@@ -1,0 +1,45 @@
+Log file open, 02/05/15 10:17:58
+LogInit:Display: Running engine for game: SpaceShooter
+LogInit: Version: 4.4.3-2296771+++depot+UE4-Releases+4.4
+LogInit: API Version: 2255576
+LogInit: Compiled (64-bit): Sep 13 2014 22:30:58
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++depot+UE4-Releases+4.4
+LogInit: Command line: 
+LogInit: Base directory: C:/Program Files/Unreal Engine/4.4/Engine/Binaries/Win64/
+LogInit: Rocket: 1
+[2015.02.05-15.17.58:542][  0]LogTaskGraph: Started task graph with 3 named threads and 4 total threads.
+[2015.02.05-15.17.58:568][  0]LogOnline:Warning: No default platform service specified for OnlineSubsystem
+[2015.02.05-15.17.58:575][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.02.05-15.17.58:583][  0]LogInit: Object subsystem initialized
+[2015.02.05-15.17.58:586][  0]LogInit: Selected Device Profile: [Windows]
+[2015.02.05-15.17.58:586][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.02.05-15.17.58:591][  0]LogInit: Computer: C401IT27
+[2015.02.05-15.17.58:592][  0]LogInit: User: npham
+[2015.02.05-15.17.58:592][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.02.05-15.17.58:592][  0]LogInit: High frequency timer resolution =2.741240 MHz
+[2015.02.05-15.17.58:592][  0]LogMemory: Memory total: Physical=6.0GB (6GB approx) Virtual=8192.0GB
+[2015.02.05-15.17.58:593][  0]LogMemory: Platform Memory Stats for Windows
+[2015.02.05-15.17.58:593][  0]LogMemory: Process Physical Memory: 62.19 MB used, 62.19 MB peak
+[2015.02.05-15.17.58:593][  0]LogMemory: Process Virtual Memory: 38.29 MB used, 38.29 MB peak
+[2015.02.05-15.17.58:593][  0]LogMemory: Physical Memory: 4123.88 MB used, 6134.93 MB total
+[2015.02.05-15.17.58:593][  0]LogMemory: Virtual Memory: 260.68 MB used, 8388608.00 MB total
+[2015.02.05-15.17.58:628][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 260   (Feature Level 10_0)
+[2015.02.05-15.17.58:628][  0]LogD3D11RHI: Adapter has 1767MB of dedicated video memory, 0MB of dedicated system memory, and 2303MB of shared system memory, 1 output[s]
+[2015.02.05-15.17.58:628][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.02.05-15.17.58:633][  0]LogRHI: Texture pool is 1237 MB (70% of 1767 MB)
+[2015.02.05-15.17.58:640][  0]LogD3D11RHI: Async texture creation enabled
+[2015.02.05-15.17.58:751][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.02.05-15.18.00:307][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.02.05-15.18.00:647][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.02.05-15.18.00:683][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.02.05-15.18.00:718][  0]LogDerivedDataCache: Loaded boot cache 0.03s 34MB C:/Users/npham/AppData/Local/UnrealEngine/4.4/DerivedDataCache/Boot.ddc.
+[2015.02.05-15.18.00:718][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/npham/AppData/Local/UnrealEngine/4.4/DerivedDataCache/Boot.ddc
+[2015.02.05-15.18.00:718][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/npham/Documents/GitHub/SpaceShooter/SpaceShooter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.02.05-15.18.00:718][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.02.05-15.18.00:738][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/DDC.ddp.
+[2015.02.05-15.18.00:749][  0]LogDerivedDataCache: Using Local data cache path C:/Users/npham/AppData/Local/UnrealEngine/4.4/DerivedDataCache: Writable
+[2015.02.05-15.18.00:908][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.02.05-15.18.00:908][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.02.05-15.18.01:232][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.02.05-15.18.02:035][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//FMonitoredProcess///Thread_c10_0
