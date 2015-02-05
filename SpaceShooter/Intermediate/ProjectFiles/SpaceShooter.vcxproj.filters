@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\SpaceShooter.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{A2D61750-5984-402B-81B8-95807B334761}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\SpaceShooter.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\SpaceShooterEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{B6259B17-1E98-4FD9-BDF7-A5675DB3140F}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\SpaceShooter">
+			<UniqueIdentifier>{4FDF06E1-D9B5-4DCD-B62D-88922BFCE40E}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\SpaceShooter\SpaceShooter.Build.cs">
+			<Filter>Source\SpaceShooter</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\SpaceShooter\SpaceShooter.cpp">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\SpaceShooter\SpaceShooter.h">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\SpaceShooter\SpaceShooterGameMode.cpp">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\SpaceShooter\SpaceShooterGameMode.h">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClInclude >
+		<Filter Include="Source\SpaceShooter\Resources">
+			<UniqueIdentifier>{6BC9BA1B-50BC-4E9D-97EE-C79FB663E15A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Source\SpaceShooter\Resources\Windows">
+			<UniqueIdentifier>{E25D3122-B57E-46DB-AFFE-5AC17E747BCF}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.ico">
+			<Filter>Source\SpaceShooter\Resources\Windows</Filter>
+		</None >
+		<ResourceCompile Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.rc">
+			<Filter>Source\SpaceShooter\Resources\Windows</Filter>
+		</ResourceCompile >
+	</ItemGroup>
+</Project>
