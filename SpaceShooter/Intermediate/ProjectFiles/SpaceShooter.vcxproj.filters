@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\SpaceShooter.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{A2D61750-5984-402B-81B8-95807B334761}</UniqueIdentifier>
+			<UniqueIdentifier>{7C60468A-69D5-4CE3-91AD-1B6B0C6E9FF1}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\SpaceShooter.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{B6259B17-1E98-4FD9-BDF7-A5675DB3140F}</UniqueIdentifier>
+			<UniqueIdentifier>{4C750B27-93D2-4810-BF91-CEC5FE93FED4}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -25,8 +25,14 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\SpaceShooter">
-			<UniqueIdentifier>{4FDF06E1-D9B5-4DCD-B62D-88922BFCE40E}</UniqueIdentifier>
+			<UniqueIdentifier>{99E544B5-7935-4826-9D8D-ACB3D2FD6696}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\SpaceShooter\Ship.cpp">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\SpaceShooter\Ship.h">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClInclude >
 		<None Include="..\..\Source\SpaceShooter\SpaceShooter.Build.cs">
 			<Filter>Source\SpaceShooter</Filter>
 		</None >
@@ -43,10 +49,10 @@
 			<Filter>Source\SpaceShooter</Filter>
 		</ClInclude >
 		<Filter Include="Source\SpaceShooter\Resources">
-			<UniqueIdentifier>{6BC9BA1B-50BC-4E9D-97EE-C79FB663E15A}</UniqueIdentifier>
+			<UniqueIdentifier>{ED9FF0A6-841D-42C0-A405-AEE5F33F813B}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\SpaceShooter\Resources\Windows">
-			<UniqueIdentifier>{E25D3122-B57E-46DB-AFFE-5AC17E747BCF}</UniqueIdentifier>
+			<UniqueIdentifier>{BF347B14-0899-40D5-BC37-9A057D113E20}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.ico">
 			<Filter>Source\SpaceShooter\Resources\Windows</Filter>

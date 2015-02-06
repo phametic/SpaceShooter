@@ -13,6 +13,6 @@ class SPACESHOOTER_API ASpaceShooterGameMode : public AGameMode
 {
 	GENERATED_UCLASS_BODY()
 
-	
+		virtual void StartPlay() override;
 	
 };
