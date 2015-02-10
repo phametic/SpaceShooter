@@ -1,16 +1,10 @@
-﻿Build started 2/10/2015 12:09:52 PM.
+﻿Build started 2/10/2015 1:22:56 PM.
      1>Project "C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
      1>Build:
          "C:\Program Files\Unreal Engine\4.4\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
-         Performing 2 actions (max 4 parallel jobs)
-         SpacyCamera.cpp
-         [2/2] link.exe UE4Editor-SpaceShooter-Win64-DebugGame.dll
-            Creating library C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.lib and object C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.exp
-         -------- End Detailed Actions Stats -----------------------------------------------------------
-         Cumulative action seconds (8 processors): 0.00 building projects, 1.19 compiling, 0.00 creating app bundles, 0.00 generating debug info, 0.64 linking, 0.00 other
-         UBT execution time: 5.76 seconds
+         Target is up to date.
      1>Done Building Project "C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.91
+Time Elapsed 00:00:02.86
