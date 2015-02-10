@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\SpaceShooter.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{B5723894-58A9-44C7-8CDA-427297F2867D}</UniqueIdentifier>
+			<UniqueIdentifier>{849342F2-B140-4CAC-BBAD-2112B1B1F306}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\SpaceShooter.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{E0515DC4-C168-4BAB-8F7D-8DB8F38D3ED9}</UniqueIdentifier>
+			<UniqueIdentifier>{7D16BAB9-3841-4F72-8C07-71C13785FF71}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\SpaceShooter">
-			<UniqueIdentifier>{12EB4E4F-A285-4CCE-8F7C-BE7C49B46837}</UniqueIdentifier>
+			<UniqueIdentifier>{47B6D275-5A95-402A-A59D-12512675E9E4}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\SpaceShooter\Ship.cpp">
 			<Filter>Source\SpaceShooter</Filter>
@@ -51,11 +51,17 @@
 		<ClInclude Include="..\..\Source\SpaceShooter\SpaceShooterGameMode.h">
 			<Filter>Source\SpaceShooter</Filter>
 		</ClInclude >
+		<ClCompile Include="..\..\Source\SpaceShooter\SpacyCamera.cpp">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\SpaceShooter\SpacyCamera.h">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClInclude >
 		<Filter Include="Source\SpaceShooter\Resources">
-			<UniqueIdentifier>{BE895154-7205-41A8-8CB1-76971E5D767A}</UniqueIdentifier>
+			<UniqueIdentifier>{C18DA95B-7830-433A-9C9D-91C5171A05D6}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\SpaceShooter\Resources\Windows">
-			<UniqueIdentifier>{A606CB26-9D79-4C08-9EF8-CDDEB11847B4}</UniqueIdentifier>
+			<UniqueIdentifier>{0A202AD7-5B31-44FA-A875-7D8289ADF79E}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.ico">
 			<Filter>Source\SpaceShooter\Resources\Windows</Filter>

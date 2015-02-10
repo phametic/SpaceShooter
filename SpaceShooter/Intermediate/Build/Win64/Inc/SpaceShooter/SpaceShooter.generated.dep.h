@@ -11,3 +11,6 @@
 #ifndef SPACESHOOTER_SpaceShooterGameMode_generated_h
 	#include "SpaceShooterGameMode.h"
 #endif
+#ifndef SPACESHOOTER_SpacyCamera_generated_h
+	#include "SpacyCamera.h"
+#endif

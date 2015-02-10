@@ -18,10 +18,16 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	{
 	}
 	IMPLEMENT_CLASS(ASpaceShooterGameMode);
+	void ASpacyCamera::StaticRegisterNativesASpacyCamera()
+	{
+	}
+	IMPLEMENT_CLASS(ASpacyCamera);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor();
+	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 
 	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_MoveLeftRight();
 	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_MoveUpDown();
@@ -29,6 +35,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_AShip();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpaceShooterGameMode_NoRegister();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpaceShooterGameMode();
+	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpacyCamera_NoRegister();
+	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpacyCamera();
 	SPACESHOOTER_API class UPackage* Z_Construct_UPackage_SpaceShooter();
 	UFunction* Z_Construct_UFunction_AShip_MoveLeftRight()
 	{
@@ -138,6 +146,36 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 		return OuterClass;
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ASpaceShooterGameMode(Z_Construct_UClass_ASpaceShooterGameMode);
+	UClass* Z_Construct_UClass_ASpacyCamera_NoRegister()
+	{
+		return ASpacyCamera::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ASpacyCamera()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage_SpaceShooter();
+			OuterClass = ASpacyCamera::StaticClass();
+			UObjectForceRegistration(OuterClass);
+			OuterClass->ClassFlags |= 0x00900080;
+
+
+			UProperty* NewProp_CameraComponent = new(OuterClass, TEXT("CameraComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(CameraComponent, ASpacyCamera), 0x00000000044a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
+			OuterClass->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+			MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("SpacyCamera.h"));
+			MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("SpacyCamera.h"));
+			MetaData->SetValue(NewProp_CameraComponent, TEXT("Category"), TEXT("CameraActor"));
+			MetaData->SetValue(NewProp_CameraComponent, TEXT("ModuleRelativePath"), TEXT("SpacyCamera.h"));
+#endif
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ASpacyCamera(Z_Construct_UClass_ASpacyCamera);
 	UPackage* Z_Construct_UPackage_SpaceShooter()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -146,8 +184,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/SpaceShooter")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0xB4D984A6;
-			Guid.B = 0x15642528;
+			Guid.A = 0x2FF6B349;
+			Guid.B = 0xC5F570CB;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
