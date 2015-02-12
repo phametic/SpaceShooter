@@ -10,6 +10,7 @@ ASpacyCamera::ASpacyCamera(const class FPostConstructInitializeProperties& PCIP)
 	PrimaryActorTick.bCanEverTick = true;
 	CameraComponent = PCIP.CreateDefaultSubobject<UCameraComponent>(this, TEXT("Shmup Camera"));
 	RootComponent = CameraComponent;
+
 }
 void ASpacyCamera::Tick(float DeltaTime)
 {

@@ -25,6 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
+	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
@@ -102,6 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			OuterClass->LinkChild(Z_Construct_UFunction_AShip_MoveLeftRight());
 			OuterClass->LinkChild(Z_Construct_UFunction_AShip_MoveUpDown());
 
+			UProperty* NewProp_MeshComponent = new(OuterClass, TEXT("MeshComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(MeshComponent, AShip), 0x00000800044a001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 			OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AShip_MoveLeftRight());
 			OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AShip_MoveUpDown());
 			OuterClass->StaticLink();
@@ -110,6 +112,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation AI|Navigation Pawn|Character|InternalEvents"));
 			MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Ship.h"));
 			MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Ship.h"));
+			MetaData->SetValue(NewProp_MeshComponent, TEXT("Category"), TEXT("StaticMesh"));
+			MetaData->SetValue(NewProp_MeshComponent, TEXT("ModuleRelativePath"), TEXT("Ship.h"));
 #endif
 		}
 		check(OuterClass->GetClass());
@@ -184,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/SpaceShooter")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x2FF6B349;
+			Guid.A = 0x248B30C0;
 			Guid.B = 0xC5F570CB;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

@@ -1,0 +1,85 @@
+Log file open, 02/12/15 09:38:51
+LogInit:Display: Running engine for game: SpaceShooter
+LogInit: Version: 4.4.3-2296771+++depot+UE4-Releases+4.4
+LogInit: API Version: 2255576
+LogInit: Compiled (64-bit): Sep 13 2014 22:30:58
+LogInit: Build Configuration: DebugGame
+LogInit: Branch Name: ++depot+UE4-Releases+4.4
+LogInit: Command line:  -debug
+LogInit: Base directory: C:/Program Files/Unreal Engine/4.4/Engine/Binaries/Win64/
+LogInit: Rocket: 1
+[2015.02.12-14.38.51:013][  0]LogTaskGraph: Started task graph with 3 named threads and 4 total threads.
+[2015.02.12-14.38.51:043][  0]LogOnline:Warning: No default platform service specified for OnlineSubsystem
+[2015.02.12-14.38.51:073][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.02.12-14.38.51:100][  0]LogInit: Object subsystem initialized
+[2015.02.12-14.38.51:116][  0]LogInit: Selected Device Profile: [Windows]
+[2015.02.12-14.38.51:117][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.02.12-14.38.51:128][  0]LogInit: Computer: C401IT27
+[2015.02.12-14.38.51:129][  0]LogInit: User: sctcad
+[2015.02.12-14.38.51:130][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.02.12-14.38.51:131][  0]LogInit: High frequency timer resolution =2.741230 MHz
+[2015.02.12-14.38.51:131][  0]LogMemory: Memory total: Physical=6.0GB (6GB approx) Virtual=8192.0GB
+[2015.02.12-14.38.51:132][  0]LogMemory: Platform Memory Stats for Windows
+[2015.02.12-14.38.51:132][  0]LogMemory: Process Physical Memory: 60.64 MB used, 60.64 MB peak
+[2015.02.12-14.38.51:133][  0]LogMemory: Process Virtual Memory: 36.18 MB used, 36.18 MB peak
+[2015.02.12-14.38.51:133][  0]LogMemory: Physical Memory: 5204.13 MB used, 6134.93 MB total
+[2015.02.12-14.38.51:133][  0]LogMemory: Virtual Memory: 256.68 MB used, 8388608.00 MB total
+[2015.02.12-14.38.51:266][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 260   (Feature Level 10_0)
+[2015.02.12-14.38.51:266][  0]LogD3D11RHI: Adapter has 1767MB of dedicated video memory, 0MB of dedicated system memory, and 2303MB of shared system memory, 1 output[s]
+[2015.02.12-14.38.51:266][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.02.12-14.38.51:272][  0]LogRHI: Texture pool is 1237 MB (70% of 1767 MB)
+[2015.02.12-14.38.51:307][  0]LogD3D11RHI: Async texture creation enabled
+[2015.02.12-14.38.51:603][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.02.12-14.38.53:413][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.02.12-14.38.53:833][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.02.12-14.38.53:887][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.02.12-14.38.54:055][  0]LogDerivedDataCache: Loaded boot cache 0.17s 34MB C:/Users/sctcad/AppData/Local/UnrealEngine/4.4/DerivedDataCache/Boot.ddc.
+[2015.02.12-14.38.54:056][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/sctcad/AppData/Local/UnrealEngine/4.4/DerivedDataCache/Boot.ddc
+[2015.02.12-14.38.54:057][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.02.12-14.38.54:057][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.02.12-14.38.54:081][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/DDC.ddp.
+[2015.02.12-14.38.54:094][  0]LogDerivedDataCache: Using Local data cache path C:/Users/sctcad/AppData/Local/UnrealEngine/4.4/DerivedDataCache: Writable
+[2015.02.12-14.38.54:711][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.02.12-14.38.54:711][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.02.12-14.38.55:274][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.02.12-14.38.56:737][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//FMonitoredProcess///Thread_1c58_0///////STATCAT_Advanced//// old //STATGROUP_Threads//FMonitoredProcess///Thread_c30_0///////STATCAT_Advanced////
+[2015.02.12-14.38.56:737][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.02.12-14.38.56:878][  0]LogLinker:Warning: Can't find file '/Game/Meshes/UFO'
+[2015.02.12-14.38.56:879][  0]LogLinker:Warning: Can't find file '/Game/Meshes/UFO'
+[2015.02.12-14.38.56:880][  0]LogUObjectGlobals:Warning: Failed to find object 'StaticMesh /Game/Meshes/UFO.UFO'
+[2015.02.12-14.38.56:880][  0]Error: CDO Constructor: Failed to find /Game/Meshes/UFO.UFO
+[2015.02.12-14.38.56:881][  0]LogUObjectBase:Warning: -------------- Default Property warnings and errors:
+[2015.02.12-14.38.56:881][  0]LogUObjectBase:Warning: Error: CDO Constructor: Failed to find /Game/Meshes/UFO.UFO
+[2015.02.12-14.39.00:934][  0]SourceControl: Info Source control is disabled
+[2015.02.12-14.39.00:935][  0]SourceControl: Info Source control is disabled
+[2015.02.12-14.39.00:941][  0]SourceControl: Info Source control is disabled
+[2015.02.12-14.39.01:308][  0]BlueprintLog: New page: Editor Load
+[2015.02.12-14.39.01:474][  0]LogObj: 21459 objects as part of root set at end of initial load.
+[2015.02.12-14.39.01:475][  0]LogUObjectAllocator: 4232768 out of 0 bytes used by permanent object pool.
+[2015.02.12-14.39.01:695][  0]LogEngine: Initializing Engine...
+[2015.02.12-14.39.01:814][  0]LogInit: XAudio2 using 'Digital Audio (HDMI) (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.02.12-14.39.01:835][  0]LogInit: FAudioDevice initialized.
+[2015.02.12-14.39.01:879][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.02.12-14.39.01:905][  0]LogDerivedDataCache: Saved boot cache 0.02s 34MB C:/Users/sctcad/AppData/Local/UnrealEngine/4.4/DerivedDataCache/Boot.ddc.
+[2015.02.12-14.39.01:912][  0]LogInit: Texture streaming: Enabled
+[2015.02.12-14.39.01:948][  0]LogInit: Transaction tracking system initialized
+[2015.02.12-14.39.02:124][  0]LogAssetRegistry: FAssetRegistry took 0.0123 seconds to start up
+[2015.02.12-14.39.02:686][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.02.12-14.39.03:002][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.02.12-14.39.03:191][  0]LogConsoleResponse:Display: 
+[2015.02.12-14.39.03:458][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//FMonitoredProcess///Thread_21dc_0///////STATCAT_Advanced//// old //STATGROUP_Threads//FMonitoredProcess///Thread_c30_0///////STATCAT_Advanced////
+[2015.02.12-14.39.03:459][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//FMonitoredProcess///Thread_218c_0///////STATCAT_Advanced//// old //STATGROUP_Threads//FMonitoredProcess///Thread_c30_0///////STATCAT_Advanced////
+[2015.02.12-14.39.03:459][  0]SourceControl: Info Source control is disabled
+[2015.02.12-14.39.03:461][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1
+[2015.02.12-14.39.03:463][  0]LightingResults: New page: Lighting Build
+[2015.02.12-14.39.03:476][  0]MapCheck: New page: Map Check
+[2015.02.12-14.39.03:476][  0]LightingResults: New page: Lighting Build
+[2015.02.12-14.39.03:496][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000FF70540
+[2015.02.12-14.39.03:731][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.02.12-14.39.03:733][  0]LogAIModule: Creating AISystem for world Template_Default
+[2015.02.12-14.39.03:734][  0]Cmd: MAP CHECKDEP
+[2015.02.12-14.39.03:734][  0]MapCheck: New page: Untitled_1 - Feb 12, 2015, 4:39:03 AM
+[2015.02.12-14.39.03:791][  0]MapCheck: Info ========== Map Check: 0 Error(s), 0 Warning(s), [57.144ms] ==========
+[2015.02.12-14.39.03:792][  0]LogFileHelpers: Loading map 'Template_Default' took 0.332
+[2015.02.12-14.39.03:930][  0]LogCollectionManager: Loaded 0 collections in 0.001059 seconds
+[2015.0
