@@ -297,7 +297,8 @@ C:\Program Files\Unreal Engine\4.4\Engine\Plugins\Script\ScriptEditorPlugin\Sour
 C:\Program Files\Unreal Engine\4.4\Engine\Plugins\Script\ScriptGeneratorPlugin\Source\ScriptGeneratorPlugin\ScriptGeneratorPlugin.Build.cs
 C:\Program Files\Unreal Engine\4.4\Engine\Plugins\Script\ScriptPlugin\Source\ScriptPlugin\ScriptPlugin.Build.cs
 C:\Program Files\Unreal Engine\4.4\Engine\Plugins\Slate\SlateRemote\Source\SlateRemote\SlateRemote.Build.cs
-C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Source\SpaceShooter\SpaceShooter.Build.cs
+C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Source\SpaceShooter\SpaceShooter.Build.cs
 C:\Program Files\Unreal Engine\4.4\Engine\Source\UE4Game.Target.cs
-C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Source\SpaceShooter.Target.cs
-C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Source\SpaceShooterEditor.Target.cs
+C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Source\SpaceShooter.Target.cs
+C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Source\SpaceShooterEditor.Target.cs
+oter\Source\SpaceShooterEditor.Target.cs

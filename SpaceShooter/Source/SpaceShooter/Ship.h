@@ -15,8 +15,7 @@ class SPACESHOOTER_API AShip : public ACharacter
 
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMesh)
-	TSubobjectPtr<class UStaticMeshComponent> MeshComponent;
+	
 	//Up & Down movement
 	UFUNCTION()
 		void MoveUpDown(float value);

@@ -1,0 +1,78 @@
+Log file open, 03/03/15 13:39:25
+LogInit:Display: Running engine for game: SpaceShooter
+LogInit: Version: 4.4.3-2296771+++depot+UE4-Releases+4.4
+LogInit: API Version: 2255576
+LogInit: Compiled (64-bit): Sep 13 2014 22:30:58
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++depot+UE4-Releases+4.4
+LogInit: Command line: 
+LogInit: Base directory: C:/Program Files/Unreal Engine/4.4/Engine/Binaries/Win64/
+LogInit: Rocket: 1
+[2015.03.03-18.39.25:849][  0]LogTaskGraph: Started task graph with 3 named threads and 4 total threads.
+[2015.03.03-18.39.25:878][  0]LogOnline:Warning: No default platform service specified for OnlineSubsystem
+[2015.03.03-18.39.25:889][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.03.03-18.39.25:897][  0]LogInit: Object subsystem initialized
+[2015.03.03-18.39.25:900][  0]LogInit: Selected Device Profile: [Windows]
+[2015.03.03-18.39.25:901][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.03.03-18.39.25:905][  0]LogInit: Computer: C401IT35
+[2015.03.03-18.39.25:906][  0]LogInit: User: npham
+[2015.03.03-18.39.25:907][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.03.03-18.39.25:907][  0]LogInit: High frequency timer resolution =2.741230 MHz
+[2015.03.03-18.39.25:908][  0]LogMemory: Memory total: Physical=6.0GB (6GB approx) Virtual=8192.0GB
+[2015.03.03-18.39.25:908][  0]LogMemory: Platform Memory Stats for Windows
+[2015.03.03-18.39.25:909][  0]LogMemory: Process Physical Memory: 60.73 MB used, 60.73 MB peak
+[2015.03.03-18.39.25:909][  0]LogMemory: Process Virtual Memory: 36.21 MB used, 36.21 MB peak
+[2015.03.03-18.39.25:909][  0]LogMemory: Physical Memory: 4245.56 MB used, 6134.93 MB total
+[2015.03.03-18.39.25:909][  0]LogMemory: Virtual Memory: 256.68 MB used, 8388608.00 MB total
+[2015.03.03-18.39.25:987][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 260   (Feature Level 10_0)
+[2015.03.03-18.39.25:987][  0]LogD3D11RHI: Adapter has 1767MB of dedicated video memory, 0MB of dedicated system memory, and 2303MB of shared system memory, 1 output[s]
+[2015.03.03-18.39.25:988][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.03.03-18.39.25:993][  0]LogRHI: Texture pool is 1237 MB (70% of 1767 MB)
+[2015.03.03-18.39.26:025][  0]LogD3D11RHI: Async texture creation enabled
+[2015.03.03-18.39.26:177][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.03.03-18.39.27:874][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.03.03-18.39.28:263][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.03.03-18.39.28:311][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.03.03-18.39.28:348][  0]LogDerivedDataCache: Loaded boot cache 0.04s 35MB C:/Users/npham/AppData/Local/UnrealEngine/4.4/DerivedDataCache/Boot.ddc.
+[2015.03.03-18.39.28:349][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/npham/AppData/Local/UnrealEngine/4.4/DerivedDataCache/Boot.ddc
+[2015.03.03-18.39.28:349][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/npham/Desktop/SpaceShooter/SpaceShooter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.03.03-18.39.28:350][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.03.03-18.39.28:369][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/DDC.ddp.
+[2015.03.03-18.39.28:381][  0]LogDerivedDataCache: Using Local data cache path C:/Users/npham/AppData/Local/UnrealEngine/4.4/DerivedDataCache: Writable
+[2015.03.03-18.39.28:550][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.03.03-18.39.28:550][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.03.03-18.39.28:890][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.03.03-18.39.29:703][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//FMonitoredProcess///Thread_1898_0///////STATCAT_Advanced//// old //STATGROUP_Threads//FMonitoredProcess///Thread_1dec_0///////STATCAT_Advanced////
+[2015.03.03-18.39.29:703][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.03.03-18.39.29:917][  0]LogBlueprint:Warning: [compiler] Warning Get Input Axis references unknown Axis 'MoveRight' for  MoveRight 
+[2015.03.03-18.39.29:924][  0]LogBlueprint:Warning: [compiler] Warning [0005.93] Compile of BP_Pixel_Ship_Player successful, but with 1 Warning(s) [in 15 ms]
+[2015.03.03-18.39.29:945][  0]LogBlueprint:Warning: [compiler] Warning Get Input Axis references unknown Axis 'MoveRight' for  MoveRight 
+[2015.03.03-18.39.29:951][  0]LogBlueprint:Warning: [compiler] Warning [0005.96] Compile of BP_Pixel_Ship_Player successful, but with 1 Warning(s) [in 14 ms]
+[2015.03.03-18.39.29:972][  0]BlueprintLog:Warning: Warning Blueprint BP_Pixel_Projectile has been migrated and requires re-saving to avoid import errors
+[2015.03.03-18.39.29:980][  0]BlueprintLog:Warning: Warning Blueprint BP_Pixel_Ship_Player has been migrated and requires re-saving to avoid import errors
+[2015.03.03-18.39.29:982][  0]LogUObjectGlobals:Warning: Failed to find object 'Class /Game/ExampleContent/Input_Examples/Blueprints/BP_Pixel_Ship_Player.BP_Pixel_Ship_Player'
+[2015.03.03-18.39.29:982][  0]Error: CDO Constructor: Failed to find /Game/ExampleContent/Input_Examples/Blueprints/BP_Pixel_Ship_Player.BP_Pixel_Ship_Player
+[2015.03.03-18.39.29:983][  0]LogUObjectBase:Warning: -------------- Default Property warnings and errors:
+[2015.03.03-18.39.29:983][  0]LogUObjectBase:Warning: Error: CDO Constructor: Failed to find /Game/ExampleContent/Input_Examples/Blueprints/BP_Pixel_Ship_Player.BP_Pixel_Ship_Player
+[2015.03.03-18.39.35:544][  0]SourceControl: Info Source control is disabled
+[2015.03.03-18.39.35:544][  0]SourceControl: Info Source control is disabled
+[2015.03.03-18.39.35:550][  0]SourceControl: Info Source control is disabled
+[2015.03.03-18.39.35:748][  0]BlueprintLog: New page: Editor Load
+[2015.03.03-18.39.35:856][  0]LogObj: 27520 objects as part of root set at end of initial load.
+[2015.03.03-18.39.35:857][  0]LogUObjectAllocator: 6024752 out of 0 bytes used by permanent object pool.
+[2015.03.03-18.39.36:049][  0]LogEngine: Initializing Engine...
+[2015.03.03-18.39.36:156][  0]LogInit: XAudio2 using 'Digital Audio (HDMI) (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.03.03-18.39.36:184][  0]LogInit: FAudioDevice initialized.
+[2015.03.03-18.39.36:202][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.03.03-18.39.36:222][  0]LogDerivedDataCache: Saved boot cache 0.02s 36MB C:/Users/npham/AppData/Local/UnrealEngine/4.4/DerivedDataCache/Boot.ddc.
+[2015.03.03-18.39.36:229][  0]LogInit: Texture streaming: Enabled
+[2015.03.03-18.39.36:261][  0]LogInit: Transaction tracking system initialized
+[2015.03.03-18.39.36:391][  0]LogAssetRegistry: FAssetRegistry took 0.0100 seconds to start up
+[2015.03.03-18.39.36:878][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.03.03-18.39.37:198][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.03.03-18.39.37:344][  0]LogConsoleResponse:Display: 
+[2015.03.03-18.39.37:525][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//FMonitoredProcess///Thread_1520_0///////STATCAT_Advanced//// old //STATGROUP_Threads//FMonitoredProcess///Thread_1dec_0///////STATCAT_Advanced////
+[2015.03.03-18.39.37:525][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//FMonitoredProcess///Thread_1754_0///////STATCAT_Advanced//// old //STATGROUP_Threads//FMonitoredProcess///Thread_1dec_0///////STATCAT_Advanced////
+[2015.03.03-18.39.37:526][  0]SourceControl: Info Source control is disabled
+[2015.03.03-18.39.37:526][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1
+[2015.03.03-18.39.37:52
