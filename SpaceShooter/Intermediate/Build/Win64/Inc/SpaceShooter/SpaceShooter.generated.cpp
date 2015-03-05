@@ -24,7 +24,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	IMPLEMENT_CLASS(ASpacyCamera);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
-	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
+	ENGINE_API class UClass* Z_Construct_UClass_APawn();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
@@ -94,7 +94,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 		static UClass* OuterClass = NULL;
 		if (!OuterClass)
 		{
-			Z_Construct_UClass_ACharacter();
+			Z_Construct_UClass_APawn();
 			Z_Construct_UPackage_SpaceShooter();
 			OuterClass = AShip::StaticClass();
 			UObjectForceRegistration(OuterClass);
@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			OuterClass->StaticLink();
 #if WITH_METADATA
 			UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
-			MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation AI|Navigation Pawn|Character|InternalEvents"));
+			MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation AI|Navigation"));
 			MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Ship.h"));
 			MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Ship.h"));
 			MetaData->SetValue(NewProp_MeshComponent, TEXT("Category"), TEXT("StaticMesh"));
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/SpaceShooter")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x248B30C0;
+			Guid.A = 0x510E9067;
 			Guid.B = 0xC5F570CB;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;

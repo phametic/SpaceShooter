@@ -34,7 +34,7 @@
 	static void StaticRegisterNativesAShip(); \
 	friend SPACESHOOTER_API class UClass* Z_Construct_UClass_AShip(); \
 	public: \
-	DECLARE_CLASS(AShip, ACharacter, COMPILED_IN_FLAGS(0), 0, SpaceShooter, NO_API) \
+	DECLARE_CLASS(AShip, APawn, COMPILED_IN_FLAGS(0), 0, SpaceShooter, NO_API) \
 	/** Standard constructor, called after all reflected properties have been initialized */    NO_API AShip(const class FPostConstructInitializeProperties& PCIP); \
 	DECLARE_SERIALIZER(AShip) \
 	/** Indicates whether the class is compiled into the engine */    enum {IsIntrinsic=COMPILED_IN_INTRINSIC};

@@ -1,16 +1,17 @@
-﻿Build started 2/12/2015 9:58:10 AM.
-     1>Project "C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
+﻿Build started 04/03/2015 10:14:17 PM.
+     1>Project "C:\Users\Rob\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
      1>Build:
-         "C:\Program Files\Unreal Engine\4.4\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
-         Performing 2 actions (max 4 parallel jobs)
+         "C:\Program Files\Epic Games\4.4\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\Rob\Desktop\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
+         Performing 3 actions (max 4 parallel jobs)
+         SpacyCamera.cpp
          Ship.cpp
-         [2/2] link.exe UE4Editor-SpaceShooter-Win64-DebugGame.dll
-            Creating library C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.lib and object C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.exp
+         [3/3] link.exe UE4Editor-SpaceShooter-Win64-DebugGame.dll
+            Creating library C:\Users\Rob\Desktop\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.lib and object C:\Users\Rob\Desktop\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.exp
          -------- End Detailed Actions Stats -----------------------------------------------------------
-         Cumulative action seconds (8 processors): 0.00 building projects, 0.32 compiling, 0.00 creating app bundles, 0.00 generating debug info, 0.54 linking, 0.00 other
-         UBT execution time: 5.05 seconds
-     1>Done Building Project "C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
+         Cumulative action seconds (4 processors): 0.00 building projects, 0.49 compiling, 0.00 creating app bundles, 0.00 generating debug info, 0.41 linking, 0.00 other
+         UBT execution time: 4.58 seconds
+     1>Done Building Project "C:\Users\Rob\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.19
+Time Elapsed 00:00:04.71
