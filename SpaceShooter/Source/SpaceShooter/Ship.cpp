@@ -21,6 +21,8 @@ void AShip::SetupPlayerInputComponent(UInputComponent* InputComponent)
 	Super::SetupPlayerInputComponent(InputComponent);
 	
 	// Setup gameplay key bindings
+	//InputComponent->BindAction("Fire", IE_Pressed, this, &AShip::OnFirePressed);
+	//InputComponent->BindAction("Fire", IE_Released, this, &AShip::OnFireReleased);
 	InputComponent->BindAxis("MoveUpDown", this, &AShip::MoveUpDown);
 	InputComponent->BindAxis("MoveLeftRight", this, &AShip::MoveLeftRight);
 }
@@ -52,6 +54,16 @@ void AShip::MoveLeftRight(float value)
 		//AddMovementInput(FVector(1.0f, 0.0f, 0.0f), value);
 	//}
 }
+/*
+void AShip::OnFirePressed()
+{
+	GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Black, FString::Printf(TEXT("SHOOT PRESSED")));
+}
+void AShip::OnFireReleased()
+{
+	GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Black, FString::Printf(TEXT("SHOOT RELEASED")));
+}
+*/
 void AShip::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);

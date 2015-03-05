@@ -30,6 +30,9 @@ protected:
 	UFUNCTION()
 		void MoveLeftRight(float value);
 
+	//UFUNCTION()
+		//void OnFirePressed();
+
 	float UpMovement;
 	float RightMovement;
 
