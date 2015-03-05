@@ -8,10 +8,12 @@ AShip::AShip(const class FPostConstructInitializeProperties& PCIP)
 	: Super(PCIP)
 {
 	MeshComponent = PCIP.CreateDefaultSubobject<UStaticMeshComponent>(this, TEXT("Mesh"));
-	const ConstructorHelpers::FObjectFinder<UStaticMesh> MeshObj(TEXT("StaticMesh'/Game/UFO.UFO'"));
+	//const ConstructorHelpers::FObjectFinder<UStaticMesh> MeshObj(TEXT("StaticMesh'/Game/UFO.UFO'"));
+	//const ConstructorHelpers::FObjectFinder<UStaticMesh> MeshObj(TEXT("StaticMesh'/Game/UFO.UFO'"));
+	const ConstructorHelpers::FObjectFinder<UStaticMesh> MeshObj(TEXT("StaticMesh'/Game/ExampleContent/Input_Examples/Meshes/SM_Pixel_Player.SM_Pixel_Player'"));
 	MeshComponent->SetStaticMesh(MeshObj.Object);
 	RootComponent = MeshComponent;
-
+	
 }
 
 void AShip::SetupPlayerInputComponent(UInputComponent* InputComponent)

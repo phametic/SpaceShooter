@@ -5,6 +5,9 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
+#ifndef SPACESHOOTER_Projectile_generated_h
+	#include "Projectile.h"
+#endif
 #ifndef SPACESHOOTER_Ship_generated_h
 	#include "Ship.h"
 #endif

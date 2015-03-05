@@ -51,6 +51,8 @@
 		<None Include="..\..\Config\DefaultEngine.ini" />
 		<None Include="..\..\Config\DefaultGame.ini" />
 		<None Include="..\..\Config\DefaultInput.ini" />
+		<ClCompile Include="..\..\Source\SpaceShooter\Projectile.cpp" />
+		<ClInclude Include="..\..\Source\SpaceShooter\Projectile.h" />
 		<ClCompile Include="..\..\Source\SpaceShooter\Ship.cpp" />
 		<ClInclude Include="..\..\Source\SpaceShooter\Ship.h" />
 		<None Include="..\..\Source\SpaceShooter\SpaceShooter.Build.cs" />
