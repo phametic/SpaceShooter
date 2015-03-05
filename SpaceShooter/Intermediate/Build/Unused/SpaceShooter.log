@@ -1,20 +1,10 @@
-﻿Build started 3/3/2015 1:52:04 PM.
-     1>Project "C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
+﻿Build started 3/5/2015 9:39:51 AM.
+     1>Project "C:\Users\jsmalley\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
      1>Build:
-         "C:\Program Files\Unreal Engine\4.4\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 Development "C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
-         Parsing headers for SpaceShooterEditor
-         Reflection code generation finished for SpaceShooterEditor and took 3.19
-         Performing 4 actions (max 4 parallel jobs)
-         SpaceShooter.generated.cpp
-         SpaceShooterGameMode.cpp
-         Ship.cpp
-         [4/4] link.exe UE4Editor-SpaceShooter.dll
-            Creating library C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\Development\UE4Editor-SpaceShooter.lib and object C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\Development\UE4Editor-SpaceShooter.exp
-         -------- End Detailed Actions Stats -----------------------------------------------------------
-         Cumulative action seconds (8 processors): 0.00 building projects, 1.32 compiling, 0.00 creating app bundles, 0.00 generating debug info, 0.55 linking, 0.00 other
-         UBT execution time: 8.90 seconds
-     1>Done Building Project "C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
+         "C:\Program Files\Unreal Engine\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\jsmalley\Desktop\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
+         Target is up to date.
+     1>Done Building Project "C:\Users\jsmalley\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:09.06
+Time Elapsed 00:00:02.90
