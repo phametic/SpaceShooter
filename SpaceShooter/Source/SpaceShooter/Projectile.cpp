@@ -30,5 +30,17 @@ void AProjectile::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	SetActorLocation(FVector(GetActorLocation().X+400*DeltaTime,GetActorLocation().Y,GetActorLocation().Z));
+	if (GetActorLocation().X > (cam->GetActorLocation().X + 550))
+	{
+		Destroy();
+	}
+}
+void AProjectile::BeginPlay()
+{
+	Super::BeginPlay();
+	for (TActorIterator<ASpacyCamera> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+	{
+		cam = ActorItr->returnSelf();
+	}
 }
 
