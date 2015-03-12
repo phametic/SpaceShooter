@@ -4,7 +4,11 @@
 	<ItemGroup>
 		<None Include="..\..\SpaceShooter.uproject" />
 		<Filter Include="Source">
+<<<<<<< HEAD
 			<UniqueIdentifier>{59EBA5BC-4870-4E9C-82C9-6B95575F40E7}</UniqueIdentifier>
+=======
+			<UniqueIdentifier>{3481432E-5D8B-48D3-994A-8E30E910B489}</UniqueIdentifier>
+>>>>>>> origin/Rob
 		</Filter>
 		<None Include="..\..\Source\SpaceShooter.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +17,11 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
+<<<<<<< HEAD
 			<UniqueIdentifier>{A3C4BF0B-174E-44E5-85F4-894AB470E240}</UniqueIdentifier>
+=======
+			<UniqueIdentifier>{3376000E-D26C-406A-BCB9-DE230511C9EE}</UniqueIdentifier>
+>>>>>>> origin/Rob
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +36,11 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\SpaceShooter">
+<<<<<<< HEAD
 			<UniqueIdentifier>{6BA43F12-71E9-4AD5-BACE-3074E26275CC}</UniqueIdentifier>
+=======
+			<UniqueIdentifier>{3AD8ED5A-97CC-4AEC-9254-1E2045A61719}</UniqueIdentifier>
+>>>>>>> origin/Rob
 		</Filter>
 		<ClCompile Include="..\..\Source\SpaceShooter\BasicEnemy.cpp">
 			<Filter>Source\SpaceShooter</Filter>
@@ -70,10 +82,17 @@
 			<Filter>Source\SpaceShooter</Filter>
 		</ClInclude >
 		<Filter Include="Source\SpaceShooter\Resources">
+<<<<<<< HEAD
 			<UniqueIdentifier>{8698A1D2-5A75-4194-8839-78EAAC508200}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\SpaceShooter\Resources\Windows">
 			<UniqueIdentifier>{B1F80E03-FF71-410D-B6C1-69B6958EF6C8}</UniqueIdentifier>
+=======
+			<UniqueIdentifier>{560CFE63-BDAB-4611-8BBC-4C1BEE0DD701}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Source\SpaceShooter\Resources\Windows">
+			<UniqueIdentifier>{37EBABAF-2E47-4E0D-8EF9-0614FDEAEC3F}</UniqueIdentifier>
+>>>>>>> origin/Rob
 		</Filter>
 		<None Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.ico">
 			<Filter>Source\SpaceShooter\Resources\Windows</Filter>
