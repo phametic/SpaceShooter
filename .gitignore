@@ -1,5 +1,7 @@
 #Unneeded project files
 *.sdf
+*.response
+*.exp
 
 # Compiled Object files
 *.slo

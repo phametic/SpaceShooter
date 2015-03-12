@@ -5,6 +5,12 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
+#ifndef SPACESHOOTER_SpacyCamera_generated_h
+	#include "SpacyCamera.h"
+#endif
+#ifndef SPACESHOOTER_BasicEnemy_generated_h
+	#include "BasicEnemy.h"
+#endif
 #ifndef SPACESHOOTER_Projectile_generated_h
 	#include "Projectile.h"
 #endif
@@ -13,7 +19,4 @@
 #endif
 #ifndef SPACESHOOTER_SpaceShooterGameMode_generated_h
 	#include "SpaceShooterGameMode.h"
-#endif
-#ifndef SPACESHOOTER_SpacyCamera_generated_h
-	#include "SpacyCamera.h"
 #endif

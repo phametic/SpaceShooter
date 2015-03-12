@@ -1,0 +1,471 @@
+﻿Log file open, 03/05/15 10:16:02
+LogInit:Display: Running engine for game: SpaceShooter
+LogInit: Version: 4.7.2-2467323+++depot+UE4-Releases+4.7
+LogInit: API Version: 2455222
+LogInit: Compiled (64-bit): Mar  2 2015 23:16:34
+LogInit: Compiled with Visual C++: 18.00.21005.01
+LogInit: Build Configuration: DebugGame
+LogInit: Branch Name: ++depot+UE4-Releases+4.7
+LogInit: Command line:  -debug
+LogInit: Base directory: C:/Program Files/Unreal Engine/4.7/Engine/Binaries/Win64/
+LogInit: Rocket: 1
+[2015.03.05-15.16.02:422][  0]LogTaskGraph: Started task graph with 3 named threads and 6 total threads.
+[2015.03.05-15.16.02:492][  0]LogOnline:Warning: No default platform service specified for OnlineSubsystem
+[2015.03.05-15.16.02:613][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.03.05-15.16.02:646][  0]LogInit: Object subsystem initialized
+[2015.03.05-15.16.02:672][  0]LogInit: Selected Device Profile: [Windows]
+[2015.03.05-15.16.02:673][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.03.05-15.16.02:687][  0]LogInit: Computer: C401IT25
+[2015.03.05-15.16.02:688][  0]LogInit: User: sctcad
+[2015.03.05-15.16.02:688][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.03.05-15.16.02:689][  0]LogInit: High frequency timer resolution =2.741259 MHz
+[2015.03.05-15.16.02:690][  0]LogMemory: Memory total: Physical=4.0GB (4GB approx) Virtual=8192.0GB
+[2015.03.05-15.16.02:692][  0]LogMemory: Platform Memory Stats for Windows
+[2015.03.05-15.16.02:692][  0]LogMemory: Process Physical Memory: 35.88 MB used, 35.88 MB peak
+[2015.03.05-15.16.02:692][  0]LogMemory: Process Virtual Memory: 22.67 MB used, 22.67 MB peak
+[2015.03.05-15.16.02:693][  0]LogMemory: Physical Memory: 4061.49 MB used, 4086.93 MB total
+[2015.03.05-15.16.02:693][  0]LogMemory: Virtual Memory: 273.38 MB used, 8388608.00 MB total
+[2015.03.05-15.16.02:854][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 260   (Feature Level 10_0)
+[2015.03.05-15.16.02:854][  0]LogD3D11RHI: Adapter has 1771MB of dedicated video memory, 0MB of dedicated system memory, and 1787MB of shared system memory, 1 output[s]
+[2015.03.05-15.16.02:855][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.03.05-15.16.02:863][  0]LogRHI: Texture pool is 1239 MB (70% of 1771 MB)
+[2015.03.05-15.16.02:934][  0]LogD3D11RHI: Async texture creation enabled
+[2015.03.05-15.16.03:329][  0]LogTextLocalizationManager: The requested culture ('en_US') has no localization data; parent culture's ('en') localization data will be used.
+[2015.03.05-15.16.03:518][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.03.05-15.16.09:178][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.03.05-15.16.10:794][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.03.05-15.16.11:288][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.03.05-15.16.11:548][  0]LogDerivedDataCache: Loaded boot cache 0.23s 36MB C:/Users/sctcad/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
+[2015.03.05-15.16.11:548][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/sctcad/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc
+[2015.03.05-15.16.11:549][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.03.05-15.16.11:549][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.03.05-15.16.11:711][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2015.03.05-15.16.11:723][  0]LogDerivedDataCache: Using Local data cache path C:/Users/sctcad/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2015.03.05-15.16.13:201][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.03.05-15.16.13:202][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.03.05-15.16.14:164][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.03.05-15.16.14:387][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf'
+[2015.03.05-15.16.17:775][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.03.05-15.16.19:050][  0]SourceControl: Info Source control is disabled
+[2015.03.05-15.16.19:054][  0]SourceControl: Info Source control is disabled
+[2015.03.05-15.16.19:054][  0]SourceControl: Info Source control is disabled
+[2015.03.05-15.16.19:055][  0]LogSourceControl: RunCommandInternalRaw: 'git version'
+[2015.03.05-15.16.19:056][  0]LogSourceControl: RunCommandInternalRaw: ExecProcess ReturnCode=2 OutResults=''
+[2015.03.05-15.16.19:068][  0]SourceControl: Info Source control is disabled
+[2015.03.05-15.16.20:394][  0]LogObj: 24280 objects as part of root set at end of initial load.
+[2015.03.05-15.16.20:395][  0]LogUObjectAllocator: 5160536 out of 0 bytes used by permanent object pool.
+[2015.03.05-15.16.21:209][  0]LogEngine: Initializing Engine...
+[2015.03.05-15.16.23:477][  0]LogInit: XAudio2 using 'Digital Audio (HDMI) (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.03.05-15.16.23:525][  0]LogInit: FAudioDevice initialized.
+[2015.03.05-15.16.23:725][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.03.05-15.16.23:937][  0]LogDerivedDataCache: Saved boot cache 0.15s 36MB C:/Users/sctcad/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
+[2015.03.05-15.16.23:966][  0]LogInit: Texture streaming: Enabled
+[2015.03.05-15.16.24:154][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2015.03.05-15.16.24:154][  0]LogAnalytics: ET APIKey = Rocket.Release. APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.7.2-2467323+++depot+UE4-Releases+4.7
+[2015.03.05-15.16.24:154][  0]LogAnalytics: ET APIKey = Rocket.Release. DataRouterUploadURL = https://datarouter-public-service-gamedev.ol.epicgames.net/datarouter/api/v1/public/data. AppVersion = 4.7.2-2467323+++depot+UE4-Releases+4.7
+[2015.03.05-15.16.24:156][  0]LogAnalytics: SetUserId 2a240c6f4c728f6806e6fdbc946ea52c|d9d81cedd9384488858a28c751665a55|7fac54aa-9f69-47ad-8344-357d0c6be1ba
+[2015.03.05-15.16.24:161][  0]LogAnalytics: AnalyticsET::StartSession [Rocket.Release]
+[2015.03.05-15.16.24:244][  0]LogInit: Transaction tracking system initialized
+[2015.03.05-15.16.26:481][  0]BlueprintLog: New page: Editor Load
+[2015.03.05-15.16.26:570][  0]LogAssetRegistry: FAssetRegistry took 0.0142 seconds to start up
+[2015.03.05-15.16.26:572][  0]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for ../../../Engine/Plugins/Experimental/CharacterAI/Content/. Error: 0
+[2015.03.05-15.16.30:437][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.03.05-15.16.30:974][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.03.05-15.16.32:310][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Regular.ttf'
+[2015.03.05-15.16.32:311][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Bold.ttf'
+[2015.03.05-15.16.32:329][  0]LogConsoleResponse:Display: 
+[2015.03.05-15.16.32:603][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2015.03.05-15.16.33:442][  0]SourceControl: Info Source control is disabled
+[2015.03.05-15.16.33:446][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=2
+[2015.03.05-15.16.33:450][  0]LightingResults: New page: Lighting Build
+[2015.03.05-15.16.33:491][  0]MapCheck: New page: Map Check
+[2015.03.05-15.16.33:492][  0]LightingResults: New page: Lighting Build
+[2015.03.05-15.16.33:539][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000012A03060
+[2015.03.05-15.16.34:690][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.03.05-15.16.34:693][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2015.03.05-15.16.34:700][  0]Cmd: MAP CHECKDEP
+[2015.03.05-15.16.34:727][  0]MapCheck: New page: Untitled_1 - Mar 5, 2015, 5:16:34 AM
+[2015.03.05-15.16.34:831][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 130.165ms to complete.
+[2015.03.05-15.16.34:832][  0]LogFileHelpers: Loading map 'Template_Default' took 1.390
+[2015.03.05-15.16.35:119][  0]LogCollectionManager: Loaded 0 collections in 0.002135 seconds
+[2015.03.05-15.16.35:141][  0]LogContentBrowser: Native class hierarchy populated in 0.0215 seconds. Added 1700 classes and 263 folders.
+[2015.03.05-15.16.35:189][  0]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Classes_Game/SpaceShooter'
+[2015.03.05-15.16.35:375][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0060 seconds. Added 1 classes and 2 folders.
+[2015.03.05-15.16.35:649][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2015.03.05-15.16.35:660][  0]LogSlate:Warning: Failed to load font data from 'Veranda'
+[2015.03.05-15.16.35:768][  0]LogLoad: Full Startup: 38.30 seconds (BP compile: 0.18 seconds)
+[2015.03.05-15.16.36:235][  0]LogRenderer:Warning: Reallocating scene render targets to support 32x32 (Frame:2).
+[2015.03.05-15.16.36:416][  0]LogRenderer:Warning: Reallocating scene render targets to support 1144x928 (Frame:3).
+[2015.03.05-15.16.37:760][  7]LogAssetRegistry: Asset discovery search completed in 11.2300 seconds
+[2015.03.05-15.16.59:238][923]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game/ExampleContent'
+[2015.03.05-15.16.59:711][945]LogContentBrowser:Verbose: The content browser source was changed by the sources view to '/Game'
+[2015.03.05-15.17.01:604][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall'
+[2015.03.05-15.17.01:605][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.01:606][ 21]LoadErrors:Error: Error /Game/SpacyMap : Can't find file for asset. /Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall
+[2015.03.05-15.17.01:608][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall'
+[2015.03.05-15.17.01:609][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.01:609][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb'
+[2015.03.05-15.17.01:610][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.01:611][ 21]LoadErrors:Error: Error /Game/SpacyMap : Can't find file for asset. /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb
+[2015.03.05-15.17.01:612][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g'
+[2015.03.05-15.17.01:613][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.01:613][ 21]LoadErrors:Error: Error /Game/SpacyMap : Can't find file for asset. /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g
+[2015.03.05-15.17.01:614][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h'
+[2015.03.05-15.17.01:614][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.01:615][ 21]LoadErrors:Error: Error /Game/SpacyMap : Can't find file for asset. /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h
+[2015.03.05-15.17.01:616][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n'
+[2015.03.05-15.17.01:616][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.01:617][ 21]LoadErrors:Error: Error /Game/SpacyMap : Can't find file for asset. /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n
+[2015.03.05-15.17.01:617][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/T_MacroVariation2'
+[2015.03.05-15.17.01:618][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/T_MacroVariation2' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.01:619][ 21]LoadErrors:Error: Error /Game/SpacyMap : Can't find file for asset. /Game/GTFreeMaterials/Textures/T_MacroVariation2
+[2015.03.05-15.17.01:621][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb'
+[2015.03.05-15.17.01:621][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.01:622][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g'
+[2015.03.05-15.17.01:623][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.01:624][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h'
+[2015.03.05-15.17.01:624][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.01:625][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n'
+[2015.03.05-15.17.01:626][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.01:626][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/T_MacroVariation2'
+[2015.03.05-15.17.01:627][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/T_MacroVariation2' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.01:629][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall'
+[2015.03.05-15.17.01:629][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall' while loading NULL.
+[2015.03.05-15.17.01:630][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall'
+[2015.03.05-15.17.01:630][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall' while loading NULL.
+[2015.03.05-15.17.01:631][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb'
+[2015.03.05-15.17.01:632][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb' while loading NULL.
+[2015.03.05-15.17.01:633][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g'
+[2015.03.05-15.17.01:633][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g' while loading NULL.
+[2015.03.05-15.17.01:634][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h'
+[2015.03.05-15.17.01:635][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h' while loading NULL.
+[2015.03.05-15.17.01:635][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n'
+[2015.03.05-15.17.01:636][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n' while loading NULL.
+[2015.03.05-15.17.01:637][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/T_MacroVariation2'
+[2015.03.05-15.17.01:637][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/T_MacroVariation2' while loading NULL.
+[2015.03.05-15.17.01:638][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb'
+[2015.03.05-15.17.01:639][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb' while loading NULL.
+[2015.03.05-15.17.01:639][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g'
+[2015.03.05-15.17.01:640][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g' while loading NULL.
+[2015.03.05-15.17.01:640][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h'
+[2015.03.05-15.17.01:641][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h' while loading NULL.
+[2015.03.05-15.17.01:642][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n'
+[2015.03.05-15.17.01:642][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n' while loading NULL.
+[2015.03.05-15.17.01:643][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/T_MacroVariation2'
+[2015.03.05-15.17.01:643][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/T_MacroVariation2' while loading NULL.
+[2015.03.05-15.17.01:707][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall'
+[2015.03.05-15.17.01:708][ 21]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall.Rock_JaggedCaveWall Referenced by Landscape_3
+[2015.03.05-15.17.01:709][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall' while loading NULL.
+[2015.03.05-15.17.01:716][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall'
+[2015.03.05-15.17.01:717][ 21]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall.Rock_JaggedCaveWall Referenced by LandscapeMaterialInstanceConstant_0
+[2015.03.05-15.17.01:717][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall' while loading NULL.
+[2015.03.05-15.17.01:719][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h'
+[2015.03.05-15.17.01:719][ 21]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h.Rock_JaggedCaveWall_2k_h Referenced by PersistentLevel
+[2015.03.05-15.17.01:720][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h' while loading NULL.
+[2015.03.05-15.17.01:721][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n'
+[2015.03.05-15.17.01:721][ 21]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n.Rock_JaggedCaveWall_2k_n Referenced by PersistentLevel
+[2015.03.05-15.17.01:721][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n' while loading NULL.
+[2015.03.05-15.17.01:722][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/T_MacroVariation2'
+[2015.03.05-15.17.01:722][ 21]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Textures/T_MacroVariation2.T_MacroVariation2 Referenced by PersistentLevel
+[2015.03.05-15.17.01:723][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/T_MacroVariation2' while loading NULL.
+[2015.03.05-15.17.01:724][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb'
+[2015.03.05-15.17.01:724][ 21]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb.Rock_JaggedCaveWall_2k_alb Referenced by PersistentLevel
+[2015.03.05-15.17.01:725][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb' while loading NULL.
+[2015.03.05-15.17.01:725][ 21]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g'
+[2015.03.05-15.17.01:726][ 21]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g.Rock_JaggedCaveWall_2k_g Referenced by PersistentLevel
+[2015.03.05-15.17.01:726][ 21]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g' while loading NULL.
+[2015.03.05-15.17.01:936][ 21]Cmd: MAP LOAD FILE="../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
+[2015.03.05-15.17.01:937][ 21]LightingResults: New page: Lighting Build
+[2015.03.05-15.17.01:974][ 21]LoadErrors: New page: Loading map: SpacyMap.umap
+[2015.03.05-15.17.01:977][ 21]MapCheck: New page: Map Check
+[2015.03.05-15.17.01:978][ 21]LightingResults: New page: Lighting Build
+[2015.03.05-15.17.01:989][ 21]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000E0D2FC0
+[2015.03.05-15.17.02:065][ 21]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.03.05-15.17.02:066][ 21]LogAIModule: Creating AISystem for world SpacyMap
+[2015.03.05-15.17.02:116][ 21]Cmd: MAP CHECKDEP
+[2015.03.05-15.17.02:117][ 21]MapCheck: New page: SpacyMap - Mar 5, 2015, 5:17:02 AM
+[2015.03.05-15.17.02:230][ 21]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 112.837ms to complete.
+[2015.03.05-15.17.02:230][ 21]LogFileHelpers: Loading map 'SpacyMap' took 0.297
+[2015.03.05-15.17.02:469][ 22]Cmd: UpdateLandscapeEditorData -warnings
+[2015.03.05-15.17.02:484][ 22]Cmd: UpdateLandscapeEditorData
+[2015.03.05-15.17.04:283][ 70]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT)
+[2015.03.05-15.17.04:288][ 70]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1)
+[2015.03.05-15.17.04:290][ 70]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (BGRA8)
+[2015.03.05-15.17.04:293][ 70]MapCheck: Info SM_Template_Map_Floor_7 StaticMeshComponent0 : Repaired painted vertex colors 
+[2015.03.05-15.17.04:311][ 70]LogUObjectGlobals:Warning: Failed to find object 'Object /Game/SpacyMapBackup-03052015.SpacyMap'
+[2015.03.05-15.17.05:882][124]Cmd: MAP LOAD FILE="../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
+[2015.03.05-15.17.05:883][124]LightingResults: New page: Lighting Build
+[2015.03.05-15.17.05:923][124]LoadErrors: New page: Loading map: SpacyMap.umap
+[2015.03.05-15.17.05:928][124]MapCheck: New page: Map Check
+[2015.03.05-15.17.05:928][124]LightingResults: New page: Lighting Build
+[2015.03.05-15.17.05:941][124]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000CD49760
+[2015.03.05-15.17.05:956][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall'
+[2015.03.05-15.17.05:956][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.05:957][124]LoadErrors:Error: Error /Game/SpacyMap : Can't find file for asset. /Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall
+[2015.03.05-15.17.05:958][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall'
+[2015.03.05-15.17.05:959][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.05:960][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb'
+[2015.03.05-15.17.05:960][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.05:961][124]LoadErrors:Error: Error /Game/SpacyMap : Can't find file for asset. /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb
+[2015.03.05-15.17.05:961][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g'
+[2015.03.05-15.17.05:962][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.05:962][124]LoadErrors:Error: Error /Game/SpacyMap : Can't find file for asset. /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g
+[2015.03.05-15.17.05:963][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h'
+[2015.03.05-15.17.05:963][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.05:964][124]LoadErrors:Error: Error /Game/SpacyMap : Can't find file for asset. /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h
+[2015.03.05-15.17.05:964][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n'
+[2015.03.05-15.17.05:965][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.05:965][124]LoadErrors:Error: Error /Game/SpacyMap : Can't find file for asset. /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n
+[2015.03.05-15.17.05:966][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/T_MacroVariation2'
+[2015.03.05-15.17.05:966][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/T_MacroVariation2' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.05:966][124]LoadErrors:Error: Error /Game/SpacyMap : Can't find file for asset. /Game/GTFreeMaterials/Textures/T_MacroVariation2
+[2015.03.05-15.17.05:969][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb'
+[2015.03.05-15.17.05:969][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.05:970][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g'
+[2015.03.05-15.17.05:970][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.05:971][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h'
+[2015.03.05-15.17.05:972][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.05:972][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n'
+[2015.03.05-15.17.05:973][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.05:973][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/T_MacroVariation2'
+[2015.03.05-15.17.05:974][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/T_MacroVariation2' while loading ../../../../../../Users/sctcad/Desktop/SpaceShooter/SpaceShooter/SpaceShooter/Content/SpacyMap.umap.
+[2015.03.05-15.17.05:975][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall'
+[2015.03.05-15.17.05:976][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall' while loading NULL.
+[2015.03.05-15.17.05:976][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall'
+[2015.03.05-15.17.05:977][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall' while loading NULL.
+[2015.03.05-15.17.05:977][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb'
+[2015.03.05-15.17.05:978][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb' while loading NULL.
+[2015.03.05-15.17.05:978][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g'
+[2015.03.05-15.17.05:979][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g' while loading NULL.
+[2015.03.05-15.17.05:979][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h'
+[2015.03.05-15.17.05:980][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h' while loading NULL.
+[2015.03.05-15.17.05:980][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n'
+[2015.03.05-15.17.05:981][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n' while loading NULL.
+[2015.03.05-15.17.05:981][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/T_MacroVariation2'
+[2015.03.05-15.17.05:982][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/T_MacroVariation2' while loading NULL.
+[2015.03.05-15.17.05:983][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb'
+[2015.03.05-15.17.05:983][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb' while loading NULL.
+[2015.03.05-15.17.05:984][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g'
+[2015.03.05-15.17.05:984][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g' while loading NULL.
+[2015.03.05-15.17.05:985][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h'
+[2015.03.05-15.17.05:985][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h' while loading NULL.
+[2015.03.05-15.17.05:986][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n'
+[2015.03.05-15.17.05:986][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n' while loading NULL.
+[2015.03.05-15.17.05:987][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/T_MacroVariation2'
+[2015.03.05-15.17.05:987][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/T_MacroVariation2' while loading NULL.
+[2015.03.05-15.17.06:047][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall'
+[2015.03.05-15.17.06:047][124]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall.Rock_JaggedCaveWall Referenced by Landscape_3
+[2015.03.05-15.17.06:048][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall' while loading NULL.
+[2015.03.05-15.17.06:053][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall'
+[2015.03.05-15.17.06:054][124]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall.Rock_JaggedCaveWall Referenced by LandscapeMaterialInstanceConstant_0
+[2015.03.05-15.17.06:054][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Materials/Rock_JaggedCaveWall' while loading NULL.
+[2015.03.05-15.17.06:056][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h'
+[2015.03.05-15.17.06:056][124]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h.Rock_JaggedCaveWall_2k_h Referenced by PersistentLevel
+[2015.03.05-15.17.06:057][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_h' while loading NULL.
+[2015.03.05-15.17.06:057][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n'
+[2015.03.05-15.17.06:058][124]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n.Rock_JaggedCaveWall_2k_n Referenced by PersistentLevel
+[2015.03.05-15.17.06:058][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_n' while loading NULL.
+[2015.03.05-15.17.06:059][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/T_MacroVariation2'
+[2015.03.05-15.17.06:059][124]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Textures/T_MacroVariation2.T_MacroVariation2 Referenced by PersistentLevel
+[2015.03.05-15.17.06:060][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/T_MacroVariation2' while loading NULL.
+[2015.03.05-15.17.06:060][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb'
+[2015.03.05-15.17.06:061][124]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb.Rock_JaggedCaveWall_2k_alb Referenced by PersistentLevel
+[2015.03.05-15.17.06:062][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_alb' while loading NULL.
+[2015.03.05-15.17.06:063][124]LogLinker:Warning: Can't find file '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g'
+[2015.03.05-15.17.06:063][124]LoadErrors: Info Failed to load /Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g.Rock_JaggedCaveWall_2k_g Referenced by PersistentLevel
+[2015.03.05-15.17.06:064][124]LogLinker:Warning: Can't find file for asset '/Game/GTFreeMaterials/Textures/Rock_JaggedCaveWall/Rock_JaggedCaveWall_2k_g' while loading NULL.
+[2015.03.05-15.17.06:193][124]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.03.05-15.17.06:194][124]LogAIModule: Creating AISystem for world SpacyMap
+[2015.03.05-15.17.06:262][124]Cmd: MAP CHECKDEP
+[2015.03.05-15.17.06:263][124]MapCheck: New page: SpacyMap - Mar 5, 2015, 5:17:06 AM
+[2015.03.05-15.17.06:370][124]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 107.131ms to complete.
+[2015.03.05-15.17.06:373][124]LogFileHelpers: Loading map 'SpacyMap' took 0.494
+[2015.03.05-15.17.06:422][125]Cmd: UpdateLandscapeEditorData
+[2015.03.05-15.17.06:426][125]Cmd: UpdateLandscapeEditorData -warnings
+[2015.03.05-15.17.19:164][593]Cmd: QUIT_EDITOR
+[2015.03.05-15.17.19:515][593]LogExit: Preparing to exit.
+[2015.03.05-15.17.20:462][593]LogExit: Editor shut down
+[2015.03.05-15.17.20:463][593]LogExit: Transaction tracking system shut down
+[2015.03.05-15.17.20:464][593]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000A998680
+[2015.03.05-15.17.20:576][593]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001561A840
+[2015.03.05-15.17.20:576][593]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000DFA8860
+[2015.03.05-15.17.20:577][593]LogExit: Object subsystem successfully closed.
+[2015.03.05-15.17.20:761][593]LogModuleManager: Shutting down and abandoning module CrashTracker (178)
+[2015.03.05-15.17.20:762][593]LogModuleManager: Shutting down and abandoning module SuperSearch (177)
+[2015.03.05-15.17.20:763][593]LogModuleManager: Shutting down and abandoning module SceneOutliner (176)
+[2015.03.05-15.17.20:763][593]LogModuleManager: Shutting down and abandoning module EditorWidgets (175)
+[2015.03.05-15.17.20:764][593]LogModuleManager: Shutting down and abandoning module CollectionManager (174)
+[2015.03.05-15.17.20:764][593]LogModuleManager: Shutting down and abandoning module StatsViewer (173)
+[2015.03.05-15.17.20:766][593]LogModuleManager: Shutting down and abandoning module FoliageEdit (172)
+[2015.03.05-15.17.20:766][593]LogModuleManager: Shutting down and abandoning module LandscapeEditor (171)
+[2015.03.05-15.17.20:767][593]LogModuleManager: Shutting down and abandoning module MeshPaint (170)
+[2015.03.05-15.17.20:768][593]LogModuleManager: Shutting down and abandoning module ActorPickerMode (169)
+[2015.03.05-15.17.20:768][593]LogModuleManager: Shutting down and abandoning module GeometryMode (168)
+[2015.03.05-15.17.20:769][593]LogModuleManager: Shutting down and abandoning module TextureAlignMode (167)
+[2015.03.05-15.17.20:769][593]LogModuleManager: Shutting down and abandoning module BspMode (166)
+[2015.03.05-15.17.20:769][593]LogModuleManager: Shutting down and abandoning module PlacementMode (165)
+[2015.03.05-15.17.20:769][593]LogModuleManager: Shutting down and abandoning module AutomationWorker (164)
+[2015.03.05-15.17.20:770][593]LogModuleManager: Shutting down and abandoning module CharacterAI (163)
+[2015.03.05-15.17.20:770][593]LogModuleManager: Shutting down and abandoning module SmartSnapping (162)
+[2015.03.05-15.17.20:770][593]LogModuleManager: Shutting down and abandoning module ViewportSnapping (161)
+[2015.03.05-15.17.20:770][593]LogModuleManager: Shutting down and abandoning module LogVisualizer (160)
+[2015.03.05-15.17.20:772][593]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (159)
+[2015.03.05-15.17.20:773][593]LogModuleManager: Shutting down and abandoning module IntroTutorials (158)
+[2015.03.05-15.17.20:776][593]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (157)
+[2015.03.05-15.17.20:776][593]LogModuleManager: Shutting down and abandoning module HardwareTargeting (156)
+[2015.03.05-15.17.20:776][593]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (155)
+[2015.03.05-15.17.20:777][593]LogModuleManager: Shutting down and abandoning module UndoHistory (154)
+[2015.03.05-15.17.20:778][593]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (153)
+[2015.03.05-15.17.20:778][593]LogModuleManager: Shutting down and abandoning module UserFeedback (152)
+[2015.03.05-15.17.20:778][593]LogModuleManager: Shutting down and abandoning module XmlParser (151)
+[2015.03.05-15.17.20:779][593]LogModuleManager: Shutting down and abandoning module Blutility (150)
+[2015.03.05-15.17.20:779][593]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (149)
+[2015.03.05-15.17.20:779][593]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (148)
+[2015.03.05-15.17.20:779][593]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (147)
+[2015.03.05-15.17.21:058][593]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (146)
+[2015.03.05-15.17.21:059][593]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (145)
+[2015.03.05-15.17.21:059][593]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (144)
+[2015.03.05-15.17.21:060][593]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (143)
+[2015.03.05-15.17.21:060][593]LogModuleManager: Shutting down and abandoning module InputBindingEditor (142)
+[2015.03.05-15.17.21:062][593]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (141)
+[2015.03.05-15.17.21:063][593]LogModuleManager: Shutting down and abandoning module SettingsEditor (140)
+[2015.03.05-15.17.21:063][593]LogModuleManager: Shutting down and abandoning module ProjectLauncher (139)
+[2015.03.05-15.17.21:065][593]LogModuleManager: Shutting down and abandoning module SessionFrontend (138)
+[2015.03.05-15.17.21:065][593]LogModuleManager: Shutting down and abandoning module ProfilerClient (137)
+[2015.03.05-15.17.21:066][593]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (136)
+[2015.03.05-15.17.21:067][593]LogModuleManager: Shutting down and abandoning module DeviceManager (135)
+[2015.03.05-15.17.21:068][593]LogModuleManager: Shutting down and abandoning module AutomationController (134)
+[2015.03.05-15.17.21:069][593]LogModuleManager: Shutting down and abandoning module AutomationWindow (133)
+[2015.03.05-15.17.21:069][593]LogModuleManager: Shutting down and abandoning module Layers (132)
+[2015.03.05-15.17.21:072][593]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (131)
+[2015.03.05-15.17.21:073][593]LogModuleManager: Shutting down and abandoning module DetailCustomizations (130)
+[2015.03.05-15.17.21:074][593]LogModuleManager: Shutting down and abandoning module PackagesDialog (129)
+[2015.03.05-15.17.21:076][593]LogModuleManager: Shutting down and abandoning module AssetRegistry (128)
+[2015.03.05-15.17.21:188][593]LogModuleManager: Shutting down and abandoning module Persona (127)
+[2015.03.05-15.17.21:190][593]LogModuleManager: Shutting down and abandoning module SlateReflector (126)
+[2015.03.05-15.17.21:194][593]LogModuleManager: Shutting down and abandoning module LevelEditor (125)
+[2015.03.05-15.17.21:196][593]LogModuleManager: Shutting down and abandoning module Kismet (124)
+[2015.03.05-15.17.21:199][593]LogModuleManager: Shutting down and abandoning module GraphEditor (123)
+[2015.03.05-15.17.21:202][593]LogModuleManager: Shutting down and abandoning module ClassViewer (122)
+[2015.03.05-15.17.21:203][593]LogModuleManager: Shutting down and abandoning module Toolbox (121)
+[2015.03.05-15.17.21:203][593]LogModuleManager: Shutting down and abandoning module ModuleUI (120)
+[2015.03.05-15.17.21:203][593]LogModuleManager: Shutting down and abandoning module MovieSceneTools (119)
+[2015.03.05-15.17.21:205][593]LogModuleManager: Shutting down and abandoning module OutputLog (118)
+[2015.03.05-15.17.21:205][593]LogModuleManager: Shutting down and abandoning module GammaUI (117)
+[2015.03.05-15.17.21:206][593]LogModuleManager: Shutting down and abandoning module Documentation (116)
+[2015.03.05-15.17.21:206][593]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (115)
+[2015.03.05-15.17.21:207][593]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (114)
+[2015.03.05-15.17.21:208][593]LogModuleManager: Shutting down and abandoning module HTTP (113)
+[2015.03.05-15.17.21:208][593]LogModuleManager: Shutting down and abandoning module AnalyticsET (112)
+[2015.03.05-15.17.21:209][593]LogModuleManager: Shutting down and abandoning module Analytics (111)
+[2015.03.05-15.17.21:209][593]LogModuleManager: Shutting down and abandoning module AITestSuite (110)
+[2015.03.05-15.17.21:210][593]LogModuleManager: Shutting down and abandoning module GameplayDebugger (109)
+[2015.03.05-15.17.21:210][593]LogModuleManager: Shutting down and abandoning module AIModule (108)
+[2015.03.05-15.17.21:211][593]LogModuleManager: Shutting down and abandoning module ProfilerService (107)
+[2015.03.05-15.17.21:396][593]LogModuleManager: Shutting down and abandoning module TaskGraph (106)
+[2015.03.05-15.17.21:398][593]LogModuleManager: Shutting down and abandoning module SlateRemote (105)
+[2015.03.05-15.17.21:398][593]LogModuleManager: Shutting down and abandoning module ScriptEditorPlugin (104)
+[2015.03.05-15.17.21:398][593]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (103)
+[2015.03.05-15.17.21:399][593]LogModuleManager: Shutting down and abandoning module CableComponent (102)
+[2015.03.05-15.17.21:399][593]LogModuleManager: Shutting down and abandoning module MessagingDebugger (101)
+[2015.03.05-15.17.21:401][593]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (100)
+[2015.03.05-15.17.21:402][593]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (99)
+[2015.03.05-15.17.21:403][593]LogModuleManager: Shutting down and abandoning module PluginsEditor (98)
+[2015.03.05-15.17.21:403][593]LogModuleManager: Shutting down and abandoning module MainFrame (97)
+[2015.03.05-15.17.21:404][593]LogModuleManager: Shutting down and abandoning module EpicSurvey (96)
+[2015.03.05-15.17.21:405][593]LogModuleManager: Shutting down and abandoning module DesktopPlatform (95)
+[2015.03.05-15.17.21:407][593]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (94)
+[2015.03.05-15.17.21:407][593]LogModuleManager: Shutting down and abandoning module HotReload (93)
+[2015.03.05-15.17.21:408][593]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (92)
+[2015.03.05-15.17.21:408][593]LogModuleManager: Shutting down and abandoning module UObjectPlugin (91)
+[2015.03.05-15.17.21:408][593]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (90)
+[2015.03.05-15.17.21:409][593]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (89)
+[2015.03.05-15.17.21:411][593]LogModuleManager: Shutting down and abandoning module SourceControl (88)
+[2015.03.05-15.17.21:411][593]LogModuleManager: Shutting down and abandoning module GitSourceControl (87)
+[2015.03.05-15.17.21:412][593]LogModuleManager: Shutting down and abandoning module BlankPlugin (86)
+[2015.03.05-15.17.21:412][593]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (85)
+[2015.03.05-15.17.21:413][593]LogModuleManager: Shutting down and abandoning module PaperJsonImporter (84)
+[2015.03.05-15.17.21:413][593]LogModuleManager: Shutting down and abandoning module ContentBrowser (83)
+[2015.03.05-15.17.21:414][593]LogModuleManager: Shutting down and abandoning module Paper2DEditor (82)
+[2015.03.05-15.17.21:416][593]LogModuleManager: Shutting down and abandoning module SpaceShooter (81)
+[2015.03.05-15.17.21:416][593]LogModuleManager: Shutting down and abandoning module ScriptPlugin (80)
+[2015.03.05-15.17.21:416][593]LogModuleManager: Shutting down and abandoning module UdpMessaging (79)
+[2015.03.05-15.17.21:517][593]LogModuleManager: Shutting down and abandoning module Paper2D (78)
+[2015.03.05-15.17.21:517][593]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (77)
+[2015.03.05-15.17.21:520][593]LogModuleManager: Shutting down and abandoning module Media (76)
+[2015.03.05-15.17.21:521][593]LogModuleManager: Shutting down and abandoning module WmfMedia (75)
+[2015.03.05-15.17.21:522][593]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (74)
+[2015.03.05-15.17.21:523][593]LogModuleManager: Shutting down and abandoning module PropertyEditor (73)
+[2015.03.05-15.17.21:523][593]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (72)
+[2015.03.05-15.17.21:525][593]LogModuleManager: Shutting down and abandoning module FunctionalTesting (71)
+[2015.03.05-15.17.21:526][593]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (70)
+[2015.03.05-15.17.21:527][593]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (69)
+[2015.03.05-15.17.21:528][593]LogModuleManager: Shutting down and abandoning module MessageLog (68)
+[2015.03.05-15.17.21:528][593]LogModuleManager: Shutting down and abandoning module Sequencer (67)
+[2015.03.05-15.17.21:531][593]LogModuleManager: Shutting down and abandoning module AssetTools (66)
+[2015.03.05-15.17.21:533][593]LogModuleManager: Shutting down and abandoning module UMGEditor (65)
+[2015.03.05-15.17.21:534][593]LogModuleManager: Shutting down and abandoning module UMG (64)
+[2015.03.05-15.17.21:535][593]LogModuleManager: Shutting down and abandoning module Slate (63)
+[2015.03.05-15.17.21:535][593]LogModuleManager: Shutting down and abandoning module EditorStyle (62)
+[2015.03.05-15.17.21:543][593]LogModuleManager: Shutting down and abandoning module SessionServices (61)
+[2015.03.05-15.17.21:543][593]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (60)
+[2015.03.05-15.17.21:543][593]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (59)
+[2015.03.05-15.17.21:544][593]LogModuleManager: Shutting down and abandoning module XAudio2 (58)
+[2015.03.05-15.17.21:544][593]LogModuleManager: Shutting down and abandoning module Networking (56)
+[2015.03.05-15.17.21:544][593]LogModuleManager: Shutting down and abandoning module Core (55)
+[2015.03.05-15.17.21:544][593]LogModuleManager: Shutting down and abandoning module KismetCompiler (54)
+[2015.03.05-15.17.21:545][593]LogModuleManager: Shutting down and abandoning module PhysXFormats (53)
+[2015.03.05-15.17.21:545][593]LogModuleManager: Shutting down and abandoning module MeshUtilities (52)
+[2015.03.05-15.17.21:547][593]LogModuleManager: Shutting down and abandoning module DerivedDataCache (51)
+[2015.03.05-15.17.21:846][593]LogDerivedDataCache: Shutdown
+[2015.03.05-15.17.21:846][593]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (50)
+[2015.03.05-15.17.21:847][593]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (49)
+[2015.03.05-15.17.21:848][593]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (48)
+[2015.03.05-15.17.21:849][593]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (47)
+[2015.03.05-15.17.21:849][593]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (46)
+[2015.03.05-15.17.21:850][593]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (45)
+[2015.03.05-15.17.21:851][593]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (44)
+[2015.03.05-15.17.21:851][593]LogModuleManager: Shutting down and abandoning module ImageWrapper (43)
+[2015.03.05-15.17.21:851][593]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (42)
+[2015.03.05-15.17.21:852][593]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (41)
+[2015.03.05-15.17.21:852][593]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (40)
+[2015.03.05-15.17.21:853][593]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (39)
+[2015.03.05-15.17.21:853][593]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (38)
+[2015.03.05-15.17.21:853][593]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (37)
+[2015.03.05-15.17.21:853][593]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (36)
+[2015.03.05-15.17.21:854][593]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (35)
+[2015.03.05-15.17.21:855][593]LogModuleManager: Shutting down and abandoning module Messaging (34)
+[2015.03.05-15.17.21:855][593]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (33)
+[2015.03.05-15.17.21:855][593]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (32)
+[2015.03.05-15.17.21:855][593]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (31)
+[2015.03.05-15.17.21:856][593]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (30)
+[2015.03.05-15.17.21:856][593]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (29)
+[2015.03.05-15.17.21:856][593]LogModuleManager: Shutting down and abandoning module Android_ES31TargetPlatform (28)
+[2015.03.05-15.17.21:856][593]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (27)
+[2015.03.05-15.17.21:856][593]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (26)
+[2015.03.05-15.17.21:857][593]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (25)
+[2015.03.05-15.17.21:857][593]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (24)
+[2015.03.05-15.17.21:858][593]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (23)
+[2015.03.05-15.17.21:858][593]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (22)
+[2015.03.05-15.17.21:858][593]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (21)
+[2015.03.05-15.17.21:858][593]LogModuleManager: Shutting down and abandoning module TargetPlatform (20)
+[2015.03.05-15.17.21:859][593]LogModuleManager: Shutting down and abandoning module InputCore (19)
+[2015.03.05-15.17.21:859][593]LogModuleManager: Shutting down and abandoning module Settings (18)
+[2015.03.05-15.17.21:859][593]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (16)
+[2015.03.05-15.17.21:860][593]LogModuleManager: Shutting down and abandoning module OculusRift (15)
+[2015.03.05-15.17.21:860][593]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (14)
+[2015.03.05-15.17.21:861][593]LogModuleManager: Shutting down and abandoning module TextureCompressor (13)
+[2015.03.05-15.17.21:861][593]LogModuleManager: Shutting down and abandoning module ShaderCore (12)
+[2015.03.05-15.17.21:861][593]LogModuleManager: Shutting down and abandoning module Landscape (11)
+[2015.03.05-15.17.21:862][593]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (10)
+[2015.03.05-15.17.21:865][593]LogModuleManager: Shutting down and abandoning module OpenGLDrv (9)
+[2015.03.05-15.17.21:866][593]LogModuleManager: Shutting down and abandoning module D3D11RHI (8)
+[2015.03.05-15.17.21:866][593]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2015.03.05-15.17.21:866][593]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2015.03.05-15.17.21:866][593]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2015.03.05-15.17.21:867][593]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2015.03.05-15.17.21:868][593]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2015.03.05-15.17.21:868][593]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2015.03.05-15.17.21:869][593]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2015.03.05-15.17.21:875][593]LogExit: Exiting.
+[2015.03.05-15.17.21:924][593]Log file closed, 03/05/15 10:17:21
