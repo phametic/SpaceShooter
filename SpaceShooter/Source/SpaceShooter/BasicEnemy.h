@@ -12,14 +12,17 @@
 UCLASS()
 class SPACESHOOTER_API ABasicEnemy : public APawn
 {
-	GENERATED_BODY()
+	
 private:
 	ASpacyCamera* cam;
 	FVector position;
+	float speed;
+
 	void getCam(ASpacyCamera*);
 public:
+	GENERATED_UCLASS_BODY()
 	// Sets default values for this pawn's properties
-	ABasicEnemy();
+	
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -28,7 +31,10 @@ public:
 	virtual void Tick( float DeltaSeconds ) override;
 
 	// Called to bind functionality to input
+
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMesh)
+		TSubobjectPtr<UStaticMeshComponent> MeshComponent;
 
 	
 	

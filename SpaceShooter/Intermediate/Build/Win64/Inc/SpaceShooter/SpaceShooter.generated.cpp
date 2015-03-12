@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	void ABasicEnemy::StaticRegisterNativesABasicEnemy()
 	{
 	}
-	IMPLEMENT_CLASS(ABasicEnemy, 136677335);
+	IMPLEMENT_CLASS(ABasicEnemy, 2506064328);
 	void AProjectile::StaticRegisterNativesAProjectile()
 	{
 	}
@@ -34,10 +34,10 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
-
+	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_APawn();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_APawn();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpacyCamera_NoRegister();
@@ -106,12 +106,16 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 				OuterClass->ClassFlags |= 0x20900080;
 
 
+				UProperty* NewProp_MeshComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MeshComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(MeshComponent, ABasicEnemy), 0x00000000004a001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("BasicEnemy.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("BasicEnemy.h"));
+				MetaData->SetValue(NewProp_MeshComponent, TEXT("Category"), TEXT("StaticMesh"));
+				MetaData->SetValue(NewProp_MeshComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_MeshComponent, TEXT("ModuleRelativePath"), TEXT("BasicEnemy.h"));
 #endif
 			}
 		}
@@ -302,8 +306,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/SpaceShooter")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x9ACD2F80;
-			Guid.B = 0x04CC6508;
+			Guid.A = 0x785EAE45;
+			Guid.B = 0xF5C30E90;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

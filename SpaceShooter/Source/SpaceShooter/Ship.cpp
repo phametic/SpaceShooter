@@ -107,7 +107,7 @@ void AShip::Tick(float DeltaTime)
 		SetActorLocation(FVector(GetActorLocation().X,GetActorLocation().Y,GetActorLocation().Z+250.0*UpMovement*DeltaTime));
 	}
 	*/
-	for (TActorIterator<ASpacyCamera> ActorItr(GetWorld()); ActorItr; ++ActorItr )
+	for (TActorIterator<ASpacyCamera> ActorItr(GetWorld()); ActorItr; ++ActorItr)
 	{
 		camPos = ActorItr->GetActorLocation();
 	}

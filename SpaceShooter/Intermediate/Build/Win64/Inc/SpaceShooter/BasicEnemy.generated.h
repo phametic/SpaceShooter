@@ -54,11 +54,13 @@ public:
 
 
 #define ABasicEnemy_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API ABasicEnemy(const class FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API ABasicEnemy(const ABasicEnemy& InCopy); \
 public: \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABasicEnemy)
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABasicEnemy)
 
 
 #undef UCLASS_CURRENT_FILE_NAME
@@ -96,7 +98,7 @@ public: \
 	ABasicEnemy_CALLBACK_WRAPPERS \
 	ABasicEnemy_INCLASS_NO_PURE_DECLS \
 	ABasicEnemy_ENHANCED_CONSTRUCTORS \
-private: \
+static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class BasicEnemy."); \
 PRAGMA_POP
 
 
