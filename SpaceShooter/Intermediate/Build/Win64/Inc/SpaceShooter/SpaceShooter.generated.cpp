@@ -25,8 +25,9 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"MoveLeftRight",(Native)&AShip::execMoveLeftRight);
 		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"MoveUpDown",(Native)&AShip::execMoveUpDown);
 		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"OnFirePressed",(Native)&AShip::execOnFirePressed);
+		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"OnFireReleased",(Native)&AShip::execOnFireReleased);
 	}
-	IMPLEMENT_CLASS(AShip, 925052636);
+	IMPLEMENT_CLASS(AShip, 339490856);
 	void ASpaceShooterGameMode::StaticRegisterNativesASpaceShooterGameMode()
 	{
 	}
@@ -49,6 +50,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_MoveLeftRight();
 	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_MoveUpDown();
 	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_OnFirePressed();
+	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_OnFireReleased();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_AShip_NoRegister();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_AShip();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpaceShooterGameMode_NoRegister();
@@ -224,6 +226,22 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_AShip_OnFireReleased()
+	{
+		UClass* OuterClass=Z_Construct_UClass_AShip();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("OnFireReleased"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x00080401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Ship.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AShip_NoRegister()
 	{
 		return AShip::StaticClass();
@@ -244,11 +262,13 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 				OuterClass->LinkChild(Z_Construct_UFunction_AShip_MoveLeftRight());
 				OuterClass->LinkChild(Z_Construct_UFunction_AShip_MoveUpDown());
 				OuterClass->LinkChild(Z_Construct_UFunction_AShip_OnFirePressed());
+				OuterClass->LinkChild(Z_Construct_UFunction_AShip_OnFireReleased());
 
 				UProperty* NewProp_MeshComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MeshComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(MeshComponent, AShip), 0x00000800004a001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AShip_MoveLeftRight()); // 949887137
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AShip_MoveUpDown()); // 4028128031
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AShip_OnFirePressed()); // 735349037
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AShip_OnFireReleased()); // 780212354
 				OuterClass->StaticLink();
 #if WITH_METADATA
 				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
@@ -306,8 +326,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/SpaceShooter")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x785EAE45;
-			Guid.B = 0xF5C30E90;
+			Guid.A = 0x0CDAC077;
+			Guid.B = 0xE6F290C9;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

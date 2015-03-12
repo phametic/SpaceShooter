@@ -2,7 +2,6 @@
 
 #include "SpaceShooter.h"
 #include "Ship.h"
-#include "SpacyCamera.h"
 
 AShip::AShip(const class FPostConstructInitializeProperties& PCIP)
 	: Super(PCIP)
@@ -17,7 +16,7 @@ AShip::AShip(const class FPostConstructInitializeProperties& PCIP)
 	position.X = 0;
 	position.Y = -400;
 	position.Z = 0;
-	speed = 4.0;
+	speed = 300.0;
 }
 
 void AShip::SetupPlayerInputComponent(UInputComponent* InputComponent)
@@ -26,7 +25,7 @@ void AShip::SetupPlayerInputComponent(UInputComponent* InputComponent)
 	
 	// Setup gameplay key bindings
 	InputComponent->BindAction("Fire", IE_Pressed, this, &AShip::OnFirePressed);
-	//InputComponent->BindAction("Fire", IE_Released, this, &AShip::OnFireReleased);
+	InputComponent->BindAction("Fire", IE_Released, this, &AShip::OnFireReleased);
 	InputComponent->BindAxis("MoveUpDown", this, &AShip::MoveUpDown);
 	InputComponent->BindAxis("MoveLeftRight", this, &AShip::MoveLeftRight);
 }
@@ -40,54 +39,37 @@ void AShip::BeginPlay()
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("We are using Ship!"));
 	}
 	SetActorRotation(FRotator(-90.0,0.0,0.0));
+	for (TActorIterator<ASpacyCamera> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+	{
+		cam = ActorItr->returnSelf();
+	}
+	world = GetWorld();
+	shootCounter = 0;
 }
 
 void AShip::MoveUpDown(float value)
 {
-	//if ((Controller != NULL) && (value != 0.0f))
-	//{
-		//AddMovementInput(FVector(0.0f, 0.0f, 1.0f), value);
-	//}
-	position.Z += value * speed;
-	if (position.Z >= 300)
-	{
-		position.Z = 300;
-	}
-	else if (position.Z <= -60)
-	{
-		position.Z = -60;
-	}
+	velocity.Z = value;
 }
 
 void AShip::MoveLeftRight(float value)
 {
-	//if ((Controller != NULL) && (value != 0.0f))
-	//{
-		//AddMovementInput(FVector(1.0f, 0.0f, 0.0f), value);
-	//}
-	position.X += value * speed;
-	if (position.X >= 320)
-	{
-		position.X = 320;
-	}
-	else if (position.X <= -320)
-	{
-		position.X = -320;
-	}
+	velocity.X = value;
 }
 
 void AShip::OnFirePressed()
 {
 	GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Black, FString::Printf(TEXT("SHOOT PRESSED")));
-	//UWorld* myWorld;
-	GetWorld()->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+	//GetWorld()->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+	shootHeld = true;
 }
-/*
+
 void AShip::OnFireReleased()
 {
 	GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Black, FString::Printf(TEXT("SHOOT RELEASED")));
+	shootHeld = false;
 }
-*/
+
 void AShip::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -107,9 +89,30 @@ void AShip::Tick(float DeltaTime)
 		SetActorLocation(FVector(GetActorLocation().X,GetActorLocation().Y,GetActorLocation().Z+250.0*UpMovement*DeltaTime));
 	}
 	*/
-	for (TActorIterator<ASpacyCamera> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+	shootCounter += DeltaTime*4;
+	if (shootHeld && shootCounter >= 1)
 	{
-		camPos = ActorItr->GetActorLocation();
+		world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+		shootCounter = 0;
 	}
+	position.X += (speed * velocity.X)*DeltaTime;
+	if (position.X >= 320)
+	{
+		position.X = 320;
+	}
+	else if (position.X <= -320)
+	{
+		position.X = -320;
+	}
+	position.Z += (speed * velocity.Z)*DeltaTime;
+	if (position.Z >= 300)
+	{
+		position.Z = 300;
+	}
+	else if (position.Z <= -60)
+	{
+		position.Z = -60;
+	}
+	camPos = cam->GetActorLocation();
 	SetActorLocation(FVector(position.X+camPos.X,position.Y+camPos.Y,position.Z+camPos.Z));
 }

@@ -3,6 +3,7 @@
 #include "GameFramework/Character.h"
 #include "GameFramework/FloatingPawnMovement.h"
 #include "Projectile.h"
+#include "SpacyCamera.h"
 #include "Ship.generated.h"
 
 /**
@@ -18,9 +19,12 @@ class SPACESHOOTER_API AShip : public APawn
 private:
 	FVector position;
 	FVector camPos;
+	FVector velocity;
 	float speed;
-	
-
+	ASpacyCamera* cam;
+	bool shootHeld;
+	UWorld* world;
+	float shootCounter;
 public:
 	void Tick(float DeltaTime);
 
@@ -42,8 +46,6 @@ protected:
 
 	UFUNCTION()
 		void OnFirePressed();
-
-	float UpMovement;
-	float RightMovement;
-
+	UFUNCTION()
+		void OnFireReleased();
 };
