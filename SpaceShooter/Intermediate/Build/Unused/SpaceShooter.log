@@ -1,10 +1,25 @@
-﻿Build started 3/5/2015 9:39:51 AM.
-     1>Project "C:\Users\jsmalley\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
+﻿Build started 3/12/2015 3:39:54 AM.
+     1>Project "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
      1>Build:
-         "C:\Program Files\Unreal Engine\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\jsmalley\Desktop\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
-         Target is up to date.
-     1>Done Building Project "C:\Users\jsmalley\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
+         "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 Development "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
+         Parsing headers for SpaceShooterEditor
+         Reflection code generated for SpaceShooterEditor
+         Performing 4 actions (4 in parallel)
+         BasicEnemy.cpp
+         SpacyCamera.cpp
+     1>c:\users\cloudwindfoot\documents\github\spaceshooter\spaceshooter\source\spaceshooter\SpacyCamera.h(17): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
+     1>c:\users\cloudwindfoot\documents\github\spaceshooter\spaceshooter\source\spaceshooter\SpacyCamera.h(17): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
+     1>C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Source\SpaceShooter\SpacyCamera.cpp(7): warning C4996: FPostConstructInitializeProperties is deprecated and was renamed to FObjectInitializer. Please use that type instead.
+         SpaceShooter.generated.cpp
+     1>C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Source\SpaceShooter\SpacyCamera.h(17): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
+     1>C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Source\SpaceShooter\Ship.h(23): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
+         [4/4] Link UE4Editor-SpaceShooter.dll
+            Creating library C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\Development\UE4Editor-SpaceShooter.lib and object C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\Development\UE4Editor-SpaceShooter.exp
+         -------- End Detailed Actions Stats -----------------------------------------------------------
+         Cumulative action seconds (8 processors): 0.00 building projects, 2.05 compiling, 0.00 creating app bundles, 0.00 generating debug info, 0.95 linking, 0.00 other
+         UBT execution time: 13.61 seconds
+     1>Done Building Project "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.90
+Time Elapsed 00:00:13.85

@@ -17,4 +17,7 @@ class SPACESHOOTER_API ASpacyCamera : public AActor
 	TSubobjectPtr<class UCameraComponent> CameraComponent;
 
 	void Tick(float DeltaTime) override;
+public:
+	ASpacyCamera* returnSelf() { return this; }
+private:
 };
