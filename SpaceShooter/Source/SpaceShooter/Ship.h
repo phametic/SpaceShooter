@@ -2,6 +2,7 @@
 
 #include "GameFramework/Character.h"
 #include "GameFramework/FloatingPawnMovement.h"
+#include "Projectile.h"
 #include "Ship.generated.h"
 
 /**
@@ -14,13 +15,22 @@ class SPACESHOOTER_API AShip : public APawn
 
 		virtual void BeginPlay() override;
 
+private:
+	FVector position;
+	FVector camPos;
+	float speed;
+	
+
 public:
 	void Tick(float DeltaTime);
 
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMesh)
-	TSubobjectPtr<class UStaticMeshComponent> MeshComponent;
+	TSubobjectPtr<UStaticMeshComponent> MeshComponent;
+	
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Projectiles)
+	//TSubobjectPtr<AProjectile> ProjectileClass;
 	
 	//Up & Down movement
 	UFUNCTION()
@@ -30,8 +40,8 @@ protected:
 	UFUNCTION()
 		void MoveLeftRight(float value);
 
-	//UFUNCTION()
-		//void OnFirePressed();
+	UFUNCTION()
+		void OnFirePressed();
 
 	float UpMovement;
 	float RightMovement;

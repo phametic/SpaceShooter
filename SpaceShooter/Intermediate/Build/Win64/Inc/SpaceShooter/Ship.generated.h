@@ -16,6 +16,13 @@
 #define AShip_RPC_WRAPPERS \
  \
  \
+	DECLARE_FUNCTION(execOnFirePressed) \
+	{ \
+		P_FINISH; \
+		this->OnFirePressed(); \
+	} \
+ \
+ \
 	DECLARE_FUNCTION(execMoveLeftRight) \
 	{ \
 		P_GET_PROPERTY(UFloatProperty,value); \
@@ -35,6 +42,13 @@
 #define AShip_RPC_WRAPPERS_NO_PURE_DECLS \
 	static inline void StaticChecks_Implementation_Validate() \
 	{ \
+	} \
+ \
+ \
+	DECLARE_FUNCTION(execOnFirePressed) \
+	{ \
+		P_FINISH; \
+		this->OnFirePressed(); \
 	} \
  \
  \
