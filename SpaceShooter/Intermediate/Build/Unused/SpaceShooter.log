@@ -1,19 +1,10 @@
-﻿Build started 3/12/2015 4:53:24 AM.
-     1>Project "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
+﻿Build started 3/12/2015 10:22:39 AM.
+     1>Project "C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
      1>Build:
-         "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 Development "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
-         Deleting old hot reload file: "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Binaries\Win64\UE4Editor-SpaceShooter-3124.dll".
-         Deleting old hot reload file: "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Binaries\Win64\UE4Editor-SpaceShooter-3124.pdb".
-         Deleting old hot reload file: "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Binaries\Win64\UE4Editor-SpaceShooter-8144.dll".
-         Deleting old hot reload file: "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Binaries\Win64\UE4Editor-SpaceShooter-8144.pdb".
-         Performing 1 actions (4 in parallel)
-         [1/1] Link UE4Editor-SpaceShooter.dll
-            Creating library C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\Development\UE4Editor-SpaceShooter.lib and object C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\Development\UE4Editor-SpaceShooter.exp
-         -------- End Detailed Actions Stats -----------------------------------------------------------
-         Cumulative action seconds (8 processors): 0.00 building projects, 0.00 compiling, 0.00 creating app bundles, 0.00 generating debug info, 0.99 linking, 0.00 other
-         UBT execution time: 7.83 seconds
-     1>Done Building Project "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
+         "C:\Program Files\Unreal Engine\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
+         Target is up to date.
+     1>Done Building Project "C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:08.04
+Time Elapsed 00:00:02.89

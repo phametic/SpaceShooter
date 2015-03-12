@@ -17,6 +17,9 @@
 #ifndef SPACESHOOTER_Ship_generated_h
 	#include "Ship.h"
 #endif
+#ifndef SPACESHOOTER_SpaceHud_generated_h
+	#include "SpaceHud.h"
+#endif
 #ifndef SPACESHOOTER_SpaceShooterGameMode_generated_h
 	#include "SpaceShooterGameMode.h"
 #endif
