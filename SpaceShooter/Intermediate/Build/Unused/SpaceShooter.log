@@ -1,20 +1,10 @@
-﻿Build started 3/12/2015 9:38:41 AM.
-     1>Project "C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
+﻿Build started 16/03/2015 3:41:40 PM.
+     1>Project "C:\Users\Rob\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
      1>Build:
-         "C:\Program Files\Unreal Engine\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
-         Performing 2 actions (4 in parallel)
-         Projectile.cpp
-     1>c:\users\sctcad\desktop\spaceshooter\spaceshooter\spaceshooter\source\spaceshooter\SpacyCamera.h(17): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
-     1>c:\users\sctcad\desktop\spaceshooter\spaceshooter\spaceshooter\source\spaceshooter\Projectile.h(23): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
-     1>c:\users\sctcad\desktop\spaceshooter\spaceshooter\spaceshooter\source\spaceshooter\Projectile.h(29): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
-     1>C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Source\SpaceShooter\Projectile.cpp(7): warning C4996: FPostConstructInitializeProperties is deprecated and was renamed to FObjectInitializer. Please use that type instead.
-         [2/2] Link UE4Editor-SpaceShooter-Win64-DebugGame.dll
-            Creating library C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.lib and object C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.exp
-         -------- End Detailed Actions Stats -----------------------------------------------------------
-         Cumulative action seconds (8 processors): 0.00 building projects, 7.06 compiling, 0.00 creating app bundles, 0.00 generating debug info, 1.12 linking, 0.00 other
-         UBT execution time: 12.60 seconds
-     1>Done Building Project "C:\Users\sctcad\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
+         "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\Rob\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
+         Target is up to date.
+     1>Done Building Project "C:\Users\Rob\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:12.80
+Time Elapsed 00:00:02.42
