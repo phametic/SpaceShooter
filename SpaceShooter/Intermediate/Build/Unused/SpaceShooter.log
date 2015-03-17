@@ -1,0 +1,10 @@
+﻿Build started 16/03/2015 3:41:40 PM.
+     1>Project "C:\Users\Rob\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\Rob\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
+         Target is up to date.
+     1>Done Building Project "C:\Users\Rob\Desktop\SpaceShooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.42
