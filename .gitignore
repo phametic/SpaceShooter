@@ -2,6 +2,8 @@
 *.sdf
 *.response
 *.exp
+*.sln
+*.suo
 
 # Compiled Object files
 *.slo
