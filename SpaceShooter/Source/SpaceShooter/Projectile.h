@@ -16,6 +16,7 @@ class SPACESHOOTER_API AProjectile : public AActor
 public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void BeginPlay() override;
+	void Movement(float DeltaTime);
 protected:
 	GENERATED_UCLASS_BODY()
 	

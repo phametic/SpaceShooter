@@ -73,28 +73,12 @@ void AShip::OnFireReleased()
 void AShip::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	/*
-	if (RightMovement != 0.f)
-	{
-		//AddMovementInput(GetActorRightVector() * RightMovement);
-		SetActorLocation(FVector(GetActorLocation().X+250.0*RightMovement*DeltaTime,GetActorLocation().Y,GetActorLocation().Z));
-		GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Black, FString::Printf(TEXT("MOVEMENT")));
-	}
-	else
-	{
-		SetActorLocation(FVector(GetActorLocation().X+50.0*DeltaTime,GetActorLocation().Y,GetActorLocation().Z));
-	}
-	if (UpMovement != 0.f)
-	{
-		SetActorLocation(FVector(GetActorLocation().X,GetActorLocation().Y,GetActorLocation().Z+250.0*UpMovement*DeltaTime));
-	}
-	*/
-	shootCounter += DeltaTime*4;
-	if (shootHeld && shootCounter >= 1)
-	{
-		world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
-		shootCounter = 0;
-	}
+	Movement(DeltaTime);
+	ShotCheck(DeltaTime);
+}
+
+void AShip::Movement(float DeltaTime)
+{
 	position.X += (speed * velocity.X)*DeltaTime;
 	if (position.X >= 320)
 	{
@@ -115,4 +99,14 @@ void AShip::Tick(float DeltaTime)
 	}
 	camPos = cam->GetActorLocation();
 	SetActorLocation(FVector(position.X+camPos.X,position.Y+camPos.Y,position.Z+camPos.Z));
+}
+
+void AShip::ShotCheck(float DeltaTime)
+{
+	shootCounter += DeltaTime*4;
+	if (shootHeld && shootCounter >= 1)
+	{
+		world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+		shootCounter = 0;
+	}
 }

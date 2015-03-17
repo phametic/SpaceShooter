@@ -14,8 +14,9 @@ ASpacyCamera::ASpacyCamera(const class FPostConstructInitializeProperties& PCIP)
 }
 void ASpacyCamera::Tick(float DeltaTime)
 {
-	//SetActorLocation(FVector(GetActorLocation().X+1,GetActorLocation().Y,GetActorLocation().Z));
 	Super::Tick(DeltaTime);
+}
+void ASpacyCamera::Movement(float DeltaTime)
+{
 	SetActorLocation(FVector(GetActorLocation().X+50.0*DeltaTime,GetActorLocation().Y,GetActorLocation().Z));
 }
-

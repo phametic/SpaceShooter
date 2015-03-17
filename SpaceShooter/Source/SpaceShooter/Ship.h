@@ -25,6 +25,8 @@ private:
 	bool shootHeld;
 	UWorld* world;
 	float shootCounter;
+	void Movement(float DeltaTime);
+	void ShotCheck(float DeltaTime);
 public:
 	void Tick(float DeltaTime);
 
