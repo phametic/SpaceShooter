@@ -11,6 +11,9 @@
 #ifndef SPACESHOOTER_BasicEnemy_generated_h
 	#include "BasicEnemy.h"
 #endif
+#ifndef SPACESHOOTER_GenTick_generated_h
+	#include "GenTick.h"
+#endif
 #ifndef SPACESHOOTER_Projectile_generated_h
 	#include "Projectile.h"
 #endif

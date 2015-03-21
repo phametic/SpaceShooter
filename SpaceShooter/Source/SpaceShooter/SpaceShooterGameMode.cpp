@@ -2,7 +2,6 @@
 
 #include "SpaceShooter.h"
 #include "SpaceShooterGameMode.h"
-#include "Ship.h"
 #include "BasicEnemy.h"
 
 ASpaceShooterGameMode::ASpaceShooterGameMode(const class FPostConstructInitializeProperties& PCIP)
@@ -12,7 +11,7 @@ ASpaceShooterGameMode::ASpaceShooterGameMode(const class FPostConstructInitializ
 	UWorld* const World = GetWorld();
 	if (World)
 	{
-		World->SpawnActor<ABasicEnemy>(ABasicEnemy::StaticClass());
+		World->SpawnActor<AGenTick>(AGenTick::StaticClass());
 	}
 }
 
