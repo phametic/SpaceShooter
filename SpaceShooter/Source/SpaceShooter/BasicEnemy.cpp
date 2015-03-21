@@ -30,6 +30,7 @@ void ABasicEnemy::BeginPlay()
 	position.Y = cam->GetActorLocation().Y -400;
 	position.Z = cam->GetActorLocation().Z + FMath::RandRange(-60,300);
 	speed = -20.0f;	
+	
 }
 
 // Called every frame
