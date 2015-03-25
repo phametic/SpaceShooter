@@ -5,6 +5,7 @@
 #include "GameFramework/Actor.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "SpacyCamera.h"
+#include "BasicEnemy.h"
 #include "Projectile.generated.h"
 
 /**
@@ -17,6 +18,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void BeginPlay() override;
 	void Movement(float DeltaTime);
+	ABasicEnemy* basicEnemy;
 protected:
 	GENERATED_UCLASS_BODY()
 	
@@ -31,4 +33,7 @@ protected:
 	
 private:
 	ASpacyCamera* cam;
+	
+	UFUNCTION()
+	void Hit(class AActor* SelfActor, AActor* TargetActor, FVector NormalImpulse, struct FHitResult Hit);
 };

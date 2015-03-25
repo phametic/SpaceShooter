@@ -12,11 +12,38 @@
 #endif
 #define SPACESHOOTER_Projectile_generated_h
 
+class AActor;
+struct FVector;
+struct FHitResult;
 #define AProjectile_EVENTPARMS
-#define AProjectile_RPC_WRAPPERS
+#define AProjectile_RPC_WRAPPERS \
+ \
+ \
+	DECLARE_FUNCTION(execHit) \
+	{ \
+		P_GET_OBJECT(AActor,SelfActor); \
+		P_GET_OBJECT(AActor,TargetActor); \
+		P_GET_STRUCT(FVector,NormalImpulse); \
+		P_GET_STRUCT(FHitResult,Hit); \
+		P_FINISH; \
+		this->Hit(SelfActor,TargetActor,NormalImpulse,Hit); \
+	}
+
+
 #define AProjectile_RPC_WRAPPERS_NO_PURE_DECLS \
 	static inline void StaticChecks_Implementation_Validate() \
 	{ \
+	} \
+ \
+ \
+	DECLARE_FUNCTION(execHit) \
+	{ \
+		P_GET_OBJECT(AActor,SelfActor); \
+		P_GET_OBJECT(AActor,TargetActor); \
+		P_GET_STRUCT(FVector,NormalImpulse); \
+		P_GET_STRUCT(FHitResult,Hit); \
+		P_FINISH; \
+		this->Hit(SelfActor,TargetActor,NormalImpulse,Hit); \
 	}
 
 

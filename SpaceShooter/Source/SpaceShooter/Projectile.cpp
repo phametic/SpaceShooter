@@ -2,7 +2,7 @@
 
 #include "SpaceShooter.h"
 #include "Projectile.h"
-
+#include "BasicEnemy.h"
 
 AProjectile::AProjectile(const FPostConstructInitializeProperties& ObjectInitializer)
 	: Super(ObjectInitializer)
@@ -20,15 +20,14 @@ AProjectile::AProjectile(const FPostConstructInitializeProperties& ObjectInitial
 
 	PrimaryActorTick.bCanEverTick = true;
 
-	//bReplicates = true;
-	//bReplicateMovement = true;
-
-	//MovementComponent->ProjectileGravityScale = 0.0;
+	//ColliderComponent->OnComponentBeginOverlap.AddDynamic(this,&AProjectile::OnOverlap);
 }
 void AProjectile::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	Movement(DeltaTime);
+	FHitResult hit;
+	//Hit(this, basicEnemy, basicEnemy->GetActorLocation(), hit);
 }
 void AProjectile::BeginPlay()
 {
@@ -45,5 +44,9 @@ void AProjectile::Movement(float DeltaTime)
 	{
 		Destroy();
 	}
+}
+void AProjectile::Hit(class AActor* SelfActor, AActor* TargetActor, FVector NormalImpulse, struct FHitResult Hit)
+{
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("PROJECTILE HIT ENEMY!"));
 }
 

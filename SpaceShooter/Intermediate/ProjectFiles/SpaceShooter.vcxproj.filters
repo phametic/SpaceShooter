@@ -1,105 +1,85 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <None Include="..\..\SpaceShooter.uproject" />
-    <Filter Include="Config">
-      <UniqueIdentifier>{A4CD0166-C7FF-4FAC-9935-62EA6308B8A8}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultGame.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultInput.ini">
-      <Filter>Config</Filter>
-    </None>
-    <ClCompile Include="..\..\Source\SpaceShooter\SpaceShooter.cpp">
-      <Filter>SpaceShooter</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\SpaceShooter\SpaceShooter.h">
-      <Filter>SpaceShooter</Filter>
-    </ClInclude>
-    <None Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.ico">
-      <Filter>Resources\Windows</Filter>
-    </None>
-    <ResourceCompile Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.rc">
-      <Filter>Resources\Windows</Filter>
-    </ResourceCompile>
-    <None Include="..\..\Source\SpaceShooter\SpaceShooter.Build.cs">
-      <Filter>Config\Target\Build</Filter>
-    </None>
-    <None Include="..\..\Source\SpaceShooterEditor.Target.cs">
-      <Filter>Config\Target</Filter>
-    </None>
-    <None Include="..\..\Source\SpaceShooter.Target.cs">
-      <Filter>Config\Target</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Resources">
-      <UniqueIdentifier>{B1590F28-9368-4E52-ABFF-26B33EB14B91}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resources\Windows">
-      <UniqueIdentifier>{C88E6835-6B6E-47C1-B700-F0E3F4E9F549}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="SpaceShooter">
-      <UniqueIdentifier>{72E565B0-BAEF-4FB5-BC5B-AE6C92BE12ED}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Config\Target">
-      <UniqueIdentifier>{eea7cfbd-b31a-4b38-a55a-5fea8aa7b972}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Config\Target\Build">
-      <UniqueIdentifier>{DBDBF2CB-47B9-4464-9491-ADAEE9CC8FC9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="SpaceShooter\Projectile">
-      <UniqueIdentifier>{e082c94b-69b8-48a8-b4c9-4a9e832ce312}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="SpaceShooter\Enemy">
-      <UniqueIdentifier>{fcdb91e9-a00c-4f01-835c-c20fa74ba37b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="SpaceShooter\Player">
-      <UniqueIdentifier>{67383e38-6685-4bc7-8f03-77dbb8a368c6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="SpaceShooter\Game Modes">
-      <UniqueIdentifier>{9983d0ea-0b65-44d9-95c9-ddf1a3c78ddd}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\SpaceShooter\Projectile.h">
-      <Filter>SpaceShooter\Projectile</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\SpaceShooter\BasicEnemy.h">
-      <Filter>SpaceShooter\Enemy</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\SpaceShooter\Ship.h">
-      <Filter>SpaceShooter\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\SpaceShooter\SpacyCamera.h">
-      <Filter>SpaceShooter\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\SpaceShooter\SpaceShooterGameMode.h">
-      <Filter>SpaceShooter\Game Modes</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\SpaceShooter\Projectile.cpp">
-      <Filter>SpaceShooter\Projectile</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\SpaceShooter\BasicEnemy.cpp">
-      <Filter>SpaceShooter\Enemy</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\SpaceShooter\Ship.cpp">
-      <Filter>SpaceShooter\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\SpaceShooter\SpacyCamera.cpp">
-      <Filter>SpaceShooter\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\SpaceShooter\SpaceShooterGameMode.cpp">
-      <Filter>SpaceShooter\Game Modes</Filter>
-    </ClCompile>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\SpaceShooter.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{F1B11286-1AE9-4DDA-9CD3-1EFB7ED65A50}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\SpaceShooter.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\SpaceShooterEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{AB5F2F12-A678-4864-AFC5-AB281456B2FC}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\SpaceShooter">
+			<UniqueIdentifier>{CCF6F7A9-ED24-4BAE-9A47-023AA4063E80}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\SpaceShooter\BasicEnemy.cpp">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\SpaceShooter\BasicEnemy.h">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\SpaceShooter\Projectile.cpp">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\SpaceShooter\Projectile.h">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\SpaceShooter\Ship.cpp">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\SpaceShooter\Ship.h">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\SpaceShooter\SpaceShooter.Build.cs">
+			<Filter>Source\SpaceShooter</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\SpaceShooter\SpaceShooter.cpp">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\SpaceShooter\SpaceShooter.h">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\SpaceShooter\SpaceShooterGameMode.cpp">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\SpaceShooter\SpaceShooterGameMode.h">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\SpaceShooter\SpacyCamera.cpp">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\SpaceShooter\SpacyCamera.h">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClInclude >
+		<Filter Include="Source\SpaceShooter\Resources">
+			<UniqueIdentifier>{6A6DCBEC-674B-464A-B9AA-84D2FC0E0BAA}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Source\SpaceShooter\Resources\Windows">
+			<UniqueIdentifier>{BC7BD3A3-E53E-4CC1-A117-F47A844C088B}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.ico">
+			<Filter>Source\SpaceShooter\Resources\Windows</Filter>
+		</None >
+		<ResourceCompile Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.rc">
+			<Filter>Source\SpaceShooter\Resources\Windows</Filter>
+		</ResourceCompile >
+	</ItemGroup>
 </Project>
