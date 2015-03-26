@@ -17,7 +17,8 @@ private:
 	ASpacyCamera* cam;
 	FVector position;
 	float speed;
-
+	void checkOff();
+	void move(float DeltaTime);
 	void getCam(ASpacyCamera*);
 public:
 	GENERATED_UCLASS_BODY()

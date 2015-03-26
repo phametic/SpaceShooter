@@ -3,6 +3,8 @@
 #pragma once
 
 #include "GameFramework/GameMode.h"
+#include "Ship.h"
+#include "GenTick.h"
 #include "SpaceShooterGameMode.generated.h"
 
 /**

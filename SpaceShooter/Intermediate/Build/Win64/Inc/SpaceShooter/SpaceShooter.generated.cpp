@@ -16,6 +16,10 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	{
 	}
 	IMPLEMENT_CLASS(ABasicEnemy, 2506064328);
+	void AGenTick::StaticRegisterNativesAGenTick()
+	{
+	}
+	IMPLEMENT_CLASS(AGenTick, 1631331004);
 	void AProjectile::StaticRegisterNativesAProjectile()
 	{
 		FNativeFunctionRegistrar::RegisterFunction(AProjectile::StaticClass(),"Hit",(Native)&AProjectile::execHit);
@@ -50,6 +54,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ABasicEnemy_NoRegister();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ABasicEnemy();
 	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AProjectile_Hit();
+	SPACESHOOTER_API class UClass* Z_Construct_UClass_AGenTick_NoRegister();
+	SPACESHOOTER_API class UClass* Z_Construct_UClass_AGenTick();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_AProjectile_NoRegister();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_AProjectile();
 	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_MoveLeftRight();
@@ -130,6 +136,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 		return OuterClass;
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABasicEnemy(Z_Construct_UClass_ABasicEnemy, TEXT("ABasicEnemy"));
+<<<<<<< HEAD
 	UFunction* Z_Construct_UFunction_AProjectile_Hit()
 	{
 		struct Projectile_eventHit_Parms
@@ -161,6 +168,38 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 		}
 		return ReturnFunction;
 	}
+=======
+	UClass* Z_Construct_UClass_AGenTick_NoRegister()
+	{
+		return AGenTick::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AGenTick()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage_SpaceShooter();
+			OuterClass = AGenTick::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("GenTick.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("GenTick.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AGenTick(Z_Construct_UClass_AGenTick, TEXT("AGenTick"));
+>>>>>>> origin/master
 	UClass* Z_Construct_UClass_AProjectile_NoRegister()
 	{
 		return AProjectile::StaticClass();
@@ -364,8 +403,13 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/SpaceShooter")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
+<<<<<<< HEAD
 			Guid.A = 0x41A21B1B;
 			Guid.B = 0xE9CC1E09;
+=======
+			Guid.A = 0xF40A7941;
+			Guid.B = 0xF3F15560;
+>>>>>>> origin/master
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

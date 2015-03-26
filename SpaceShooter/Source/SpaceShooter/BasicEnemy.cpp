@@ -30,6 +30,7 @@ void ABasicEnemy::BeginPlay()
 	position.Y = cam->GetActorLocation().Y -400;
 	position.Z = cam->GetActorLocation().Z + FMath::RandRange(-60,300);
 	speed = -20.0f;	
+	
 }
 
 // Called every frame
@@ -37,10 +38,8 @@ void ABasicEnemy::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
 	
-	position.X += speed*DeltaTime;
-
-	SetActorLocation(FVector(position.X, position.Y, position.Z));
-
+	checkOff();
+	move(DeltaTime);
 }
 
 // Called to bind functionality to input
@@ -48,5 +47,17 @@ void ABasicEnemy::SetupPlayerInputComponent(class UInputComponent* InputComponen
 {
 	Super::SetupPlayerInputComponent(InputComponent);
 
+}
+
+void ABasicEnemy::checkOff()
+{
+	if (GetActorLocation().X < cam->GetActorLocation().X - 500)
+		Destroy();
+}
+void ABasicEnemy::move(float DeltaTime)
+{
+	position.X += speed*DeltaTime;
+
+	SetActorLocation(FVector(position.X, position.Y, position.Z));
 }
 
