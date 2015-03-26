@@ -23,17 +23,19 @@ protected:
 	GENERATED_UCLASS_BODY()
 	
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = Collision)
-	TSubobjectPtr<USphereComponent> ColliderComponent;
-	
-	//UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = Movement)
-	//TSubobjectPtr<UProjectileMovementComponent> MovementComponent;
+		TSubobjectPtr<USphereComponent> ColliderComponent;
+
+	//UPROPERTY(BlueprintAssignable, Category = "Collision")
+		//FActorHitSignature OnActorHit;
 
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = StaticMesh)
-	TSubobjectPtr<UStaticMeshComponent> MeshComponent;
+		TSubobjectPtr<UStaticMeshComponent> MeshComponent;
+
+	UFUNCTION()
+		void Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int32 TargetByIndex, bool bFromSweep, const FHitResult& SweepResult);
 	
 private:
 	ASpacyCamera* cam;
-	
-	UFUNCTION()
-	void Hit(class AActor* SelfActor, AActor* TargetActor, FVector NormalImpulse, struct FHitResult Hit);
+	FScriptDelegate Delegate;
+
 };

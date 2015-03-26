@@ -6,11 +6,10 @@
 
 AProjectile::AProjectile(const FPostConstructInitializeProperties& ObjectInitializer)
 	: Super(ObjectInitializer)
-{
+{	
 	ColliderComponent = ObjectInitializer.CreateDefaultSubobject<USphereComponent>(this, TEXT("ColliderComponent"));
 	ColliderComponent->SetSphereRadius(2.5f);
 	
-	//MovementComponent = ObjectInitializer.CreateDefaultSubobject<UProjectileMovementComponent>(this, TEXT("MovementComponent"));
 	
 	MeshComponent = ObjectInitializer.CreateDefaultSubobject<UStaticMeshComponent>(this, TEXT("Mesh"));
 	const ConstructorHelpers::FObjectFinder<UStaticMesh> MeshObj(TEXT("StaticMesh'/Game/ExampleContent/Input_Examples/Meshes/SM_Pixel_Cube.SM_Pixel_Cube'"));
@@ -19,8 +18,8 @@ AProjectile::AProjectile(const FPostConstructInitializeProperties& ObjectInitial
 	RootComponent = MeshComponent;
 
 	PrimaryActorTick.bCanEverTick = true;
-
-	//ColliderComponent->OnComponentBeginOverlap.AddDynamic(this,&AProjectile::OnOverlap);
+	ColliderComponent->AttachParent = RootComponent;
+	ColliderComponent->OnComponentBeginOverlap.AddDynamic(this,&AProjectile::Hit);
 }
 void AProjectile::Tick(float DeltaTime)
 {
@@ -45,8 +44,9 @@ void AProjectile::Movement(float DeltaTime)
 		Destroy();
 	}
 }
-void AProjectile::Hit(class AActor* SelfActor, AActor* TargetActor, FVector NormalImpulse, struct FHitResult Hit)
+void AProjectile::Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int32 TargetByIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("PROJECTILE HIT ENEMY!"));
+	if (TargetActor != nullptr && TargetActor != this && TargetComp != nullptr && (TargetActor->GetName().Contains("Enemy",ESearchCase::IgnoreCase,ESearchDir::FromStart) == true))
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());
 }
 

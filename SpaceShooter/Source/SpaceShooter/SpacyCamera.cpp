@@ -15,6 +15,7 @@ ASpacyCamera::ASpacyCamera(const class FPostConstructInitializeProperties& PCIP)
 void ASpacyCamera::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	Movement(DeltaTime);
 }
 void ASpacyCamera::Movement(float DeltaTime)
 {

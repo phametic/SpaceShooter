@@ -8,6 +8,11 @@ ASpaceShooterGameMode::ASpaceShooterGameMode(const class FPostConstructInitializ
 	: Super(PCIP)
 {
 	DefaultPawnClass = AShip::StaticClass();
+	UWorld* const World = GetWorld();
+	if (World)
+	{
+		World->SpawnActor<AGenTick>(AGenTick::StaticClass());
+	}
 }
 
 void ASpaceShooterGameMode::StartPlay()

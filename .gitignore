@@ -4,6 +4,8 @@
 *.exp
 *.sln
 *.suo
+*.log
+*.ini
 
 # Compiled Object files
 *.slo

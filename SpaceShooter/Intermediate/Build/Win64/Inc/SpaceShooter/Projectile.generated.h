@@ -13,7 +13,7 @@
 #define SPACESHOOTER_Projectile_generated_h
 
 class AActor;
-struct FVector;
+class UPrimitiveComponent;
 struct FHitResult;
 #define AProjectile_EVENTPARMS
 #define AProjectile_RPC_WRAPPERS \
@@ -21,12 +21,13 @@ struct FHitResult;
  \
 	DECLARE_FUNCTION(execHit) \
 	{ \
-		P_GET_OBJECT(AActor,SelfActor); \
 		P_GET_OBJECT(AActor,TargetActor); \
-		P_GET_STRUCT(FVector,NormalImpulse); \
-		P_GET_STRUCT(FHitResult,Hit); \
+		P_GET_OBJECT(UPrimitiveComponent,TargetComp); \
+		P_GET_PROPERTY(UIntProperty,TargetByIndex); \
+		P_GET_UBOOL(bFromSweep); \
+		P_GET_STRUCT_REF(FHitResult,Out_SweepResult); \
 		P_FINISH; \
-		this->Hit(SelfActor,TargetActor,NormalImpulse,Hit); \
+		this->Hit(TargetActor,TargetComp,TargetByIndex,bFromSweep,Out_SweepResult); \
 	}
 
 
@@ -38,12 +39,13 @@ struct FHitResult;
  \
 	DECLARE_FUNCTION(execHit) \
 	{ \
-		P_GET_OBJECT(AActor,SelfActor); \
 		P_GET_OBJECT(AActor,TargetActor); \
-		P_GET_STRUCT(FVector,NormalImpulse); \
-		P_GET_STRUCT(FHitResult,Hit); \
+		P_GET_OBJECT(UPrimitiveComponent,TargetComp); \
+		P_GET_PROPERTY(UIntProperty,TargetByIndex); \
+		P_GET_UBOOL(bFromSweep); \
+		P_GET_STRUCT_REF(FHitResult,Out_SweepResult); \
 		P_FINISH; \
-		this->Hit(SelfActor,TargetActor,NormalImpulse,Hit); \
+		this->Hit(TargetActor,TargetComp,TargetByIndex,bFromSweep,Out_SweepResult); \
 	}
 
 
