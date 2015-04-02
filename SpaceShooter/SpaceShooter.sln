@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{D48C8EE9-0851-4E5C-99D8-11A0BA7408D5}"
+# Visual Studio 2013
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{9F897EB3-E22B-4C1E-B8AF-FFCB962CF5C0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{CD60207A-FFB9-40F1-9086-0D2A7C8327B0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{2DCF227C-4D22-4E6D-9DCF-9AF666FDA8AF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpaceShooter", "Intermediate\ProjectFiles\SpaceShooter.vcxproj", "{B3B7EA78-FDF0-4A6C-A881-3B51BD8E678B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE4", "Intermediate\ProjectFiles\UE4.vcxproj", "{25A8F0D3-F1E5-4E47-8C4B-D85B44FD7C2D}"
 EndProject
@@ -28,17 +30,12 @@ Global
 		{B3B7EA78-FDF0-4A6C-A881-3B51BD8E678B}.Development|Windows.Build.0 = Development_Game|x64
 		{B3B7EA78-FDF0-4A6C-A881-3B51BD8E678B}.Shipping|Windows.ActiveCfg = Shipping_Game|Win32
 		{B3B7EA78-FDF0-4A6C-A881-3B51BD8E678B}.Shipping|Windows.Build.0 = Shipping_Game|Win32
-		{25A8F0D3-F1E5-4E47-8C4B-D85B44FD7C2D}.DebugGame Editor|Windows.ActiveCfg = BuiltWithUnrealBuildTool|Win32
-		{25A8F0D3-F1E5-4E47-8C4B-D85B44FD7C2D}.DebugGame|Windows.ActiveCfg = BuiltWithUnrealBuildTool|Win32
-		{25A8F0D3-F1E5-4E47-8C4B-D85B44FD7C2D}.Development Editor|Windows.ActiveCfg = BuiltWithUnrealBuildTool|Win32
-		{25A8F0D3-F1E5-4E47-8C4B-D85B44FD7C2D}.Development|Windows.ActiveCfg = BuiltWithUnrealBuildTool|Win32
-		{25A8F0D3-F1E5-4E47-8C4B-D85B44FD7C2D}.Shipping|Windows.ActiveCfg = BuiltWithUnrealBuildTool|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{25A8F0D3-F1E5-4E47-8C4B-D85B44FD7C2D} = {D48C8EE9-0851-4E5C-99D8-11A0BA7408D5}
-		{B3B7EA78-FDF0-4A6C-A881-3B51BD8E678B} = {CD60207A-FFB9-40F1-9086-0D2A7C8327B0}
+		{25A8F0D3-F1E5-4E47-8C4B-D85B44FD7C2D} = {9F897EB3-E22B-4C1E-B8AF-FFCB962CF5C0}
+		{B3B7EA78-FDF0-4A6C-A881-3B51BD8E678B} = {2DCF227C-4D22-4E6D-9DCF-9AF666FDA8AF}
 	EndGlobalSection
 EndGlobal
