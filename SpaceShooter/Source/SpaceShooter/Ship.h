@@ -19,10 +19,20 @@ private:
 	FVector position;
 	FVector camPos;
 	float speed;
-	
+
+	int32 PlayerScore;
+	int32 PlayerLives;
 
 public:
 	void Tick(float DeltaTime);
+
+	int32 GetPlayerScore();
+	void SetPlayerScore(int32 score);
+	void ManipulatePlayerScore(int32 score);
+
+	int32 GetPlayerLives();
+	void SetPlayerLives(int32 lives);
+	void ManipulatePlayerLives(int32 lives);
 
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;

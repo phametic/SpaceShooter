@@ -1,4 +1,4 @@
-﻿Build started 3/12/2015 10:22:39 AM.
+﻿Build started 4/2/2015 10:10:39 AM.
      1>Project "C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
      1>Build:
          "C:\Program Files\Unreal Engine\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
@@ -7,4 +7,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.89
+Time Elapsed 00:00:03.02

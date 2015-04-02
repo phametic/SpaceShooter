@@ -1,8 +1,8 @@
 ------------------
 System Information
 ------------------
-Time of this report: 3/12/2015, 09:26:28
-       Machine name: C401IT37
+Time of this report: 4/2/2015, 09:00:19
+       Machine name: C401IT25
    Operating System: Windows 7 Enterprise 64-bit (6.1, Build 7601) Service Pack 1 (7601.win7sp1_gdr.140303-2144)
            Language: English (Regional Setting: English)
 System Manufacturer: Alienware
@@ -10,8 +10,8 @@ System Manufacturer: Alienware
                BIOS: Default System BIOS
           Processor: Intel(R) Core(TM) i7 CPU         930  @ 2.80GHz (8 CPUs), ~2.8GHz
              Memory: 6144MB RAM
-Available OS Memory: 6134MB RAM
-          Page File: 6563MB used, 5704MB available
+Available OS Memory: 4086MB RAM
+          Page File: 6698MB used, 1473MB available
         Windows Dir: C:\Windows
     DirectX Version: DirectX 11
 DX Setup Parameters: Not found
@@ -47,9 +47,9 @@ Display Devices
           Chip type: GeForce GTX 260
            DAC type: Integrated RAMDAC
          Device Key: Enum\PCI\VEN_10DE&DEV_05EA&SUBSYS_073810DE&REV_A1
-     Display Memory: 4070 MB
-   Dedicated Memory: 1767 MB
-      Shared Memory: 2303 MB
+     Display Memory: 3558 MB
+   Dedicated Memory: 1771 MB
+      Shared Memory: 1787 MB
        Current Mode: 1920 x 1080 (32 bit) (60Hz)
        Monitor Name: Alienware AW2210 (Digital)
       Monitor Model: Alienware2210
@@ -220,6 +220,24 @@ Vendor/Product ID: 0x187C, 0x0515
 Vendor/Product ID: 0x187C, 0x0515
         FF Driver: n/a
 
+      Device Name: AlienFx Backlight
+         Attached: 1
+    Controller ID: 0x0
+Vendor/Product ID: 0x187C, 0x0516
+        FF Driver: n/a
+
+      Device Name: AlienFx Backlight
+         Attached: 1
+    Controller ID: 0x0
+Vendor/Product ID: 0x187C, 0x0516
+        FF Driver: n/a
+
+      Device Name: AlienFx Backlight
+         Attached: 1
+    Controller ID: 0x0
+Vendor/Product ID: 0x187C, 0x0516
+        FF Driver: n/a
+
       Device Name: Alienware TactX ™ Keyboard
          Attached: 1
     Controller ID: 0x0
@@ -255,6 +273,11 @@ PS/2 Devices
 | Service: kbdhid
 | 
 + HID Keyboard Device
+| Vendor/Product ID: 0x187C, 0x0516
+| Matching Device ID: hid_device_system_keyboard
+| Service: kbdhid
+| 
++ HID Keyboard Device
 | Vendor/Product ID: 0x187C, 0x0517
 | Matching Device ID: hid_device_system_keyboard
 | Service: kbdhid
@@ -280,7 +303,7 @@ PS/2 Devices
 Disk & DVD/CD-ROM Drives
 ------------------------
       Drive: C:
- Free Space: 72.8 GB
+ Free Space: 72.4 GB
 Total Space: 242.7 GB
 File System: NTFS
       Model: OCZ-VECTOR

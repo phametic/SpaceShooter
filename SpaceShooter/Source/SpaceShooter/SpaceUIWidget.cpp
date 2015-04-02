@@ -1,5 +1,5 @@
 //Copyright 1998-2014 Epic Games, Inc. All Rights Reserved.
-//Author: Bleakwise
+//Author: Ram
 //File: SpaceUIWidget.cpp
  
 #include "SpaceShooter.h"
@@ -14,8 +14,8 @@ void SSpaceUIWidget::Construct(const FArguments& InArgs)
         /////Slate makes extensive use of the C++ Prerocessor(macros) and operator overloading,
         /////Epic is trying to make our lives easier, look-up the macro/operator definitions to see why.
 	ChildSlot
-		.VAlign(VAlign_Fill)
-		.HAlign(HAlign_Fill)
+		.HAlign(HAlign_Left)
+		.VAlign(VAlign_Top)
 		[
 			SNew(SOverlay)
 			+ SOverlay::Slot()
@@ -26,8 +26,22 @@ void SSpaceUIWidget::Construct(const FArguments& InArgs)
 				.ShadowColorAndOpacity(FLinearColor::Black)
 				.ColorAndOpacity(FLinearColor::White)
 				.ShadowOffset(FIntPoint(-1, 1))
-				.Font(FSlateFontInfo("Veranda", 16))
-				.Text(FText::FromString("Hello, Slate!"))
+				.Font(FSlateFontInfo("Veranda", 30))
+				.Text(this,&SSpaceUIWidget::GetScore)
 			]
 		];
+
+	
+}
+
+FText SSpaceUIWidget::GetScore() const
+{
+	FString tempString;
+
+	for(TObjectIterator<AShip> Itr; Itr; ++Itr)
+	{
+		 tempString = "Highscore: " + FString::FromInt(Itr->GetPlayerScore());
+	}
+
+	return FText::FromString(tempString);
 }

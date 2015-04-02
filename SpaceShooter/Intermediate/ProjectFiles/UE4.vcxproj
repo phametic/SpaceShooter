@@ -1116,6 +1116,7 @@
 		<ClCompile Include="..\..\..\..\..\..\..\Program Files\Unreal Engine\4.7\Engine\Source\Developer\ShaderFormatOpenGL\Private\ShaderFormatOpenGL.cpp" />
 		<ClInclude Include="..\..\..\..\..\..\..\Program Files\Unreal Engine\4.7\Engine\Source\Developer\ShaderFormatOpenGL\Private\ShaderFormatOpenGL.h" />
 		<None Include="..\..\..\..\..\..\..\Program Files\Unreal Engine\4.7\Engine\Source\Developer\ShaderPreprocessor\ShaderPreprocessor.Build.cs" />
+		<ClCompile Include="..\..\..\..\..\..\..\Program Files\Unreal Engine\4.7\Engine\Source\Developer\ShaderPreprocessor\Private\PreprocessorFile.cpp" />
 		<ClInclude Include="..\..\..\..\..\..\..\Program Files\Unreal Engine\4.7\Engine\Source\Developer\ShaderPreprocessor\Private\PreprocessorPrivate.h" />
 		<ClCompile Include="..\..\..\..\..\..\..\Program Files\Unreal Engine\4.7\Engine\Source\Developer\ShaderPreprocessor\Private\ShaderPreprocessor.cpp" />
 		<ClInclude Include="..\..\..\..\..\..\..\Program Files\Unreal Engine\4.7\Engine\Source\Developer\ShaderPreprocessor\Public\ShaderPreprocessor.h" />

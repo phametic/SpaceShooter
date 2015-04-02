@@ -1,0 +1,80 @@
+﻿Log file open, 04/02/15 09:50:26
+LogInit:Display: Running engine for game: SpaceShooter
+LogInit: Version: 4.7.3-2479750+++depot+UE4-Releases+4.7
+LogInit: API Version: 2455222
+LogInit: Compiled (64-bit): Mar 15 2015 23:20:45
+LogInit: Compiled with Visual C++: 18.00.21005.01
+LogInit: Build Configuration: DebugGame
+LogInit: Branch Name: ++depot+UE4-Releases+4.7
+LogInit: Command line:  -debug
+LogInit: Base directory: C:/Program Files/Unreal Engine/4.7/Engine/Binaries/Win64/
+LogInit: Rocket: 1
+[2015.04.02-13.50.27:011][  0]LogTaskGraph: Started task graph with 3 named threads and 6 total threads.
+[2015.04.02-13.50.27:074][  0]LogOnline:Warning: No default platform service specified for OnlineSubsystem
+[2015.04.02-13.50.27:173][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.04.02-13.50.27:192][  0]LogInit: Object subsystem initialized
+[2015.04.02-13.50.27:215][  0]LogInit: Selected Device Profile: [Windows]
+[2015.04.02-13.50.27:216][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.04.02-13.50.27:229][  0]LogInit: Computer: C401IT25
+[2015.04.02-13.50.27:229][  0]LogInit: User: npham
+[2015.04.02-13.50.27:230][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.04.02-13.50.27:230][  0]LogInit: High frequency timer resolution =2.741210 MHz
+[2015.04.02-13.50.27:230][  0]LogMemory: Memory total: Physical=4.0GB (4GB approx) Virtual=8192.0GB
+[2015.04.02-13.50.27:231][  0]LogMemory: Platform Memory Stats for Windows
+[2015.04.02-13.50.27:231][  0]LogMemory: Process Physical Memory: 46.05 MB used, 46.05 MB peak
+[2015.04.02-13.50.27:231][  0]LogMemory: Process Virtual Memory: 26.80 MB used, 26.80 MB peak
+[2015.04.02-13.50.27:232][  0]LogMemory: Physical Memory: 2924.09 MB used, 4086.93 MB total
+[2015.04.02-13.50.27:232][  0]LogMemory: Virtual Memory: 277.26 MB used, 8388608.00 MB total
+[2015.04.02-13.50.27:370][  0]LogD3D11RHI: Found D3D11 adapter 0: NVIDIA GeForce GTX 260   (Feature Level 10_0)
+[2015.04.02-13.50.27:371][  0]LogD3D11RHI: Adapter has 1771MB of dedicated video memory, 0MB of dedicated system memory, and 1787MB of shared system memory, 1 output[s]
+[2015.04.02-13.50.27:371][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.04.02-13.50.27:377][  0]LogRHI: Texture pool is 1239 MB (70% of 1771 MB)
+[2015.04.02-13.50.27:412][  0]LogD3D11RHI: Async texture creation enabled
+[2015.04.02-13.50.27:666][  0]LogTextLocalizationManager: The requested culture ('en_US') has no localization data; parent culture's ('en') localization data will be used.
+[2015.04.02-13.50.27:741][  0]LogTextLocalizationManager:Warning: Loading localization resources contain conflicting entries for (Namespace:UICommands, Key:Save_ToolTip):
+Resource: (C:/Program Files/Unreal Engine/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (-29098895) String: (Saves the current level to disk)
+Resource: (C:/Program Files/Unreal Engine/4.7/Engine/Content/Localization/Engine/en/Engine.locres) Hash: (-1280300587) String: (Save selected data to vlog file)
+[2015.04.02-13.50.27:742][  0]LogTextLocalizationManager:Warning: Loading localization resources contain conflicting entries for (Namespace:ContentBrowser, Key:ImportAssetToolTip):
+Resource: (C:/Program Files/Unreal Engine/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (-630476809) String: (Import to {0}...)
+Resource: (C:/Program Files/Unreal Engine/4.7/Engine/Content/Localization/Editor/en/Editor.locres) Hash: (1271782899) String: (Imports an asset from file to this folder.)
+[2015.04.02-13.50.27:835][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.04.02-13.50.31:354][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.04.02-13.50.32:333][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.04.02-13.50.32:445][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.04.02-13.50.32:626][  0]LogDerivedDataCache: Loaded boot cache 0.18s 37MB C:/Users/npham/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
+[2015.04.02-13.50.32:626][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/npham/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc
+[2015.04.02-13.50.32:627][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/npham/Desktop/SpaceShooter/SpaceShooter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.04.02-13.50.32:627][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.04.02-13.50.32:779][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2015.04.02-13.50.32:793][  0]LogDerivedDataCache: Using Local data cache path C:/Users/npham/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2015.04.02-13.50.33:813][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.04.02-13.50.33:814][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.04.02-13.50.34:488][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.04.02-13.50.34:702][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf'
+[2015.04.02-13.50.37:548][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.04.02-13.50.38:431][  0]SourceControl: Info Source control is disabled
+[2015.04.02-13.50.38:433][  0]SourceControl: Info Source control is disabled
+[2015.04.02-13.50.38:433][  0]SourceControl: Info Source control is disabled
+[2015.04.02-13.50.38:433][  0]LogSourceControl: RunCommandInternalRaw: 'git version'
+[2015.04.02-13.50.38:434][  0]LogSourceControl: RunCommandInternalRaw: ExecProcess ReturnCode=2 OutResults=''
+[2015.04.02-13.50.38:446][  0]SourceControl: Info Source control is disabled
+[2015.04.02-13.50.39:144][  0]LogObj: 24315 objects as part of root set at end of initial load.
+[2015.04.02-13.50.39:144][  0]LogUObjectAllocator: 5180648 out of 0 bytes used by permanent object pool.
+[2015.04.02-13.50.39:371][  0]LogEngine: Initializing Engine...
+[2015.04.02-13.50.42:577][  0]LogInit: XAudio2 using 'Digital Audio (HDMI) (2- High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.04.02-13.50.42:599][  0]LogInit: FAudioDevice initialized.
+[2015.04.02-13.50.42:708][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.04.02-13.50.42:736][  0]LogDerivedDataCache: Saved boot cache 0.02s 37MB C:/Users/npham/AppData/Local/UnrealEngine/4.7/DerivedDataCache/Boot.ddc.
+[2015.04.02-13.50.42:745][  0]LogInit: Texture streaming: Enabled
+[2015.04.02-13.50.42:907][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2015.04.02-13.50.42:907][  0]LogAnalytics: ET APIKey = Rocket.Release. APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.7.3-2479750+++depot+UE4-Releases+4.7
+[2015.04.02-13.50.42:907][  0]LogAnalytics: ET APIKey = Rocket.Release. DataRouterUploadURL = https://datarouter-public-service-gamedev.ol.epicgames.net/datarouter/api/v1/public/data. AppVersion = 4.7.3-2479750+++depot+UE4-Releases+4.7
+[2015.04.02-13.50.42:908][  0]LogAnalytics: SetUserId 53e3b931478c00baf3ccecb5e54a3da4|10bf102e156545339967f48793d967ad|7fac54aa-9f69-47ad-8344-357d0c6be1ba
+[2015.04.02-13.50.42:909][  0]LogAnalytics: AnalyticsET::StartSession [Rocket.Release]
+[2015.04.02-13.50.42:953][  0]LogInit: Transaction tracking system initialized
+[2015.04.02-13.50.43:762][  0]BlueprintLog: New page: Editor Load
+[2015.04.02-13.50.43:836][  0]LogAssetRegistry: FAssetRegistry took 0.0131 seconds to start up
+[2015.04.02-13.50.43:837][  0]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for ../../../Engine/Plugins/Experimental/CharacterAI/Content/. Error: 0
+[2015.04.02-13.50.45:117][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.04.02-13.50.45:584][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.04.02-13.50.46:547][  0]LogSlate:Warning: Failed to load font data from '../../../Engine/Content

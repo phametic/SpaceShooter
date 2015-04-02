@@ -14,10 +14,8 @@ AShip::AShip(const class FPostConstructInitializeProperties& PCIP)
 	
 	//ProjectileClass = PCIP.CreateDefaultSubobject<AProjectile>(this, TEXT("Projectile Class"));
 
-	position.X = 0;
-	position.Y = -400;
-	position.Z = 0;
 	speed = 4.0;
+	
 }
 
 void AShip::SetupPlayerInputComponent(UInputComponent* InputComponent)
@@ -35,9 +33,16 @@ void AShip::BeginPlay()
 {
 	Super::BeginPlay();
 
+	position.X = 0;
+	position.Y = -400;
+	position.Z = 0;
+
+	SetPlayerLives(3);
+	SetPlayerScore(0);
+
 	if (GEngine)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("We are using Ship!"));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("We are using Ship!"));
 	}
 	SetActorRotation(FRotator(-90.0,0.0,0.0));
 }
@@ -91,6 +96,9 @@ void AShip::OnFireReleased()
 void AShip::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	ManipulatePlayerScore(1);
+	
 	/*
 	if (RightMovement != 0.f)
 	{
@@ -112,4 +120,30 @@ void AShip::Tick(float DeltaTime)
 		camPos = ActorItr->GetActorLocation();
 	}
 	SetActorLocation(FVector(position.X+camPos.X,position.Y+camPos.Y,position.Z+camPos.Z));
+}
+
+int32 AShip::GetPlayerScore()
+{
+	return PlayerScore;
+}
+void AShip::SetPlayerScore(int32 score)
+{
+	PlayerScore = score;
+}
+void AShip::ManipulatePlayerScore(int32 score)
+{
+	PlayerScore += score;
+}
+
+int32 AShip::GetPlayerLives()
+{
+	return PlayerLives;
+}
+void AShip::SetPlayerLives(int32 lives)
+{
+	PlayerLives = lives;
+}
+void AShip::ManipulatePlayerLives(int32 lives)
+{
+	PlayerLives += lives;
 }

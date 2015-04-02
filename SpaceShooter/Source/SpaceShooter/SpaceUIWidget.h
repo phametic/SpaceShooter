@@ -6,7 +6,8 @@
  
 #include "SpaceHud.h"
 #include "Slate.h"
- 
+#include "Ship.h"
+
 class SSpaceUIWidget : public SCompoundWidget
 {
 	SLATE_BEGIN_ARGS(SSpaceUIWidget)
@@ -28,4 +29,6 @@ private:
         /////HUD has "strong" pointer to Widget,
         /////circular ownership would prevent/break self-destruction of hud/widget (cause memory leak).
 	TWeakObjectPtr<class ASpaceHud> OwnerHUD;
+
+	FText GetScore() const;
 };
