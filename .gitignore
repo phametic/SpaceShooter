@@ -5,6 +5,7 @@
 *.sln
 *.suo
 SpaceShooterEditor/
+*.opensdf
 
 # Compiled Object files
 *.slo

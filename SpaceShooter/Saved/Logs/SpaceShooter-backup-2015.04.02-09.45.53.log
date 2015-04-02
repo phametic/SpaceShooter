@@ -1,0 +1,32 @@
+﻿Log file open, 04/02/15 09:41:31
+LogInit:Display: Running engine for game: SpaceShooter
+LogInit:Warning: Incompatible or missing module: UE4Editor-SpaceShooter.dll
+Running C:/Program Files/Unreal Engine/4.7/Engine/Binaries/DotNET/UnrealBuildTool.exe SpaceShooter Development Win64 -project="C:/Users/npham/Desktop/SpaceShooter/SpaceShooter/SpaceShooter.uproject" -rocket -editorrecompile -progress
+Performing 14 actions (4 in parallel)
+[2/14] Resource ModuleVersionResource.rc.inl
+[3/14] Resource SpaceShooter.rc
+PCH.SpaceShooter.SpaceShooter.h.cpp
+C:\Program Files\Unreal Engine\4.7\Engine\Source\Runtime\Core\Resources\Windows\ModuleVersionResource.rc.inl(3) : fatal error RC1015: cannot open include file 'windows.h'.
+C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Source\SpaceShooter\Resources\Windows\SpaceShooter.rc(11) : fatal error RC1015: cannot open include file 'windows.h'.
+C:\Program Files\Unreal Engine\4.7\Engine\Source\Runtime\Core\Public\HAL\PlatformIncludes.h(5) : fatal error C1083: Cannot open include file: 'new': No such file or directory
+-------- End Detailed Actions Stats -----------------------------------------------------------
+ERROR: UBT ERROR: Failed to produce item: C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Binaries\Win64\UE4Editor-SpaceShooter.dll
+Cumulative action seconds (8 processors): 0.00 building projects, 0.42 compiling, 0.00 creating app bundles, 0.00 generating debug info, 0.00 linking, 0.00 other
+UBT execution time: 4.48 seconds
+LogExit: Preparing to exit.
+LogModuleManager: Shutting down and abandoning module DesktopPlatform (14)
+LogModuleManager: Shutting down and abandoning module TextureCompressor (13)
+LogModuleManager: Shutting down and abandoning module ShaderCore (12)
+LogModuleManager: Shutting down and abandoning module Landscape (11)
+LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (10)
+LogModuleManager: Shutting down and abandoning module OpenGLDrv (9)
+LogModuleManager: Shutting down and abandoning module D3D11RHI (8)
+LogModuleManager: Shutting down and abandoning module Renderer (7)
+LogModuleManager: Shutting down and abandoning module Engine (6)
+LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+LogModuleManager: Shutting down and abandoning module PakFile (1)
+LogExit: Exiting.
+Log file closed, 04/02/15 09:41:42

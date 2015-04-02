@@ -31,7 +31,15 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"OnFirePressed",(Native)&AShip::execOnFirePressed);
 		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"OnFireReleased",(Native)&AShip::execOnFireReleased);
 	}
+<<<<<<< HEAD
 	IMPLEMENT_CLASS(AShip, 339490856);
+=======
+	IMPLEMENT_CLASS(AShip, 925052636);
+	void ASpaceHud::StaticRegisterNativesASpaceHud()
+	{
+	}
+	IMPLEMENT_CLASS(ASpaceHud, 1754145024);
+>>>>>>> origin/Ram
 	void ASpaceShooterGameMode::StaticRegisterNativesASpaceShooterGameMode()
 	{
 	}
@@ -43,6 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	ENGINE_API class UClass* Z_Construct_UClass_APawn();
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpacyCamera_NoRegister();
@@ -59,6 +68,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_OnFireReleased();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_AShip_NoRegister();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_AShip();
+	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpaceHud_NoRegister();
+	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpaceHud();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpaceShooterGameMode_NoRegister();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpaceShooterGameMode();
 	SPACESHOOTER_API class UPackage* Z_Construct_UPackage_SpaceShooter();
@@ -321,6 +332,39 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 		return OuterClass;
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AShip(Z_Construct_UClass_AShip, TEXT("AShip"));
+	UClass* Z_Construct_UClass_ASpaceHud_NoRegister()
+	{
+		return ASpaceHud::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ASpaceHud()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AHUD();
+			Z_Construct_UPackage_SpaceShooter();
+			OuterClass = ASpaceHud::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x2090028C;
+
+
+				OuterClass->ClassConfigName = FName(TEXT("Game"));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Rendering Actor Input Replication"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("SpaceHud.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("SpaceHud.h"));
+				MetaData->SetValue(OuterClass, TEXT("ShowCategories"), TEXT("Input|MouseInput Input|TouchInput"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ASpaceHud(Z_Construct_UClass_ASpaceHud, TEXT("ASpaceHud"));
 	UClass* Z_Construct_UClass_ASpaceShooterGameMode_NoRegister()
 	{
 		return ASpaceShooterGameMode::StaticClass();
@@ -362,8 +406,13 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/SpaceShooter")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
+<<<<<<< HEAD
 			Guid.A = 0xF40A7941;
 			Guid.B = 0xF3F15560;
+=======
+			Guid.A = 0x2FC6F662;
+			Guid.B = 0x392E5AAB;
+>>>>>>> origin/Ram
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

@@ -3,7 +3,11 @@
   <ItemGroup>
     <None Include="..\..\SpaceShooter.uproject" />
     <Filter Include="Source">
+<<<<<<< HEAD
       <UniqueIdentifier>{3E215BE5-DA13-4E85-8498-00DF1B3D22BA}</UniqueIdentifier>
+=======
+      <UniqueIdentifier>{44C758A6-2D4E-4D96-9B2A-D19B3676039C}</UniqueIdentifier>
+>>>>>>> origin/Ram
     </Filter>
     <None Include="..\..\Source\SpaceShooter.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +16,11 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
+<<<<<<< HEAD
       <UniqueIdentifier>{171A4B77-45FE-4B63-8C14-449745FCB730}</UniqueIdentifier>
+=======
+      <UniqueIdentifier>{24FB41BB-68F8-4731-A952-E25F449E3B5E}</UniqueIdentifier>
+>>>>>>> origin/Ram
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +35,11 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\SpaceShooter">
+<<<<<<< HEAD
       <UniqueIdentifier>{7F8E9B86-3453-4D00-A3B4-B033763BB5A9}</UniqueIdentifier>
+=======
+      <UniqueIdentifier>{CFB598DD-6457-49A9-A295-46D6CF229FC8}</UniqueIdentifier>
+>>>>>>> origin/Ram
     </Filter>
     <ClCompile Include="..\..\Source\SpaceShooter\BasicEnemy.cpp">
       <Filter>Source\SpaceShooter</Filter>
@@ -47,6 +59,15 @@
     <ClInclude Include="..\..\Source\SpaceShooter\Ship.h">
       <Filter>Source\SpaceShooter</Filter>
     </ClInclude>
+<<<<<<< HEAD
+=======
+    <ClCompile Include="..\..\Source\SpaceShooter\SpaceHud.cpp">
+      <Filter>Source\SpaceShooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\SpaceHud.h">
+      <Filter>Source\SpaceShooter</Filter>
+    </ClInclude>
+>>>>>>> origin/Ram
     <None Include="..\..\Source\SpaceShooter\SpaceShooter.Build.cs">
       <Filter>Source\SpaceShooter</Filter>
     </None>
@@ -62,6 +83,15 @@
     <ClInclude Include="..\..\Source\SpaceShooter\SpaceShooterGameMode.h">
       <Filter>Source\SpaceShooter</Filter>
     </ClInclude>
+<<<<<<< HEAD
+=======
+    <ClCompile Include="..\..\Source\SpaceShooter\SpaceUIWidget.cpp">
+      <Filter>Source\SpaceShooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SpaceShooter\SpaceUIWidget.h">
+      <Filter>Source\SpaceShooter</Filter>
+    </ClInclude>
+>>>>>>> origin/Ram
     <ClCompile Include="..\..\Source\SpaceShooter\SpacyCamera.cpp">
       <Filter>Source\SpaceShooter</Filter>
     </ClCompile>
@@ -69,10 +99,17 @@
       <Filter>Source\SpaceShooter</Filter>
     </ClInclude>
     <Filter Include="Source\SpaceShooter\Resources">
+<<<<<<< HEAD
       <UniqueIdentifier>{338DD966-564D-4C6E-86C9-4201DECB9579}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\SpaceShooter\Resources\Windows">
       <UniqueIdentifier>{ABDC33A1-BCD6-4F3E-8165-7573745145D4}</UniqueIdentifier>
+=======
+      <UniqueIdentifier>{BEF21468-86D0-4EAF-B963-596817CF3D44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SpaceShooter\Resources\Windows">
+      <UniqueIdentifier>{663079D7-A50A-4433-B067-CE83EFBA6E64}</UniqueIdentifier>
+>>>>>>> origin/Ram
     </Filter>
     <None Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.ico">
       <Filter>Source\SpaceShooter\Resources\Windows</Filter>
@@ -81,6 +118,7 @@
       <Filter>Source\SpaceShooter\Resources\Windows</Filter>
     </ResourceCompile>
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <ClInclude Include="..\..\Source\SpaceShooter\GenTick.h">
       <Filter>Source\SpaceShooter</Filter>
@@ -97,4 +135,6 @@
       <Filter>Source\SpaceShooter</Filter>
     </ClCompile>
   </ItemGroup>
+=======
+>>>>>>> origin/Ram
 </Project>
