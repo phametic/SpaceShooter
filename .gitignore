@@ -4,6 +4,7 @@
 *.exp
 *.sln
 *.suo
+SpaceShooterEditor/
 
 # Compiled Object files
 *.slo
