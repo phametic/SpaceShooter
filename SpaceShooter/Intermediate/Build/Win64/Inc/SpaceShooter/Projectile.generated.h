@@ -12,11 +12,40 @@
 #endif
 #define SPACESHOOTER_Projectile_generated_h
 
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 #define AProjectile_EVENTPARMS
-#define AProjectile_RPC_WRAPPERS
+#define AProjectile_RPC_WRAPPERS \
+ \
+ \
+	DECLARE_FUNCTION(execHit) \
+	{ \
+		P_GET_OBJECT(AActor,TargetActor); \
+		P_GET_OBJECT(UPrimitiveComponent,TargetComp); \
+		P_GET_PROPERTY(UIntProperty,TargetByIndex); \
+		P_GET_UBOOL(bFromSweep); \
+		P_GET_STRUCT_REF(FHitResult,Out_SweepResult); \
+		P_FINISH; \
+		this->Hit(TargetActor,TargetComp,TargetByIndex,bFromSweep,Out_SweepResult); \
+	}
+
+
 #define AProjectile_RPC_WRAPPERS_NO_PURE_DECLS \
 	static inline void StaticChecks_Implementation_Validate() \
 	{ \
+	} \
+ \
+ \
+	DECLARE_FUNCTION(execHit) \
+	{ \
+		P_GET_OBJECT(AActor,TargetActor); \
+		P_GET_OBJECT(UPrimitiveComponent,TargetComp); \
+		P_GET_PROPERTY(UIntProperty,TargetByIndex); \
+		P_GET_UBOOL(bFromSweep); \
+		P_GET_STRUCT_REF(FHitResult,Out_SweepResult); \
+		P_FINISH; \
+		this->Hit(TargetActor,TargetComp,TargetByIndex,bFromSweep,Out_SweepResult); \
 	}
 
 

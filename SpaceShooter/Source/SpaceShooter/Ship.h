@@ -28,6 +28,8 @@ private:
 
 	int32 PlayerScore;
 	int32 PlayerLives;
+	void Movement(float DeltaTime);
+	void ShotCheck(float DeltaTime);
 public:
 	void Tick(float DeltaTime);
 

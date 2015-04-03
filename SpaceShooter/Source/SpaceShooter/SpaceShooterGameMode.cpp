@@ -10,6 +10,11 @@ ASpaceShooterGameMode::ASpaceShooterGameMode(const class FPostConstructInitializ
 {
 	DefaultPawnClass = AShip::StaticClass();
 	HUDClass = ASpaceHud::StaticClass();
+	UWorld* const World = GetWorld();
+	if (World)
+	{
+		World->SpawnActor<AGenTick>(AGenTick::StaticClass());
+	}
 }
 
 void ASpaceShooterGameMode::StartPlay()

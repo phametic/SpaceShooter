@@ -5,7 +5,9 @@
 *.sln
 *.suo
 SpaceShooterEditor/
+DebugGame/
 *.opensdf
+*.log
 
 # Compiled Object files
 *.slo
@@ -82,3 +84,29 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+SpaceShooter/Intermediate/Build/BuildRules/ProjectFileGeneratorModuleRules.pdb
+SpaceShooter/Intermediate/ProjectFiles/SpaceShooter.vcxproj.filters
+SpaceShooter/Intermediate/ProjectFiles/SpaceShooter.vcxproj.filters
+SpaceShooter/Saved/Config/Windows/EditorLayout.ini
+SpaceShooter/Saved/Config/Windows/EditorLayout.ini
+SpaceShooter/Saved/Config/Windows/EditorUserSettings.ini
+SpaceShooter/Saved/Logs/SpaceShooter.log
+SpaceShooter/Intermediate/ReimportCache/3688439234.bin
+SpaceShooter/Intermediate/ProjectFiles/UE4.vcxproj.filters
+SpaceShooter/Intermediate/ProjectFiles/SpaceShooter.vcxproj.user
+SpaceShooter/Intermediate/ProjectFiles/SpaceShooter.vcxproj.filters
+SpaceShooter/Intermediate/CachedAssetRegistry.bin
+SpaceShooter/Intermediate/Build/Win64/SpaceShooterEditor/DependencyCache.bin
+SpaceShooter/Intermediate/Build/Unused/SpaceShooter.log
+SpaceShooter/Intermediate/Build/BuildRules/SpaceShooter_EditorRecompileModuleRules.pdb
+SpaceShooter/Intermediate/Build/BuildRules/SpaceShooterEditorModuleRules.pdb
+SpaceShooter/Intermediate/Build/BuildRules/ProjectFileGeneratorModuleRulesSourceFiles.txt
+SpaceShooter/Intermediate/Build/BuildRules/ProjectFileGeneratorModuleRules.pdb
+SpaceShooter/Intermediate/Build/BuildRules/ProjectFileGeneratorModuleRules.pdb
+SpaceShooter/Intermediate/Build/BuildRules/ProjectFileGeneratorModuleRules.pdb
+SpaceShooter/Intermediate/Build/Win64/SpaceShooterEditor/DebugGame/SpaceShooter/PCH.SpaceShooter.SpaceShooter.h.cpp
+SpaceShooter/Intermediate/Build/Win64/SpaceShooterEditor/DebugGame/SpaceShooter/SpaceShooter.h
+SpaceShooter/Intermediate/Build/Win64/SpaceShooterEditor/DebugGame/UnrealHeaderTool.manifest
+SpaceShooter/Intermediate/Build/Win64/SpaceShooterEditor/Development/SpaceShooter/PCH.SpaceShooter.SpaceShooter.h.cpp
+SpaceShooter/Intermediate/Build/Win64/SpaceShooterEditor/Development/SpaceShooter/SpaceShooter.h
+SpaceShooter/Intermediate/Build/Win64/SpaceShooterEditor/Development/SpaceShooter/PCH.SpaceShooter.SpaceShooter.h.cpp

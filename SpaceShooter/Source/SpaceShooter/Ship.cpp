@@ -102,6 +102,12 @@ void AShip::Tick(float DeltaTime)
 		world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
 		shootCounter = 0;
 	}
+	Movement(DeltaTime);
+	ShotCheck(DeltaTime);
+}
+
+void AShip::Movement(float DeltaTime)
+{
 	position.X += (speed * velocity.X)*DeltaTime;
 	if (position.X >= 320)
 	{
@@ -148,4 +154,12 @@ void AShip::SetPlayerLives(int32 lives)
 void AShip::ManipulatePlayerLives(int32 lives)
 {
 	PlayerLives += lives;
+void AShip::ShotCheck(float DeltaTime)
+{
+	shootCounter += DeltaTime*4;
+	if (shootHeld && shootCounter >= 1)
+	{
+		world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+		shootCounter = 0;
+	}
 }
