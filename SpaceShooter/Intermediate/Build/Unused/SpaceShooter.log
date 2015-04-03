@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿Build started 3/20/2015 8:34:29 PM.
+﻿Build started 4/3/2015 4:03:29 AM.
      1>Project "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
      1>Build:
          "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 Development "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
@@ -8,16 +7,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.70
-=======
-﻿Build started 4/2/2015 10:10:39 AM.
-     1>Project "C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
-     1>Build:
-         "C:\Program Files\Unreal Engine\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
-         Target is up to date.
-     1>Done Building Project "C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:03.02
->>>>>>> origin/Ram
+Time Elapsed 00:00:03.84

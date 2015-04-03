@@ -34,6 +34,9 @@ public:
 	// Called to bind functionality to input
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
+	//on ship destroyed
+	virtual void Destroyed();
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMesh)
 		TSubobjectPtr<UStaticMeshComponent> MeshComponent;
 

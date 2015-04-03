@@ -77,8 +77,6 @@ void AShip::OnFireReleased()
 void AShip::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	ManipulatePlayerScore(1);
 	
 	/*
 	if (RightMovement != 0.f)
@@ -154,6 +152,7 @@ void AShip::SetPlayerLives(int32 lives)
 void AShip::ManipulatePlayerLives(int32 lives)
 {
 	PlayerLives += lives;
+}
 void AShip::ShotCheck(float DeltaTime)
 {
 	shootCounter += DeltaTime*4;

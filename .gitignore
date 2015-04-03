@@ -110,3 +110,5 @@ SpaceShooter/Intermediate/Build/Win64/SpaceShooterEditor/DebugGame/UnrealHeaderT
 SpaceShooter/Intermediate/Build/Win64/SpaceShooterEditor/Development/SpaceShooter/PCH.SpaceShooter.SpaceShooter.h.cpp
 SpaceShooter/Intermediate/Build/Win64/SpaceShooterEditor/Development/SpaceShooter/SpaceShooter.h
 SpaceShooter/Intermediate/Build/Win64/SpaceShooterEditor/Development/SpaceShooter/PCH.SpaceShooter.SpaceShooter.h.cpp
+SpaceShooter/Intermediate/Build/Win64/Inc/SpaceShooter/SpaceShooter.generated.cpp
+SpaceShooter/Intermediate/Build/Win64/Inc/SpaceShooter/Timestamp

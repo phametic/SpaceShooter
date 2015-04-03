@@ -2,7 +2,7 @@
 
 #include "SpaceShooter.h"
 #include "BasicEnemy.h"
-
+#include "Ship.h"
 
 // Sets default values
 ABasicEnemy::ABasicEnemy(const class FPostConstructInitializeProperties& PCIP) : Super(PCIP)
@@ -61,3 +61,10 @@ void ABasicEnemy::move(float DeltaTime)
 	SetActorLocation(FVector(position.X, position.Y, position.Z));
 }
 
+void ABasicEnemy::Destroyed()
+{
+	for (TActorIterator<AShip> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+	{
+		ActorItr->ManipulatePlayerScore(10);
+	}
+}

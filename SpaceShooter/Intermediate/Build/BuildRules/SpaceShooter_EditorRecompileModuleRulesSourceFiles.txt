@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Program Files\Epic Games\4.7\Engine\Source\Developer\AITestSuite\AITestSuite.Build.cs
 C:\Program Files\Epic Games\4.7\Engine\Source\Developer\Android\AndroidDeviceDetection\AndroidDeviceDetection.Build.cs
 C:\Program Files\Epic Games\4.7\Engine\Source\Developer\Android\AndroidPlatformEditor\AndroidPlatformEditor.Build.cs
@@ -357,6 +356,7 @@ C:\Program Files\Epic Games\4.7\Engine\Plugins\Slate\SlateRemote\Source\SlateRem
 C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Source\SpaceShooter\SpaceShooter.Build.cs
 C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Source\SpaceShooter.Target.cs
 C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Source\SpaceShooterEditor.Target.cs
+or.Target.cs
 rogram Files\Unreal Engine\4.7\Engine\Plugins\Runtime\WindowsDeviceProfileSelector\Source\WindowsDeviceProfileSelector\WindowsDeviceProfileSelector.Build.cs
 =======
 C:\Program Files\Unreal Engine\4.7\Engine\Source\Developer\AITestSuite\AITestSuite.Build.cs

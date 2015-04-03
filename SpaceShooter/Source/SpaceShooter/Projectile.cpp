@@ -46,7 +46,10 @@ void AProjectile::Movement(float DeltaTime)
 }
 void AProjectile::Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int32 TargetByIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (TargetActor != nullptr && TargetActor != this && TargetComp != nullptr && (TargetActor->GetName().Contains("Enemy",ESearchCase::IgnoreCase,ESearchDir::FromStart) == true))
+	if (TargetActor != nullptr && TargetActor != this && TargetComp != nullptr && (TargetActor->GetName().Contains("Enemy", ESearchCase::IgnoreCase, ESearchDir::FromStart) == true))
+	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());
+		TargetActor->Destroy();
+	}
 }
 
