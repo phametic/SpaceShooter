@@ -106,7 +106,8 @@ void AShip::ShotCheck(float DeltaTime)
 	shootCounter += DeltaTime*4;
 	if (shootHeld && shootCounter >= 1)
 	{
-		world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+		projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+		projectile->SetOwner(projectile->PLAYER);
 		shootCounter = 0;
 	}
 }

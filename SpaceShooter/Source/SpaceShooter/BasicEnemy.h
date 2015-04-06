@@ -3,8 +3,8 @@
 #pragma once
 
 #include "GameFramework/Pawn.h"
+#include "Projectile.h"
 #include "SpacyCamera.h"
-
 
 #include "BasicEnemy.generated.h"
 
@@ -17,9 +17,14 @@ private:
 	ASpacyCamera* cam;
 	FVector position;
 	float speed;
+	float shootCounter;
+	UWorld* world;
+	AProjectile* projectile;
+	
 	void checkOff();
 	void move(float DeltaTime);
 	void getCam(ASpacyCamera*);
+	void ShotCheck(float DeltaTime);
 public:
 	GENERATED_UCLASS_BODY()
 	// Sets default values for this pawn's properties

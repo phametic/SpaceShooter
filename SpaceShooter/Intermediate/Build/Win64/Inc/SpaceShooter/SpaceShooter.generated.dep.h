@@ -8,18 +8,24 @@
 #ifndef SPACESHOOTER_SpacyCamera_generated_h
 	#include "SpacyCamera.h"
 #endif
+#ifndef SPACESHOOTER_Projectile_generated_h
+	#include "Projectile.h"
+#endif
 #ifndef SPACESHOOTER_BasicEnemy_generated_h
 	#include "BasicEnemy.h"
 #endif
 #ifndef SPACESHOOTER_GenTick_generated_h
 	#include "GenTick.h"
 #endif
-#ifndef SPACESHOOTER_Projectile_generated_h
-	#include "Projectile.h"
-#endif
 #ifndef SPACESHOOTER_Ship_generated_h
 	#include "Ship.h"
 #endif
 #ifndef SPACESHOOTER_SpaceShooterGameMode_generated_h
 	#include "SpaceShooterGameMode.h"
+#endif
+#ifndef SPACESHOOTER_VerticalEnemy_generated_h
+	#include "VerticalEnemy.h"
+#endif
+#ifndef SPACESHOOTER_WaveyEnemy_generated_h
+	#include "WaveyEnemy.h"
 #endif

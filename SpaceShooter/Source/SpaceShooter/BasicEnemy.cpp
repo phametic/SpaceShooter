@@ -31,6 +31,8 @@ void ABasicEnemy::BeginPlay()
 	position.Z = cam->GetActorLocation().Z + FMath::RandRange(-60,300);
 	speed = -20.0f;	
 	
+	world = GetWorld();
+	shootCounter = 0;
 }
 
 // Called every frame
@@ -40,6 +42,7 @@ void ABasicEnemy::Tick( float DeltaTime )
 	
 	checkOff();
 	move(DeltaTime);
+	ShotCheck(DeltaTime);
 }
 
 // Called to bind functionality to input
@@ -61,3 +64,13 @@ void ABasicEnemy::move(float DeltaTime)
 	SetActorLocation(FVector(position.X, position.Y, position.Z));
 }
 
+void ABasicEnemy::ShotCheck(float DeltaTime)
+{
+	shootCounter += DeltaTime*0.5;
+	if (shootCounter >= 1)
+	{
+		projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+		projectile->SetOwner(projectile->ENEMY);
+		shootCounter = 0;
+	}
+}

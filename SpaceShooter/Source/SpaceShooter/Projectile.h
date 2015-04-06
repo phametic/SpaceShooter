@@ -5,7 +5,6 @@
 #include "GameFramework/Actor.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "SpacyCamera.h"
-#include "BasicEnemy.h"
 #include "Projectile.generated.h"
 
 /**
@@ -18,7 +17,10 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void BeginPlay() override;
 	void Movement(float DeltaTime);
-	ABasicEnemy* basicEnemy;
+	enum OWNER{ENEMY,PLAYER};
+	OWNER owner;
+	void SetOwner(OWNER owner);
+	//ABasicEnemy* basicEnemy;
 protected:
 	GENERATED_UCLASS_BODY()
 	
@@ -37,5 +39,5 @@ protected:
 private:
 	ASpacyCamera* cam;
 	FScriptDelegate Delegate;
-
+	float speed;
 };

@@ -2,7 +2,6 @@
 
 #include "SpaceShooter.h"
 #include "Projectile.h"
-#include "BasicEnemy.h"
 
 AProjectile::AProjectile(const FPostConstructInitializeProperties& ObjectInitializer)
 	: Super(ObjectInitializer)
@@ -38,7 +37,7 @@ void AProjectile::BeginPlay()
 }
 void AProjectile::Movement(float DeltaTime)
 {
-	SetActorLocation(FVector(GetActorLocation().X+400*DeltaTime,GetActorLocation().Y,GetActorLocation().Z));
+	SetActorLocation(FVector(GetActorLocation().X+speed*DeltaTime,GetActorLocation().Y,GetActorLocation().Z));
 	if (GetActorLocation().X > (cam->GetActorLocation().X + 550))
 	{
 		Destroy();
@@ -46,7 +45,22 @@ void AProjectile::Movement(float DeltaTime)
 }
 void AProjectile::Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int32 TargetByIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (TargetActor != nullptr && TargetActor != this && TargetComp != nullptr && (TargetActor->GetName().Contains("Enemy",ESearchCase::IgnoreCase,ESearchDir::FromStart) == true))
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());
+	if (owner == PLAYER)
+	{
+		if (TargetActor != nullptr && TargetActor != this && TargetComp != nullptr && (TargetActor->GetName().Contains("Enemy",ESearchCase::IgnoreCase,ESearchDir::FromStart) == true))
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());
+	}
+}
+void AProjectile::SetOwner(OWNER owner)
+{
+	switch (owner)
+	{
+	case PLAYER:
+		speed = 400;
+		break;
+	case ENEMY:
+		speed = -400;
+		break;
+	}
 }
 

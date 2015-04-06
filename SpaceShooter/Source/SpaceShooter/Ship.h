@@ -24,6 +24,7 @@ private:
 	ASpacyCamera* cam;
 	bool shootHeld;
 	UWorld* world;
+	AProjectile* projectile;
 	float shootCounter;
 	void Movement(float DeltaTime);
 	void ShotCheck(float DeltaTime);
