@@ -87,8 +87,11 @@ void AWaveyEnemy::ShotCheck(float DeltaTime)
 	shootCounter += DeltaTime*0.5;
 	if (shootCounter >= 1)
 	{
-		projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
-		projectile->SetOwner(projectile->ENEMY);
+		FVector ProjectileOffset = GetActorLocation();
+		ProjectileOffset.X -= 100;
+		projectile = world->SpawnActor<AProjectile>(ProjectileOffset, GetActorRotation());
+		projectile->SetSpeed(-400);
+		//projectile->SetOwner(projectile->ENEMY);
 		shootCounter = 0;
 	}
 }

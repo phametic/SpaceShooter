@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\SpaceShooter.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{0BDB4675-0933-4847-8F2C-01E330B97360}</UniqueIdentifier>
+			<UniqueIdentifier>{55CBC6C6-DFAA-44CB-9FDE-A6C2DAAA502A}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\SpaceShooter.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{33619322-40F5-4811-B650-653050040B78}</UniqueIdentifier>
+			<UniqueIdentifier>{1246FBF5-F34D-4605-B7CC-ED03E759ECD2}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\SpaceShooter">
-			<UniqueIdentifier>{59B2F1A6-3598-4CC4-ACE0-C10D107A2F57}</UniqueIdentifier>
+			<UniqueIdentifier>{B48F5163-D779-48B2-A838-2858255BDAB5}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\SpaceShooter\BasicEnemy.cpp">
 			<Filter>Source\SpaceShooter</Filter>
@@ -93,6 +93,12 @@
 		<ClInclude Include="..\..\Source\SpaceShooter\SpacyCamera.h">
 			<Filter>Source\SpaceShooter</Filter>
 		</ClInclude >
+		<ClCompile Include="..\..\Source\SpaceShooter\SpreadShotPowerup.cpp">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\SpaceShooter\SpreadShotPowerup.h">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClInclude >
 		<ClCompile Include="..\..\Source\SpaceShooter\WaveyEnemy.cpp">
 			<Filter>Source\SpaceShooter</Filter>
 		</ClCompile >
@@ -100,10 +106,10 @@
 			<Filter>Source\SpaceShooter</Filter>
 		</ClInclude >
 		<Filter Include="Source\SpaceShooter\Resources">
-			<UniqueIdentifier>{F2DD54EA-B6B8-4055-B091-9D18004AB25C}</UniqueIdentifier>
+			<UniqueIdentifier>{CA85C14D-A587-4D00-A76B-4AD1B2885065}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\SpaceShooter\Resources\Windows">
-			<UniqueIdentifier>{B706AA32-1613-4BBB-B2E5-C38FE75287BA}</UniqueIdentifier>
+			<UniqueIdentifier>{263C221C-A42D-4F89-92CE-D4AA697AC095}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.ico">
 			<Filter>Source\SpaceShooter\Resources\Windows</Filter>

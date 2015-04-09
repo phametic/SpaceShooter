@@ -1,5 +1,3 @@
-
-
 #pragma once
 
 #include "GameFramework/Actor.h"
@@ -18,7 +16,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void BeginPlay() override;
 	void Movement(float DeltaTime);
-	ABasicEnemy* basicEnemy;
+	void SetSpeed(float newSpeed);
 protected:
 	GENERATED_UCLASS_BODY()
 	
@@ -37,5 +35,5 @@ protected:
 private:
 	ASpacyCamera* cam;
 	FScriptDelegate Delegate;
-
+	float speed;
 };

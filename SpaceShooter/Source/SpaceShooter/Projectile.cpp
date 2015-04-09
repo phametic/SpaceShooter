@@ -2,7 +2,6 @@
 
 #include "SpaceShooter.h"
 #include "Projectile.h"
-#include "BasicEnemy.h"
 
 AProjectile::AProjectile(const FPostConstructInitializeProperties& ObjectInitializer)
 	: Super(ObjectInitializer)
@@ -20,6 +19,8 @@ AProjectile::AProjectile(const FPostConstructInitializeProperties& ObjectInitial
 	PrimaryActorTick.bCanEverTick = true;
 	ColliderComponent->AttachParent = RootComponent;
 	ColliderComponent->OnComponentBeginOverlap.AddDynamic(this,&AProjectile::Hit);
+
+	speed = 400;
 }
 void AProjectile::Tick(float DeltaTime)
 {
@@ -38,7 +39,7 @@ void AProjectile::BeginPlay()
 }
 void AProjectile::Movement(float DeltaTime)
 {
-	SetActorLocation(FVector(GetActorLocation().X+400*DeltaTime,GetActorLocation().Y,GetActorLocation().Z));
+	SetActorLocation(FVector(GetActorLocation().X+speed*DeltaTime,GetActorLocation().Y,GetActorLocation().Z));
 	if (GetActorLocation().X > (cam->GetActorLocation().X + 550))
 	{
 		Destroy();
@@ -51,5 +52,9 @@ void AProjectile::Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int3
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());
 		TargetActor->Destroy();
 	}
+}
+void AProjectile::SetSpeed(float newSpeed)
+{
+	speed = newSpeed;
 }
 

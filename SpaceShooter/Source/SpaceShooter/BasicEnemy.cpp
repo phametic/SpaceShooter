@@ -68,16 +68,17 @@ void ABasicEnemy::Destroyed()
 {
 	for (TActorIterator<AShip> ActorItr(GetWorld()); ActorItr; ++ActorItr)
 	{
+		world->SpawnActor<ASpreadShotPowerup>(GetActorLocation(), GetActorRotation());
 		ActorItr->ManipulatePlayerScore(10);
 	}
 }
 void ABasicEnemy::ShotCheck(float DeltaTime)
 {
-	shootCounter += DeltaTime*0.5;
-	if (shootCounter >= 1)
-	{
-		projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
-		projectile->SetOwner(projectile->ENEMY);
-		shootCounter = 0;
-	}
+	//shootCounter += DeltaTime*0.5;
+	//if (shootCounter >= 1)
+	//{
+		//projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+		//projectile->SetOwner(projectile->ENEMY);
+		//shootCounter = 0;
+	//}
 }

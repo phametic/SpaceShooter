@@ -3,9 +3,8 @@
 #pragma once
 
 #include "GameFramework/Pawn.h"
-#include "Projectile.h"
 #include "SpacyCamera.h"
-
+#include "Projectile.h"
 
 #include "WaveyEnemy.generated.h"
 
@@ -26,7 +25,7 @@ private:
 
 	void checkOff();
 	void move(float DeltaTime);
-	void getCam(ASpacyCamera*);
+	void getCam(ASpacyCamera* );
 	void ShotCheck(float DeltaTime);
 public:
 	GENERATED_UCLASS_BODY()

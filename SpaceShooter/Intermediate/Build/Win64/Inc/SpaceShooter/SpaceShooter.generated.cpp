@@ -12,6 +12,11 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	{
 	}
 	IMPLEMENT_CLASS(ASpacyCamera, 2530936582);
+	void ASpreadShotPowerup::StaticRegisterNativesASpreadShotPowerup()
+	{
+		FNativeFunctionRegistrar::RegisterFunction(ASpreadShotPowerup::StaticClass(),"Hit",(Native)&ASpreadShotPowerup::execHit);
+	}
+	IMPLEMENT_CLASS(ASpreadShotPowerup, 3265686964);
 	void ABasicEnemy::StaticRegisterNativesABasicEnemy()
 	{
 	}
@@ -41,21 +46,28 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	{
 	}
 	IMPLEMENT_CLASS(ASpaceShooterGameMode, 3405153599);
+	void AWaveyEnemy::StaticRegisterNativesAWaveyEnemy()
+	{
+	}
+	IMPLEMENT_CLASS(AWaveyEnemy, 743005874);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_AActor();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
-	ENGINE_API class UClass* Z_Construct_UClass_APawn();
-	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_UEngineTypes_FHitResult();
 	ENGINE_API class UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_APawn();
 	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpacyCamera_NoRegister();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpacyCamera();
+	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_ASpreadShotPowerup_Hit();
+	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpreadShotPowerup_NoRegister();
+	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpreadShotPowerup();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ABasicEnemy_NoRegister();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ABasicEnemy();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_AGenTick_NoRegister();
@@ -73,6 +85,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpaceHud();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpaceShooterGameMode_NoRegister();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_ASpaceShooterGameMode();
+	SPACESHOOTER_API class UClass* Z_Construct_UClass_AWaveyEnemy_NoRegister();
+	SPACESHOOTER_API class UClass* Z_Construct_UClass_AWaveyEnemy();
 	SPACESHOOTER_API class UPackage* Z_Construct_UPackage_SpaceShooter();
 	UClass* Z_Construct_UClass_ASpacyCamera_NoRegister()
 	{
@@ -108,6 +122,82 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 		return OuterClass;
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ASpacyCamera(Z_Construct_UClass_ASpacyCamera, TEXT("ASpacyCamera"));
+	UFunction* Z_Construct_UFunction_ASpreadShotPowerup_Hit()
+	{
+		struct SpreadShotPowerup_eventHit_Parms
+		{
+			AActor* TargetActor;
+			UPrimitiveComponent* TargetComp;
+			int32 TargetByIndex;
+			bool bFromSweep;
+			FHitResult SweepResult;
+		};
+		UClass* OuterClass=Z_Construct_UClass_ASpreadShotPowerup();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Hit"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x00480401, 65535, sizeof(SpreadShotPowerup_eventHit_Parms));
+			UProperty* NewProp_SweepResult = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SweepResult"), RF_Public|RF_Transient|RF_Native) UStructProperty(CPP_PROPERTY_BASE(SweepResult, SpreadShotPowerup_eventHit_Parms), 0x0000000008000182, Z_Construct_UScriptStruct_UEngineTypes_FHitResult());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bFromSweep, SpreadShotPowerup_eventHit_Parms, bool);
+			UProperty* NewProp_bFromSweep = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bFromSweep"), RF_Public|RF_Transient|RF_Native) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bFromSweep, SpreadShotPowerup_eventHit_Parms), 0x0000000000000080, CPP_BOOL_PROPERTY_BITMASK(bFromSweep, SpreadShotPowerup_eventHit_Parms), sizeof(bool), true);
+			UProperty* NewProp_TargetByIndex = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TargetByIndex"), RF_Public|RF_Transient|RF_Native) UIntProperty(CPP_PROPERTY_BASE(TargetByIndex, SpreadShotPowerup_eventHit_Parms), 0x0000000000000080);
+			UProperty* NewProp_TargetComp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TargetComp"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(TargetComp, SpreadShotPowerup_eventHit_Parms), 0x0000000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_TargetActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TargetActor"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(TargetActor, SpreadShotPowerup_eventHit_Parms), 0x0000000000000080, Z_Construct_UClass_AActor_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("SpreadShotPowerup.h"));
+			MetaData->SetValue(NewProp_SweepResult, TEXT("ModuleRelativePath"), TEXT("SpreadShotPowerup.h"));
+			MetaData->SetValue(NewProp_bFromSweep, TEXT("ModuleRelativePath"), TEXT("SpreadShotPowerup.h"));
+			MetaData->SetValue(NewProp_TargetByIndex, TEXT("ModuleRelativePath"), TEXT("SpreadShotPowerup.h"));
+			MetaData->SetValue(NewProp_TargetComp, TEXT("EditInline"), TEXT("true"));
+			MetaData->SetValue(NewProp_TargetComp, TEXT("ModuleRelativePath"), TEXT("SpreadShotPowerup.h"));
+			MetaData->SetValue(NewProp_TargetActor, TEXT("ModuleRelativePath"), TEXT("SpreadShotPowerup.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_ASpreadShotPowerup_NoRegister()
+	{
+		return ASpreadShotPowerup::StaticClass();
+	}
+	UClass* Z_Construct_UClass_ASpreadShotPowerup()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AActor();
+			Z_Construct_UPackage_SpaceShooter();
+			OuterClass = ASpreadShotPowerup::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_ASpreadShotPowerup_Hit());
+
+				UProperty* NewProp_MeshComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MeshComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(MeshComponent, ASpreadShotPowerup), 0x00000800004a001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				UProperty* NewProp_ColliderComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ColliderComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(ColliderComponent, ASpreadShotPowerup), 0x00000800004a001d, Z_Construct_UClass_USphereComponent_NoRegister());
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_ASpreadShotPowerup_Hit()); // 435998463
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("SpreadShotPowerup.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("SpreadShotPowerup.h"));
+				MetaData->SetValue(NewProp_MeshComponent, TEXT("Category"), TEXT("StaticMesh"));
+				MetaData->SetValue(NewProp_MeshComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_MeshComponent, TEXT("ModuleRelativePath"), TEXT("SpreadShotPowerup.h"));
+				MetaData->SetValue(NewProp_ColliderComponent, TEXT("Category"), TEXT("Collision"));
+				MetaData->SetValue(NewProp_ColliderComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_ColliderComponent, TEXT("ModuleRelativePath"), TEXT("SpreadShotPowerup.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_ASpreadShotPowerup(Z_Construct_UClass_ASpreadShotPowerup, TEXT("ASpreadShotPowerup"));
 	UClass* Z_Construct_UClass_ABasicEnemy_NoRegister()
 	{
 		return ABasicEnemy::StaticClass();
@@ -437,6 +527,41 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 		return OuterClass;
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ASpaceShooterGameMode(Z_Construct_UClass_ASpaceShooterGameMode, TEXT("ASpaceShooterGameMode"));
+	UClass* Z_Construct_UClass_AWaveyEnemy_NoRegister()
+	{
+		return AWaveyEnemy::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AWaveyEnemy()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_APawn();
+			Z_Construct_UPackage_SpaceShooter();
+			OuterClass = AWaveyEnemy::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+
+				UProperty* NewProp_MeshComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MeshComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(MeshComponent, AWaveyEnemy), 0x00000000004a001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("WaveyEnemy.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("WaveyEnemy.h"));
+				MetaData->SetValue(NewProp_MeshComponent, TEXT("Category"), TEXT("StaticMesh"));
+				MetaData->SetValue(NewProp_MeshComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_MeshComponent, TEXT("ModuleRelativePath"), TEXT("WaveyEnemy.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AWaveyEnemy(Z_Construct_UClass_AWaveyEnemy, TEXT("AWaveyEnemy"));
 	UPackage* Z_Construct_UPackage_SpaceShooter()
 	{
 		static UPackage* ReturnPackage = NULL;
@@ -445,8 +570,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/SpaceShooter")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0xB064C746;
-			Guid.B = 0x666B37B2;
+			Guid.A = 0x90F633F9;
+			Guid.B = 0x5B5E9561;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

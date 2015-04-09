@@ -17,6 +17,7 @@ class SPACESHOOTER_API AShip : public APawn
 		virtual void BeginPlay() override;
 
 private:
+	enum SHOTTYPE{NORMAL,SPREAD};
 	FVector position;
 	FVector camPos;
 	FVector velocity;
@@ -31,6 +32,8 @@ private:
 	void Movement(float DeltaTime);
 	void ShotCheck(float DeltaTime);
 public:
+	
+	SHOTTYPE shotType;
 	void Tick(float DeltaTime);
 
 	int32 GetPlayerScore();

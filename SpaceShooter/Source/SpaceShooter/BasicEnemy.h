@@ -3,12 +3,13 @@
 #pragma once
 
 #include "GameFramework/Pawn.h"
-#include "Projectile.h"
 #include "SpacyCamera.h"
+//#include "Projectile.h"
+#include "SpreadShotPowerup.h"
 
 #include "BasicEnemy.generated.h"
 
-
+class Projectile;
 UCLASS()
 class SPACESHOOTER_API ABasicEnemy : public APawn
 {
@@ -19,7 +20,7 @@ private:
 	float speed;
 	float shootCounter;
 	UWorld* world;
-	AProjectile* projectile;
+	//AProjectile* projectile;
 	
 	void checkOff();
 	void move(float DeltaTime);

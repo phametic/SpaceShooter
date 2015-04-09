@@ -8,6 +8,9 @@
 #ifndef SPACESHOOTER_SpacyCamera_generated_h
 	#include "SpacyCamera.h"
 #endif
+#ifndef SPACESHOOTER_SpreadShotPowerup_generated_h
+	#include "SpreadShotPowerup.h"
+#endif
 #ifndef SPACESHOOTER_BasicEnemy_generated_h
 	#include "BasicEnemy.h"
 #endif
@@ -25,4 +28,7 @@
 #endif
 #ifndef SPACESHOOTER_SpaceShooterGameMode_generated_h
 	#include "SpaceShooterGameMode.h"
+#endif
+#ifndef SPACESHOOTER_WaveyEnemy_generated_h
+	#include "WaveyEnemy.h"
 #endif
