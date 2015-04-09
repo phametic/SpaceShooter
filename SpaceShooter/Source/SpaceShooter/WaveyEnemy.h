@@ -6,21 +6,24 @@
 #include "Projectile.h"
 #include "SpacyCamera.h"
 
-#include "BasicEnemy.generated.h"
+
+#include "WaveyEnemy.generated.h"
 
 
 UCLASS()
-class SPACESHOOTER_API ABasicEnemy : public APawn
+class SPACESHOOTER_API AWaveyEnemy : public APawn
 {
 	
 private:
+	enum DIRECTION{UP,DOWN};
+	DIRECTION direction;
 	ASpacyCamera* cam;
 	FVector position;
-	float speed;
+	float speedX,speedZ;
 	float shootCounter;
 	UWorld* world;
 	AProjectile* projectile;
-	
+
 	void checkOff();
 	void move(float DeltaTime);
 	void getCam(ASpacyCamera*);
@@ -39,9 +42,6 @@ public:
 	// Called to bind functionality to input
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
-	//on ship destroyed
-	virtual void Destroyed();
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMesh)
 		TSubobjectPtr<UStaticMeshComponent> MeshComponent;
 

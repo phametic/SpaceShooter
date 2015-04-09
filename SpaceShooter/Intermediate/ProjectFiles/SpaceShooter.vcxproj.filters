@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\SpaceShooter.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{655ED2E4-5374-4F72-8DA2-0C096C7938BE}</UniqueIdentifier>
+			<UniqueIdentifier>{0BDB4675-0933-4847-8F2C-01E330B97360}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\SpaceShooter.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{66647CBF-8682-4A67-8340-ED854F75E154}</UniqueIdentifier>
+			<UniqueIdentifier>{33619322-40F5-4811-B650-653050040B78}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\SpaceShooter">
-			<UniqueIdentifier>{3C214CA9-BEB1-4D3D-AA33-A1E50FFAE69C}</UniqueIdentifier>
+			<UniqueIdentifier>{59B2F1A6-3598-4CC4-ACE0-C10D107A2F57}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\SpaceShooter\BasicEnemy.cpp">
 			<Filter>Source\SpaceShooter</Filter>
@@ -93,11 +93,17 @@
 		<ClInclude Include="..\..\Source\SpaceShooter\SpacyCamera.h">
 			<Filter>Source\SpaceShooter</Filter>
 		</ClInclude >
+		<ClCompile Include="..\..\Source\SpaceShooter\WaveyEnemy.cpp">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\SpaceShooter\WaveyEnemy.h">
+			<Filter>Source\SpaceShooter</Filter>
+		</ClInclude >
 		<Filter Include="Source\SpaceShooter\Resources">
-			<UniqueIdentifier>{E7D80DB6-21AA-41EA-826A-7592A5451EA8}</UniqueIdentifier>
+			<UniqueIdentifier>{F2DD54EA-B6B8-4055-B091-9D18004AB25C}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\SpaceShooter\Resources\Windows">
-			<UniqueIdentifier>{537ED943-A367-41D3-BCC1-92A56278D0CB}</UniqueIdentifier>
+			<UniqueIdentifier>{B706AA32-1613-4BBB-B2E5-C38FE75287BA}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.ico">
 			<Filter>Source\SpaceShooter\Resources\Windows</Filter>
