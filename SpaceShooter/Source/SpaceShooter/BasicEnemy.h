@@ -17,7 +17,8 @@ private:
 	ASpacyCamera* cam;
 	FVector position;
 	float speed;
-
+	void checkOff();
+	void move(float DeltaTime);
 	void getCam(ASpacyCamera*);
 public:
 	GENERATED_UCLASS_BODY()
@@ -33,6 +34,9 @@ public:
 	// Called to bind functionality to input
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
+	//on ship destroyed
+	virtual void Destroyed();
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMesh)
 		TSubobjectPtr<UStaticMeshComponent> MeshComponent;
 

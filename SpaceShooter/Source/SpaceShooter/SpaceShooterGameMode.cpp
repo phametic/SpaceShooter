@@ -2,7 +2,6 @@
 
 #include "SpaceShooter.h"
 #include "SpaceShooterGameMode.h"
-#include "Ship.h"
 #include "BasicEnemy.h"
 #include "SpaceHud.h"
 
@@ -11,11 +10,10 @@ ASpaceShooterGameMode::ASpaceShooterGameMode(const class FPostConstructInitializ
 {
 	DefaultPawnClass = AShip::StaticClass();
 	HUDClass = ASpaceHud::StaticClass();
-
 	UWorld* const World = GetWorld();
 	if (World)
 	{
-		World->SpawnActor<ABasicEnemy>(ABasicEnemy::StaticClass());
+		World->SpawnActor<AGenTick>(AGenTick::StaticClass());
 	}
 }
 

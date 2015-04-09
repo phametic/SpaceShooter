@@ -16,6 +16,13 @@
 #define AShip_RPC_WRAPPERS \
  \
  \
+	DECLARE_FUNCTION(execOnFireReleased) \
+	{ \
+		P_FINISH; \
+		this->OnFireReleased(); \
+	} \
+ \
+ \
 	DECLARE_FUNCTION(execOnFirePressed) \
 	{ \
 		P_FINISH; \
@@ -42,6 +49,13 @@
 #define AShip_RPC_WRAPPERS_NO_PURE_DECLS \
 	static inline void StaticChecks_Implementation_Validate() \
 	{ \
+	} \
+ \
+ \
+	DECLARE_FUNCTION(execOnFireReleased) \
+	{ \
+		P_FINISH; \
+		this->OnFireReleased(); \
 	} \
  \
  \

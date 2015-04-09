@@ -20,4 +20,5 @@ class SPACESHOOTER_API ASpacyCamera : public AActor
 public:
 	ASpacyCamera* returnSelf() { return this; }
 private:
+	void Movement(float DeltaTime);
 };
