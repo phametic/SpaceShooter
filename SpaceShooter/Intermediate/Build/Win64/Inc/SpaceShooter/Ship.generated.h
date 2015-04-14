@@ -12,6 +12,9 @@
 #endif
 #define SPACESHOOTER_Ship_generated_h
 
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 #define AShip_EVENTPARMS
 #define AShip_RPC_WRAPPERS \
  \
@@ -43,6 +46,18 @@
 		P_GET_PROPERTY(UFloatProperty,value); \
 		P_FINISH; \
 		this->MoveUpDown(value); \
+	} \
+ \
+ \
+	DECLARE_FUNCTION(execHit) \
+	{ \
+		P_GET_OBJECT(AActor,TargetActor); \
+		P_GET_OBJECT(UPrimitiveComponent,TargetComp); \
+		P_GET_PROPERTY(UIntProperty,TargetByIndex); \
+		P_GET_UBOOL(bFromSweep); \
+		P_GET_STRUCT_REF(FHitResult,Out_SweepResult); \
+		P_FINISH; \
+		this->Hit(TargetActor,TargetComp,TargetByIndex,bFromSweep,Out_SweepResult); \
 	}
 
 
@@ -79,6 +94,18 @@
 		P_GET_PROPERTY(UFloatProperty,value); \
 		P_FINISH; \
 		this->MoveUpDown(value); \
+	} \
+ \
+ \
+	DECLARE_FUNCTION(execHit) \
+	{ \
+		P_GET_OBJECT(AActor,TargetActor); \
+		P_GET_OBJECT(UPrimitiveComponent,TargetComp); \
+		P_GET_PROPERTY(UIntProperty,TargetByIndex); \
+		P_GET_UBOOL(bFromSweep); \
+		P_GET_STRUCT_REF(FHitResult,Out_SweepResult); \
+		P_FINISH; \
+		this->Hit(TargetActor,TargetComp,TargetByIndex,bFromSweep,Out_SweepResult); \
 	}
 
 

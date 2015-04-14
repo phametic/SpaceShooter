@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\SpaceShooter.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{BAB90A94-4FEA-4E1D-8698-46FB4052334C}</UniqueIdentifier>
+			<UniqueIdentifier>{39BEE6FD-6FB6-443D-BCF2-A9DE1AD946AD}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\SpaceShooter.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{CF258E83-AF4D-45F0-B4B5-707B92128EAB}</UniqueIdentifier>
+			<UniqueIdentifier>{C5E0D6A0-4141-46E5-88B5-F7CDEB8349F4}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,7 +28,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\SpaceShooter">
-			<UniqueIdentifier>{512DF60E-82F4-4A3F-A52A-8A1F43CE9657}</UniqueIdentifier>
+			<UniqueIdentifier>{F51EAA5E-524E-401C-8537-E68DE81F16E8}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\SpaceShooter\BasicEnemy.cpp">
 			<Filter>Source\SpaceShooter</Filter>
@@ -106,10 +106,10 @@
 			<Filter>Source\SpaceShooter</Filter>
 		</ClInclude >
 		<Filter Include="Source\SpaceShooter\Resources">
-			<UniqueIdentifier>{E8EDF523-77AF-4AB8-94EB-8DB3C46B92D6}</UniqueIdentifier>
+			<UniqueIdentifier>{AE3D920E-B2AD-4485-9912-0F08B0C75E60}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\SpaceShooter\Resources\Windows">
-			<UniqueIdentifier>{A1CF2AF9-18E4-4504-A0AA-99D8702ADA98}</UniqueIdentifier>
+			<UniqueIdentifier>{1BD74EC7-0400-46BE-A2AE-B143BF9E3106}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\SpaceShooter\Resources\Windows\SpaceShooter.ico">
 			<Filter>Source\SpaceShooter\Resources\Windows</Filter>

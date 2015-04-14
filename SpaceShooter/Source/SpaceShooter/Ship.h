@@ -4,6 +4,7 @@
 #include "GameFramework/FloatingPawnMovement.h"
 #include "Projectile.h"
 #include "SpacyCamera.h"
+#include "BasicEnemy.h"
 #include "Ship.generated.h"
 
 /**
@@ -45,9 +46,16 @@ public:
 	int32 GetPlayerLives();
 	void SetPlayerLives(int32 lives);
 	void ManipulatePlayerLives(int32 lives);
+	
+	UFUNCTION()
+	void Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int32 TargetByIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
+	
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = Collision)
+		TSubobjectPtr<USphereComponent> ColliderComponent;
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMesh)
 	TSubobjectPtr<UStaticMeshComponent> MeshComponent;
 	

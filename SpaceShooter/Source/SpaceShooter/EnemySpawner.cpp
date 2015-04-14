@@ -19,7 +19,15 @@ void EnemySpawner::Tick(float DeltaTime)
 	CountDownTimer -= DeltaTime;
 	if (CountDownTimer <= 0)
 	{
-		world->SpawnActor<ABasicEnemy>(ABasicEnemy::StaticClass());
+		float EnemyChooser = FMath::RandRange(0.0, 1.0);
+		if (EnemyChooser < 0.5)
+		{
+			world->SpawnActor<ABasicEnemy>(ABasicEnemy::StaticClass());
+		}
+		else
+		{
+			world->SpawnActor<AWaveyEnemy>(AWaveyEnemy::StaticClass());
+		}
 		RandomTime();
 	}
 }

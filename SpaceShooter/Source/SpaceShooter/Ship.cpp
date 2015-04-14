@@ -6,12 +6,16 @@
 AShip::AShip(const class FPostConstructInitializeProperties& PCIP)
 	: Super(PCIP)
 {
+	ColliderComponent = PCIP.CreateDefaultSubobject<USphereComponent>(this, TEXT("ColliderComponent"));
+	ColliderComponent->SetSphereRadius(2.5f);
+	
 	MeshComponent = PCIP.CreateDefaultSubobject<UStaticMeshComponent>(this, TEXT("Mesh"));
 	const ConstructorHelpers::FObjectFinder<UStaticMesh> MeshObj(TEXT("StaticMesh'/Game/ExampleContent/Input_Examples/Meshes/SM_Pixel_Player.SM_Pixel_Player'"));
 	MeshComponent->SetStaticMesh(MeshObj.Object);
 	RootComponent = MeshComponent;
 	
-	//ProjectileClass = PCIP.CreateDefaultSubobject<AProjectile>(this, TEXT("Projectile Class"));
+	ColliderComponent->AttachParent = RootComponent;
+	ColliderComponent->OnComponentBeginOverlap.AddDynamic(this,&AShip::Hit);
 
 	speed = 300.0;
 }
@@ -177,5 +181,18 @@ void AShip::ShotCheck(float DeltaTime)
 			break;
 		}
 		shootCounter = 0;
+	}
+}
+void AShip::Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int32 TargetByIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (TargetActor != nullptr && TargetActor != this && TargetComp != nullptr && (TargetActor->GetName().Contains("Enemy", ESearchCase::IgnoreCase, ESearchDir::FromStart) == true))
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());
+		//TargetActor->Destroy();
+		SetActorLocation(FVector(100000,100000,100000));
+		position.X = 0;
+		position.Y = -400;
+		position.Z = 0;
+		cam->SetActorLocation(FVector(-3440.0, 260.0, 190.0));
 	}
 }
