@@ -67,14 +67,13 @@ void AShip::MoveLeftRight(float value)
 
 void AShip::OnFirePressed()
 {
-	GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Black, FString::Printf(TEXT("SHOOT PRESSED")));
+	
 	//GetWorld()->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
 	shootHeld = true;
 }
 
 void AShip::OnFireReleased()
 {
-	GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Black, FString::Printf(TEXT("SHOOT RELEASED")));
 	shootHeld = false;
 }
 
