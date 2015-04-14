@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/Dan
 ﻿Build started 4/14/2015 12:15:22 PM.
      1>Project "C:\Users\sctcad\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
      1>Build:
@@ -9,6 +12,7 @@
 Build succeeded.
 
 Time Elapsed 00:00:04.62
+<<<<<<< HEAD
 =======
 ﻿Build started 4/14/2015 12:48:18 PM.
      1>Project "C:\Users\npham\Downloads\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
@@ -35,4 +39,6 @@ Time Elapsed 00:00:04.62
 Build succeeded.
 
 Time Elapsed 00:00:08.40
+>>>>>>> origin/Dan
+=======
 >>>>>>> origin/Dan
