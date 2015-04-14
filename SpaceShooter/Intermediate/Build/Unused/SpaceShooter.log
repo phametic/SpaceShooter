@@ -1,23 +1,25 @@
-﻿Build started 4/14/2015 11:50:49 AM.
-     1>Project "C:\Users\sctcad\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
+﻿Build started 4/14/2015 12:48:18 PM.
+     1>Project "C:\Users\npham\Downloads\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
      1>Build:
-         "C:\Program Files\Unreal Engine\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\sctcad\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
+         "C:\Program Files\Unreal Engine\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\npham\Downloads\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
          Performing 2 actions (4 in parallel)
-         Projectile.cpp
-     1>c:\users\sctcad\desktop\spaceshooter\spaceshooter\spaceshooter\source\spaceshooter\SpacyCamera.h(17): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
-     1>c:\users\sctcad\desktop\spaceshooter\spaceshooter\spaceshooter\source\spaceshooter\SpreadShotPowerup.h(29): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
-     1>c:\users\sctcad\desktop\spaceshooter\spaceshooter\spaceshooter\source\spaceshooter\SpreadShotPowerup.h(32): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
-     1>c:\users\sctcad\desktop\spaceshooter\spaceshooter\spaceshooter\source\spaceshooter\BasicEnemy.h(47): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
-     1>c:\users\sctcad\desktop\spaceshooter\spaceshooter\spaceshooter\source\spaceshooter\Projectile.h(24): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
-     1>c:\users\sctcad\desktop\spaceshooter\spaceshooter\spaceshooter\source\spaceshooter\Projectile.h(30): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
-     1>C:\Users\sctcad\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Source\SpaceShooter\Projectile.cpp(6): warning C4996: FPostConstructInitializeProperties is deprecated and was renamed to FObjectInitializer. Please use that type instead.
+         SpaceUIWidget.cpp
+     1>C:\Program Files\Unreal Engine\4.7\Engine\Source\Runtime\Slate\Public\Slate.h(5): warning C4996: including Slate.h is deprecated. Please include SlateBasics.h and then individual widget headers instead.
+     1>c:\users\npham\downloads\spaceshooter\spaceshooter\source\spaceshooter\SpacyCamera.h(17): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
+     1>c:\users\npham\downloads\spaceshooter\spaceshooter\source\spaceshooter\SpreadShotPowerup.h(29): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
+     1>c:\users\npham\downloads\spaceshooter\spaceshooter\source\spaceshooter\SpreadShotPowerup.h(32): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
+     1>c:\users\npham\downloads\spaceshooter\spaceshooter\source\spaceshooter\BasicEnemy.h(47): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
+     1>c:\users\npham\downloads\spaceshooter\spaceshooter\source\spaceshooter\Projectile.h(24): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
+     1>c:\users\npham\downloads\spaceshooter\spaceshooter\source\spaceshooter\Projectile.h(30): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
+     1>c:\users\npham\downloads\spaceshooter\spaceshooter\source\spaceshooter\Ship.h(57): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
+     1>c:\users\npham\downloads\spaceshooter\spaceshooter\source\spaceshooter\Ship.h(60): warning C4996: TSubobjectPtr is deprecated and should no longer be used. Please use pointers instead.
          [2/2] Link UE4Editor-SpaceShooter-Win64-DebugGame.dll
-            Creating library C:\Users\sctcad\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.lib and object C:\Users\sctcad\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.exp
+            Creating library C:\Users\npham\Downloads\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.lib and object C:\Users\npham\Downloads\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.exp
          -------- End Detailed Actions Stats -----------------------------------------------------------
-         Cumulative action seconds (8 processors): 0.00 building projects, 7.14 compiling, 0.00 creating app bundles, 0.00 generating debug info, 1.28 linking, 0.00 other
-         UBT execution time: 13.89 seconds
-     1>Done Building Project "C:\Users\sctcad\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
+         Cumulative action seconds (8 processors): 0.00 building projects, 3.00 compiling, 0.00 creating app bundles, 0.00 generating debug info, 0.67 linking, 0.00 other
+         UBT execution time: 8.23 seconds
+     1>Done Building Project "C:\Users\npham\Downloads\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:14.70
+Time Elapsed 00:00:08.40
