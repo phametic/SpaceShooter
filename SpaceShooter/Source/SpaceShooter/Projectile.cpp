@@ -52,6 +52,7 @@ void AProjectile::Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int3
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());
 		TargetActor->Destroy();
+		this->Destroy();
 	}
 }
 void AProjectile::SetSpeed(float newSpeedX, float newSpeedZ)
