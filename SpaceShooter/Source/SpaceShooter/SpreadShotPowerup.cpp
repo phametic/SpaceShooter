@@ -45,7 +45,7 @@ void ASpreadShotPowerup::Hit(AActor* TargetActor, UPrimitiveComponent* TargetCom
 		for (TActorIterator<AShip> ActorItr(GetWorld()); ActorItr; ++ActorItr)
 		{
 			ship = *ActorItr;
-
+			ship->shotType = ship->SPREAD;
 		}
 		this->Destroy();
 	}

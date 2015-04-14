@@ -158,18 +158,24 @@ void AShip::ShotCheck(float DeltaTime)
 	shootCounter += DeltaTime*4;
 	if (shootHeld && shootCounter >= 1)
 	{
-		//world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
-		projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
-		projectile->SetSpeed(400, 0);
-		GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Black, FString::Printf(TEXT("PROJECTILE 1")));
-
-		projectile2 = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
-		projectile2->SetSpeed(400, 100);
-		GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Black, FString::Printf(TEXT("PROJECTILE 2")));
-
-		projectile3 = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
-		projectile3->SetSpeed(400, -100);
-		GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Black, FString::Printf(TEXT("PROJECTILE 3")));
+		switch (shotType)
+		{
+		case NORMAL:
+			projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+			projectile->SetSpeed(400, 0);
+			GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Black, FString::Printf(TEXT("PROJECTILE 1")));
+			break;
+		case SPREAD:
+			projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+			projectile->SetSpeed(400, 0);
+			
+			projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+			projectile->SetSpeed(400, 100);
+			
+			projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
+			projectile->SetSpeed(400, -100);
+			break;
+		}
 		shootCounter = 0;
 	}
 }

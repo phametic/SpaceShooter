@@ -21,7 +21,7 @@ AProjectile::AProjectile(const FPostConstructInitializeProperties& ObjectInitial
 	ColliderComponent->OnComponentBeginOverlap.AddDynamic(this,&AProjectile::Hit);
 
 	speedX = 400;
-	speedY = 0;
+	speedZ = 0;
 }
 void AProjectile::Tick(float DeltaTime)
 {
@@ -40,7 +40,7 @@ void AProjectile::BeginPlay()
 }
 void AProjectile::Movement(float DeltaTime)
 {
-	SetActorLocation(FVector(GetActorLocation().X+speedX*DeltaTime,GetActorLocation().Y,GetActorLocation().Z));
+	SetActorLocation(FVector(GetActorLocation().X+speedX*DeltaTime,GetActorLocation().Y,GetActorLocation().Z+speedZ*DeltaTime));
 	if (GetActorLocation().X > (cam->GetActorLocation().X + 550))
 	{
 		Destroy();
@@ -54,9 +54,9 @@ void AProjectile::Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int3
 		TargetActor->Destroy();
 	}
 }
-void AProjectile::SetSpeed(float newSpeedX, float newSpeedY)
+void AProjectile::SetSpeed(float newSpeedX, float newSpeedZ)
 {
 	speedX = newSpeedX;
-	speedY = newSpeedY;
+	speedZ = newSpeedZ;
 }
 
