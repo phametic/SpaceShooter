@@ -2,7 +2,7 @@
 
 #include "SpaceShooter.h"
 #include "SpreadShotPowerup.h"
-
+#include "Ship.h"
 // Sets default values
 ASpreadShotPowerup::ASpreadShotPowerup(const FPostConstructInitializeProperties& ObjectInitializer)
 	: Super(ObjectInitializer)
@@ -42,10 +42,11 @@ void ASpreadShotPowerup::Hit(AActor* TargetActor, UPrimitiveComponent* TargetCom
 	if (TargetActor != nullptr && TargetActor != this && TargetComp != nullptr && (TargetActor->GetName().Contains("Ship", ESearchCase::IgnoreCase, ESearchDir::FromStart) == true))
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());
-		//for (TActorIterator<AShip> ActorItr(GetWorld()); ActorItr; ++ActorItr)
-		//{
-			//ship = ActorItr->returnSelf();
-		//}
+		for (TActorIterator<AShip> ActorItr(GetWorld()); ActorItr; ++ActorItr)
+		{
+			ship = *ActorItr;
+
+		}
 		this->Destroy();
 	}
 }

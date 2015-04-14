@@ -6,6 +6,7 @@
 #include "SpreadShotPowerup.generated.h"
 
 class AShip;
+
 UCLASS()
 class SPACESHOOTER_API ASpreadShotPowerup : public AActor
 {

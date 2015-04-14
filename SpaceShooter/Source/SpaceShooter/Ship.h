@@ -23,6 +23,9 @@ private:
 	FVector velocity;
 	float speed;
 	ASpacyCamera* cam;
+	AProjectile* projectile;
+	AProjectile* projectile2;
+	AProjectile* projectile3;
 	bool shootHeld;
 	UWorld* world;
 	float shootCounter;

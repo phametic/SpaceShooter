@@ -16,7 +16,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void BeginPlay() override;
 	void Movement(float DeltaTime);
-	void SetSpeed(float newSpeed);
+	void SetSpeed(float newSpeedX, float newSpeedY);
 protected:
 	GENERATED_UCLASS_BODY()
 	
@@ -35,5 +35,5 @@ protected:
 private:
 	ASpacyCamera* cam;
 	FScriptDelegate Delegate;
-	float speed;
+	float speedX, speedY;
 };
