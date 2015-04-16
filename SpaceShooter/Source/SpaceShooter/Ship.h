@@ -2,6 +2,7 @@
 
 #include "GameFramework/Character.h"
 #include "GameFramework/FloatingPawnMovement.h"
+#include <SoundDefinitions.h>
 #include "Projectile.h"
 #include "SpacyCamera.h"
 #include "BasicEnemy.h"
@@ -53,14 +54,17 @@ public:
 protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sounds)
+		TSubobjectPtr<UAudioComponent> ExplosionSound;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sounds)
+		TSubobjectPtr<UAudioComponent> LaserSound;
+
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = Collision)
 		TSubobjectPtr<USphereComponent> ColliderComponent;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMesh)
-	TSubobjectPtr<UStaticMeshComponent> MeshComponent;
-	
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Projectiles)
-	//TSubobjectPtr<AProjectile> ProjectileClass;
+		TSubobjectPtr<UStaticMeshComponent> MeshComponent;
 	
 	//Up & Down movement
 	UFUNCTION()

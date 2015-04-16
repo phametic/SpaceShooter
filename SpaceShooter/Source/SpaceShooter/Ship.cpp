@@ -17,6 +17,17 @@ AShip::AShip(const class FPostConstructInitializeProperties& PCIP)
 	ColliderComponent->AttachParent = RootComponent;
 	ColliderComponent->OnComponentBeginOverlap.AddDynamic(this,&AShip::Hit);
 
+	ExplosionSound = PCIP.CreateDefaultSubobject<UAudioComponent>(this, TEXT("Explosion"));
+	const ConstructorHelpers::FObjectFinder<USoundCue> ExplSound(TEXT("SoundCue'/Game/sounds/ExplodeSound.ExplodeSound'"));
+	ExplosionSound->Sound = ExplSound.Object;
+	ExplosionSound->AttachParent = RootComponent;
+	ExplosionSound->bAutoActivate = false;
+
+	LaserSound = PCIP.CreateDefaultSubobject<UAudioComponent>(this, TEXT("Laser1"));
+	const ConstructorHelpers::FObjectFinder<USoundCue> LzrSound(TEXT("SoundCue'/Game/sounds/LaserSound.LaserSound'"));
+	LaserSound->Sound = LzrSound.Object;
+	LaserSound->AttachParent = RootComponent;
+	LaserSound->bAutoActivate = false;
 	speed = 300.0;
 }
 
@@ -98,8 +109,10 @@ void AShip::Tick(float DeltaTime)
 	}
 	*/
 	shootCounter += DeltaTime*4;
-	if (shootHeld && shootCounter >= 1)
+	if (!LaserSound->IsPlaying())
 	{
+		LaserSound->SetWorldLocation(FVector(position.X + camPos.X, position.Y + camPos.Y, position.Z + camPos.Z));
+		LaserSound->Play(0.0f);
 		world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
 		shootCounter = 0;
 	}
@@ -159,7 +172,7 @@ void AShip::ManipulatePlayerLives(int32 lives)
 void AShip::ShotCheck(float DeltaTime)
 {
 	shootCounter += DeltaTime*4;
-	if (shootHeld && shootCounter >= 1)
+	if (!LaserSound->IsPlaying())
 	{
 		switch (shotType)
 		{
@@ -188,6 +201,7 @@ void AShip::Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int32 Targ
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());
 		//TargetActor->Destroy();
+		ExplosionSound->Play();
 		SetActorLocation(FVector(100000,100000,100000));
 		position.X = 0;
 		position.Y = -400;
