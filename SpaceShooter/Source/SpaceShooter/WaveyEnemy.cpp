@@ -5,7 +5,7 @@
 
 
 // Sets default values
-AWaveyEnemy::AWaveyEnemy(const class FPostConstructInitializeProperties& PCIP) : Super(PCIP)
+AWaveyEnemy::AWaveyEnemy(const class FObjectInitializer& PCIP) : Super(PCIP)
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;

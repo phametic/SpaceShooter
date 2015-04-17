@@ -26,10 +26,10 @@ public:
 	virtual void Tick( float DeltaSeconds ) override;
 protected:
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = Collision)
-		TSubobjectPtr<USphereComponent> ColliderComponent;
+		USphereComponent* ColliderComponent;
 
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = StaticMesh)
-		TSubobjectPtr<UStaticMeshComponent> MeshComponent;
+		UStaticMeshComponent* MeshComponent;
 	
 	UFUNCTION()
 		void Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int32 TargetByIndex, bool bFromSweep, const FHitResult& SweepResult);

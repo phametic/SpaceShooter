@@ -55,16 +55,16 @@ protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sounds)
-		TSubobjectPtr<UAudioComponent> ExplosionSound;
+		UAudioComponent* ExplosionSound;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sounds)
-		TSubobjectPtr<UAudioComponent> LaserSound;
+		UAudioComponent* LaserSound;
 
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = Collision)
-		TSubobjectPtr<USphereComponent> ColliderComponent;
+		USphereComponent* ColliderComponent;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMesh)
-		TSubobjectPtr<UStaticMeshComponent> MeshComponent;
+		UStaticMeshComponent* MeshComponent;
 	
 	//Up & Down movement
 	UFUNCTION()

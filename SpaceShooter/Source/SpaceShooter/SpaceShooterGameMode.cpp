@@ -5,7 +5,7 @@
 #include "BasicEnemy.h"
 #include "SpaceHud.h"
 
-ASpaceShooterGameMode::ASpaceShooterGameMode(const class FPostConstructInitializeProperties& PCIP)
+ASpaceShooterGameMode::ASpaceShooterGameMode(const class FObjectInitializer& PCIP)
 	: Super(PCIP)
 {
 	DefaultPawnClass = AShip::StaticClass();

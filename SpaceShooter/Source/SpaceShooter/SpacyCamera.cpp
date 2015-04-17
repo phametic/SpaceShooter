@@ -4,7 +4,7 @@
 #include "SpacyCamera.h"
 
 
-ASpacyCamera::ASpacyCamera(const class FPostConstructInitializeProperties& PCIP)
+ASpacyCamera::ASpacyCamera(const class FObjectInitializer& PCIP)
 	: Super(PCIP)
 {
 	PrimaryActorTick.bCanEverTick = true;

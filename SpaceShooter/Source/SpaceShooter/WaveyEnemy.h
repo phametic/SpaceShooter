@@ -42,7 +42,7 @@ public:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMesh)
-		TSubobjectPtr<UStaticMeshComponent> MeshComponent;
+		UStaticMeshComponent* MeshComponent;
 
 	
 	

@@ -4,7 +4,7 @@
 #include "SpreadShotPowerup.h"
 #include "Ship.h"
 // Sets default values
-ASpreadShotPowerup::ASpreadShotPowerup(const FPostConstructInitializeProperties& ObjectInitializer)
+ASpreadShotPowerup::ASpreadShotPowerup(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.

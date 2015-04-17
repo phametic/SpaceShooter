@@ -5,7 +5,7 @@
 #include "Ship.h"
 
 // Sets default values
-ABasicEnemy::ABasicEnemy(const class FPostConstructInitializeProperties& PCIP) : Super(PCIP)
+ABasicEnemy::ABasicEnemy(const class FObjectInitializer& PCIP) : Super(PCIP)
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;

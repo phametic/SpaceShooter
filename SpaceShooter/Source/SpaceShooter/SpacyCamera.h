@@ -14,7 +14,7 @@ class SPACESHOOTER_API ASpacyCamera : public AActor
 	GENERATED_UCLASS_BODY()
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = CameraActor)
-	TSubobjectPtr<class UCameraComponent> CameraComponent;
+		UCameraComponent* CameraComponent;
 
 	void Tick(float DeltaTime) override;
 public:

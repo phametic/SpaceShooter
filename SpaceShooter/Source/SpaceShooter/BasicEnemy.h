@@ -44,7 +44,7 @@ public:
 	virtual void Destroyed();
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMesh)
-		TSubobjectPtr<UStaticMeshComponent> MeshComponent;
+		UStaticMeshComponent* MeshComponent;
 
 	
 	

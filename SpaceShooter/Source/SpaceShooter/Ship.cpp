@@ -3,7 +3,7 @@
 #include "SpaceShooter.h"
 #include "Ship.h"
 
-AShip::AShip(const class FPostConstructInitializeProperties& PCIP)
+AShip::AShip(const class FObjectInitializer& PCIP)
 	: Super(PCIP)
 {
 	ColliderComponent = PCIP.CreateDefaultSubobject<USphereComponent>(this, TEXT("ColliderComponent"));
