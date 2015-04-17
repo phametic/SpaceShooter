@@ -1,10 +1,16 @@
-﻿Build started 4/16/2015 9:48:15 PM.
-     1>Project "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
+﻿Build started 17/04/2015 12:21:22 AM.
+     1>Project "C:\Users\Rob\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
      1>Build:
-         "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 Development "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
-         Target is up to date.
-     1>Done Building Project "C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
+         "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\Rob\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
+         Performing 2 actions (4 in parallel)
+         Ship.cpp
+         [2/2] Link UE4Editor-SpaceShooter-Win64-DebugGame.dll
+            Creating library C:\Users\Rob\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.lib and object C:\Users\Rob\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Intermediate\Build\Win64\SpaceShooterEditor\DebugGame\UE4Editor-SpaceShooter-Win64-DebugGame.exp
+         -------- End Detailed Actions Stats -----------------------------------------------------------
+         Cumulative action seconds (4 processors): 0.00 building projects, 0.86 compiling, 0.00 creating app bundles, 0.00 generating debug info, 0.56 linking, 0.00 other
+         UBT execution time: 4.90 seconds
+     1>Done Building Project "C:\Users\Rob\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.89
+Time Elapsed 00:00:05.04

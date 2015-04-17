@@ -353,9 +353,10 @@ C:\Program Files\Epic Games\4.7\Engine\Plugins\ScriptGeneratorPlugin\Source\Scri
 C:\Program Files\Epic Games\4.7\Engine\Plugins\ScriptPlugin\Source\ScriptEditorPlugin\ScriptEditorPlugin.Build.cs
 C:\Program Files\Epic Games\4.7\Engine\Plugins\ScriptPlugin\Source\ScriptPlugin\ScriptPlugin.Build.cs
 C:\Program Files\Epic Games\4.7\Engine\Plugins\Slate\SlateRemote\Source\SlateRemote\SlateRemote.Build.cs
-C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Source\SpaceShooter\SpaceShooter.Build.cs
-C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Source\SpaceShooter.Target.cs
-C:\Users\CloudWindfoot\Documents\GitHub\SpaceShooter\SpaceShooter\Source\SpaceShooterEditor.Target.cs
+C:\Users\Rob\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Source\SpaceShooter\SpaceShooter.Build.cs
+C:\Users\Rob\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Source\SpaceShooter.Target.cs
+C:\Users\Rob\Desktop\Spaceshooter\SpaceShooter\SpaceShooter\Source\SpaceShooterEditor.Target.cs
+Editor.Target.cs
 rogram Files\Unreal Engine\4.7\Engine\Plugins\Runtime\WindowsDeviceProfileSelector\Source\WindowsDeviceProfileSelector\WindowsDeviceProfileSelector.Build.cs
 C:\Program Files\Unreal Engine\4.7\Engine\Plugins\Runtime\WindowsMoviePlayer\Source\WindowsMoviePlayer\WindowsMoviePlayer.Build.cs
 C:\Program Files\Unreal Engine\4.7\Engine\Plugins\ScriptGeneratorPlugin\Source\ScriptGeneratorPlugin\ScriptGeneratorPlugin.Build.cs

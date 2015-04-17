@@ -65,7 +65,10 @@ protected:
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = StaticMesh)
 		UStaticMeshComponent* MeshComponent;
-	
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Particles)
+		UParticleSystemComponent* ParticleExhaust;
+
 	//Up & Down movement
 	UFUNCTION()
 		void MoveUpDown(float value);

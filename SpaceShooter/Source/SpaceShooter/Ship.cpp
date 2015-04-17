@@ -28,6 +28,13 @@ AShip::AShip(const class FObjectInitializer& PCIP)
 	LaserSound->Sound = LzrSound.Object;
 	LaserSound->AttachParent = RootComponent;
 	LaserSound->bAutoActivate = false;
+
+	ParticleExhaust = PCIP.CreateDefaultSubobject<UParticleSystemComponent>(this, TEXT("ParticleExhaust"));
+	ParticleExhaust->AttachParent = RootComponent;
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> pParticleSystem(TEXT("ParticleSystem'/Game/ExampleContent/Input_Examples/Meshes/P_ShipExhaust.P_ShipExhaust'"));
+	ParticleExhaust->SetTemplate(pParticleSystem.Object);
+	ParticleExhaust->bAutoDestroy = false;
+
 	speed = 300.0;
 }
 

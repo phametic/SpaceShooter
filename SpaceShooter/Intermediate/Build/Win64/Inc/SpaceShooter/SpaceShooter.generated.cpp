@@ -38,7 +38,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"OnFirePressed",(Native)&AShip::execOnFirePressed);
 		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"OnFireReleased",(Native)&AShip::execOnFireReleased);
 	}
-	IMPLEMENT_CLASS(AShip, 703214323);
+	IMPLEMENT_CLASS(AShip, 1141492228);
 	void ASpaceHud::StaticRegisterNativesASpaceHud()
 	{
 	}
@@ -62,6 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_APawn();
 	ENGINE_API class UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UParticleSystemComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AHUD();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
 
@@ -484,6 +485,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 				OuterClass->LinkChild(Z_Construct_UFunction_AShip_OnFirePressed());
 				OuterClass->LinkChild(Z_Construct_UFunction_AShip_OnFireReleased());
 
+				UProperty* NewProp_ParticleExhaust = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ParticleExhaust"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(ParticleExhaust, AShip), 0x00000800000a001d, Z_Construct_UClass_UParticleSystemComponent_NoRegister());
 				UProperty* NewProp_MeshComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MeshComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(MeshComponent, AShip), 0x00000800000a001d, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 				UProperty* NewProp_ColliderComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ColliderComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(ColliderComponent, AShip), 0x00000800000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
 				UProperty* NewProp_LaserSound = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LaserSound"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(LaserSound, AShip), 0x00000800000a001d, Z_Construct_UClass_UAudioComponent_NoRegister());
@@ -499,6 +501,9 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Ship.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Ship.h"));
+				MetaData->SetValue(NewProp_ParticleExhaust, TEXT("Category"), TEXT("Particles"));
+				MetaData->SetValue(NewProp_ParticleExhaust, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_ParticleExhaust, TEXT("ModuleRelativePath"), TEXT("Ship.h"));
 				MetaData->SetValue(NewProp_MeshComponent, TEXT("Category"), TEXT("StaticMesh"));
 				MetaData->SetValue(NewProp_MeshComponent, TEXT("EditInline"), TEXT("true"));
 				MetaData->SetValue(NewProp_MeshComponent, TEXT("ModuleRelativePath"), TEXT("Ship.h"));
@@ -627,7 +632,7 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/SpaceShooter")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0x7BA67D9E;
+			Guid.A = 0xD297595C;
 			Guid.B = 0xD2147095;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
