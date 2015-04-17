@@ -116,13 +116,13 @@ void AShip::Tick(float DeltaTime)
 	}
 	*/
 	shootCounter += DeltaTime*4;
-	if (!LaserSound->IsPlaying())
+	/*if (!LaserSound->IsPlaying() && shootHeld)
 	{
 		LaserSound->SetWorldLocation(FVector(position.X + camPos.X, position.Y + camPos.Y, position.Z + camPos.Z));
 		LaserSound->Play(0.0f);
 		world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
 		shootCounter = 0;
-	}
+	}*/
 	Movement(DeltaTime);
 	ShotCheck(DeltaTime);
 }
@@ -179,7 +179,7 @@ void AShip::ManipulatePlayerLives(int32 lives)
 void AShip::ShotCheck(float DeltaTime)
 {
 	shootCounter += DeltaTime*4;
-	if (!LaserSound->IsPlaying())
+	if (!LaserSound->IsPlaying() && shootHeld)
 	{
 		switch (shotType)
 		{
