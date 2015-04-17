@@ -1,10 +1,10 @@
-﻿Build started 4/17/2015 10:53:00 AM.
-     1>Project "C:\Users\jsmalley\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
+﻿Build started 4/17/2015 5:50:49 PM.
+     1>Project "C:\Users\Ram\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" on node 2 (Build target(s)).
      1>Build:
-         "C:\Program Files\Unreal Engine\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\jsmalley\Desktop\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
+         "C:\Program Files\Epic Games\4.7\Engine\Build\BatchFiles\Build.bat" SpaceShooterEditor Win64 DebugGame "C:\Users\Ram\Documents\GitHub\SpaceShooter\SpaceShooter\SpaceShooter.uproject" -rocket
          Target is up to date.
-     1>Done Building Project "C:\Users\jsmalley\Desktop\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
+     1>Done Building Project "C:\Users\Ram\Documents\GitHub\SpaceShooter\SpaceShooter\Intermediate\ProjectFiles\SpaceShooter.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.66
+Time Elapsed 00:00:02.72
