@@ -199,6 +199,8 @@ void AShip::ShotCheck(float DeltaTime)
 			projectile->SetSpeed(400, -100);
 			break;
 		}
+		LaserSound->SetWorldLocation(FVector(position.X + camPos.X, position.Y + camPos.Y, position.Z + camPos.Z));
+		LaserSound->Play(0.0f);
 		shootCounter = 0;
 	}
 }
@@ -206,6 +208,20 @@ void AShip::Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int32 Targ
 {
 	if (TargetActor != nullptr && TargetActor != this && TargetComp != nullptr && (TargetActor->GetName().Contains("Enemy", ESearchCase::IgnoreCase, ESearchDir::FromStart) == true))
 	{
+		
+		ManipulatePlayerLives(-1);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());
+		//TargetActor->Destroy();
+		ExplosionSound->Play();
+		SetActorLocation(FVector(100000,100000,100000));
+		position.X = 0;
+		position.Y = -400;
+		position.Z = 0;
+		cam->SetActorLocation(FVector(-3440.0, 260.0, 190.0));
+	}
+	if (TargetActor != nullptr && TargetActor != this && TargetComp != nullptr && (TargetActor->GetName().Contains("Box", ESearchCase::IgnoreCase, ESearchDir::FromStart) == true))
+	{
+		ManipulatePlayerLives(-1);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());
 		//TargetActor->Destroy();
 		ExplosionSound->Play();

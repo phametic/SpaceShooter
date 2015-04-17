@@ -353,10 +353,10 @@ C:\Program Files\Unreal Engine\4.7\Engine\Plugins\ScriptGeneratorPlugin\Source\S
 C:\Program Files\Unreal Engine\4.7\Engine\Plugins\ScriptPlugin\Source\ScriptEditorPlugin\ScriptEditorPlugin.Build.cs
 C:\Program Files\Unreal Engine\4.7\Engine\Plugins\ScriptPlugin\Source\ScriptPlugin\ScriptPlugin.Build.cs
 C:\Program Files\Unreal Engine\4.7\Engine\Plugins\Slate\SlateRemote\Source\SlateRemote\SlateRemote.Build.cs
-C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Source\SpaceShooter\SpaceShooter.Build.cs
-C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Source\SpaceShooter.Target.cs
-C:\Users\npham\Desktop\SpaceShooter\SpaceShooter\Source\SpaceShooterEditor.Target.cs
-oter\Source\SpaceShooterEditor.Target.cs
+C:\Users\jsmalley\Desktop\SpaceShooter\SpaceShooter\Source\SpaceShooter\SpaceShooter.Build.cs
+C:\Users\jsmalley\Desktop\SpaceShooter\SpaceShooter\Source\SpaceShooter.Target.cs
+C:\Users\jsmalley\Desktop\SpaceShooter\SpaceShooter\Source\SpaceShooterEditor.Target.cs
+ce\SpaceShooterEditor.Target.cs
 
 .Target.cs
 =======

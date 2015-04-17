@@ -19,5 +19,5 @@ void ASpacyCamera::Tick(float DeltaTime)
 }
 void ASpacyCamera::Movement(float DeltaTime)
 {
-	SetActorLocation(FVector(GetActorLocation().X+50.0*DeltaTime,GetActorLocation().Y,GetActorLocation().Z));
+	SetActorLocation(FVector(GetActorLocation().X+200.0*DeltaTime,GetActorLocation().Y,GetActorLocation().Z));
 }

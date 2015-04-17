@@ -3,7 +3,7 @@
 #pragma once
 #include "BasicEnemy.h"
 #include "WaveyEnemy.h"
-#define MAX_TIMER 10
+#define MAX_TIMER 2
 /**
  * 
  */
