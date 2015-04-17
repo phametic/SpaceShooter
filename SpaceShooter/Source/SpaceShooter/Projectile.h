@@ -19,15 +19,17 @@ public:
 	void SetSpeed(float newSpeedX, float newSpeedZ);
 protected:
 	GENERATED_UCLASS_BODY()
-	
+		
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sounds)
+		UAudioComponent* ExplosionSound;
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = Collision)
-		TSubobjectPtr<USphereComponent> ColliderComponent;
+		USphereComponent* ColliderComponent;
 
 	//UPROPERTY(BlueprintAssignable, Category = "Collision")
 		//FActorHitSignature OnActorHit;
 
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = StaticMesh)
-		TSubobjectPtr<UStaticMeshComponent> MeshComponent;
+		UStaticMeshComponent* MeshComponent;
 
 	UFUNCTION()
 		void Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int32 TargetByIndex, bool bFromSweep, const FHitResult& SweepResult);

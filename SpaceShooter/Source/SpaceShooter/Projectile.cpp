@@ -3,13 +3,18 @@
 #include "SpaceShooter.h"
 #include "Projectile.h"
 
-AProjectile::AProjectile(const FPostConstructInitializeProperties& ObjectInitializer)
+AProjectile::AProjectile(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {	
 	ColliderComponent = ObjectInitializer.CreateDefaultSubobject<USphereComponent>(this, TEXT("ColliderComponent"));
 	ColliderComponent->SetSphereRadius(2.5f);
 	
-	
+	ExplosionSound = ObjectInitializer.CreateDefaultSubobject<UAudioComponent>(this, TEXT("Explosion"));
+	const ConstructorHelpers::FObjectFinder<USoundCue> ExplSound(TEXT("SoundCue'/Game/sounds/ExplodeSound.ExplodeSound'"));
+	ExplosionSound->Sound = ExplSound.Object;
+	ExplosionSound->AttachParent = RootComponent;
+	ExplosionSound->bAutoActivate = false;
+
 	MeshComponent = ObjectInitializer.CreateDefaultSubobject<UStaticMeshComponent>(this, TEXT("Mesh"));
 	const ConstructorHelpers::FObjectFinder<UStaticMesh> MeshObj(TEXT("StaticMesh'/Game/ExampleContent/Input_Examples/Meshes/SM_Pixel_Cube.SM_Pixel_Cube'"));
 	MeshComponent->SetStaticMesh(MeshObj.Object);
@@ -50,6 +55,9 @@ void AProjectile::Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int3
 {
 	if (TargetActor != nullptr && TargetActor != this && TargetComp != nullptr && (TargetActor->GetName().Contains("Enemy", ESearchCase::IgnoreCase, ESearchDir::FromStart) == true))
 	{
+		ExplosionSound->bStopWhenOwnerDestroyed = false;
+		ExplosionSound->Activate();
+		ExplosionSound->Play();
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());
 		TargetActor->Destroy();
 		this->Destroy();
