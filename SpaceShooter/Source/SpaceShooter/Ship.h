@@ -33,6 +33,8 @@ private:
 
 	int32 PlayerScore;
 	int32 PlayerLives;
+
+
 	void Movement(float DeltaTime);
 	void ShotCheck(float DeltaTime);
 public:
@@ -40,11 +42,15 @@ public:
 	SHOTTYPE shotType;
 	void Tick(float DeltaTime);
 
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category="Score")
 	int32 GetPlayerScore();
+
 	void SetPlayerScore(int32 score);
 	void ManipulatePlayerScore(int32 score);
 
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category="Lives")
 	int32 GetPlayerLives();
+
 	void SetPlayerLives(int32 lives);
 	void ManipulatePlayerLives(int32 lives);
 	

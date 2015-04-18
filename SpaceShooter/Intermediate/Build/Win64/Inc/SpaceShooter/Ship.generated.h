@@ -58,6 +58,20 @@ struct FHitResult;
 		P_GET_STRUCT_REF(FHitResult,Out_SweepResult); \
 		P_FINISH; \
 		this->Hit(TargetActor,TargetComp,TargetByIndex,bFromSweep,Out_SweepResult); \
+	} \
+ \
+ \
+	DECLARE_FUNCTION(execGetPlayerLives) \
+	{ \
+		P_FINISH; \
+		*(int32*)Result=this->GetPlayerLives(); \
+	} \
+ \
+ \
+	DECLARE_FUNCTION(execGetPlayerScore) \
+	{ \
+		P_FINISH; \
+		*(int32*)Result=this->GetPlayerScore(); \
 	}
 
 
@@ -106,6 +120,20 @@ struct FHitResult;
 		P_GET_STRUCT_REF(FHitResult,Out_SweepResult); \
 		P_FINISH; \
 		this->Hit(TargetActor,TargetComp,TargetByIndex,bFromSweep,Out_SweepResult); \
+	} \
+ \
+ \
+	DECLARE_FUNCTION(execGetPlayerLives) \
+	{ \
+		P_FINISH; \
+		*(int32*)Result=this->GetPlayerLives(); \
+	} \
+ \
+ \
+	DECLARE_FUNCTION(execGetPlayerScore) \
+	{ \
+		P_FINISH; \
+		*(int32*)Result=this->GetPlayerScore(); \
 	}
 
 

@@ -84,6 +84,7 @@ void AWaveyEnemy::move(float DeltaTime)
 }
 void AWaveyEnemy::ShotCheck(float DeltaTime)
 {
+	/*
 	shootCounter += DeltaTime*0.5;
 	if (shootCounter >= 1)
 	{
@@ -94,5 +95,6 @@ void AWaveyEnemy::ShotCheck(float DeltaTime)
 		//projectile->SetOwner(projectile->ENEMY);
 		shootCounter = 0;
 	}
+	*/
 }
 

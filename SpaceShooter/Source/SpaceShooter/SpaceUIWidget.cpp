@@ -29,6 +29,18 @@ void SSpaceUIWidget::Construct(const FArguments& InArgs)
 				.Font(FSlateFontInfo("Veranda", 30))
 				.Text(this,&SSpaceUIWidget::GetScore)
 			]
+			+ SOverlay::Slot()
+			.VAlign(VAlign_Top)
+			.HAlign(HAlign_Left)
+			.Padding(FMargin(0.0f, 50.0f))
+			[
+				SNew(STextBlock)
+				.ShadowColorAndOpacity(FLinearColor::Black)
+				.ColorAndOpacity(FLinearColor::White)
+				.ShadowOffset(FIntPoint(-1, 1))
+				.Font(FSlateFontInfo("Veranda", 30))
+				.Text(this,&SSpaceUIWidget::GetLives)
+			]
 		];
 
 	
@@ -41,6 +53,18 @@ FText SSpaceUIWidget::GetScore() const
 	for(TObjectIterator<AShip> Itr; Itr; ++Itr)
 	{
 		 tempString = "Highscore: " + FString::FromInt(Itr->GetPlayerScore());
+	}
+
+	return FText::FromString(tempString);
+}
+
+FText SSpaceUIWidget::GetLives() const
+{
+	FString tempString;
+
+	for(TObjectIterator<AShip> Itr; Itr; ++Itr)
+	{
+		 tempString = "Lives: " + FString::FromInt(Itr->GetPlayerLives());
 	}
 
 	return FText::FromString(tempString);

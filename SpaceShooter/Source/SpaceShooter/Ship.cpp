@@ -147,6 +147,10 @@ void AShip::Movement(float DeltaTime)
 	{
 		position.Z = -60;
 	}
+	if (this->GetActorLocation().X >= 750)
+	{
+		cam->SetActorLocation(FVector(-3440.0, 260.0, 190.0));
+	}
 	camPos = cam->GetActorLocation();
 	SetActorLocation(FVector(position.X+camPos.X,position.Y+camPos.Y,position.Z+camPos.Z));
 }
@@ -185,18 +189,18 @@ void AShip::ShotCheck(float DeltaTime)
 		{
 		case NORMAL:
 			projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
-			projectile->SetSpeed(400, 0);
+			projectile->SetSpeed(700, 0);
 			GEngine->AddOnScreenDebugMessage(10, 5.f, FColor::Black, FString::Printf(TEXT("PROJECTILE 1")));
 			break;
 		case SPREAD:
 			projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
-			projectile->SetSpeed(400, 0);
+			projectile->SetSpeed(700, 0);
 			
 			projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
-			projectile->SetSpeed(400, 100);
+			projectile->SetSpeed(700, 100);
 			
 			projectile = world->SpawnActor<AProjectile>(GetActorLocation(), GetActorRotation());
-			projectile->SetSpeed(400, -100);
+			projectile->SetSpeed(700, -100);
 			break;
 		}
 		LaserSound->SetWorldLocation(FVector(position.X + camPos.X, position.Y + camPos.Y, position.Z + camPos.Z));
@@ -219,7 +223,7 @@ void AShip::Hit(AActor* TargetActor, UPrimitiveComponent* TargetComp, int32 Targ
 		position.Z = 0;
 		cam->SetActorLocation(FVector(-3440.0, 260.0, 190.0));
 	}
-	if (TargetActor != nullptr && TargetActor != this && TargetComp != nullptr && (TargetActor->GetName().Contains("Box", ESearchCase::IgnoreCase, ESearchDir::FromStart) == true))
+	if (TargetActor != nullptr && TargetActor != this && TargetComp != nullptr && (TargetActor->GetName().Contains("Cube", ESearchCase::IgnoreCase, ESearchDir::FromStart) == true))
 	{
 		ManipulatePlayerLives(-1);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TargetActor->GetName());

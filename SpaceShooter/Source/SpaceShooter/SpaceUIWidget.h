@@ -31,4 +31,5 @@ private:
 	TWeakObjectPtr<class ASpaceHud> OwnerHUD;
 
 	FText GetScore() const;
+	FText GetLives() const;
 };

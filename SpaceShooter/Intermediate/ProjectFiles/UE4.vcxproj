@@ -1116,6 +1116,7 @@
 		<ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\4.7\Engine\Source\Developer\ShaderFormatOpenGL\Private\ShaderFormatOpenGL.cpp" />
 		<ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\4.7\Engine\Source\Developer\ShaderFormatOpenGL\Private\ShaderFormatOpenGL.h" />
 		<None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\4.7\Engine\Source\Developer\ShaderPreprocessor\ShaderPreprocessor.Build.cs" />
+		<ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\4.7\Engine\Source\Developer\ShaderPreprocessor\Private\PreprocessorFile.cpp" />
 		<ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\4.7\Engine\Source\Developer\ShaderPreprocessor\Private\PreprocessorPrivate.h" />
 		<ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\4.7\Engine\Source\Developer\ShaderPreprocessor\Private\ShaderPreprocessor.cpp" />
 		<ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\4.7\Engine\Source\Developer\ShaderPreprocessor\Public\ShaderPreprocessor.h" />
@@ -10423,7 +10424,7 @@
 	</PropertyGroup>
 	<PropertyGroup>
 		<NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-		<NMakeIncludeSearchPath>$(NMakeIncludeSearchPath);Z:\Visual Studio 2013\VC\INCLUDE;Z:\Visual Studio 2013\VC\ATLMFC\INCLUDE;C:\Program Files (x86)\Windows Kits\8.1\include\shared;C:\Program Files (x86)\Windows Kits\8.1\include\um;C:\Program Files (x86)\Windows Kits\8.1\include\winrt;;</NMakeIncludeSearchPath>
+		<NMakeIncludeSearchPath>$(NMakeIncludeSearchPath);C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\INCLUDE;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\ATLMFC\INCLUDE;C:\Program Files (x86)\Windows Kits\8.1\include\shared;C:\Program Files (x86)\Windows Kits\8.1\include\um;C:\Program Files (x86)\Windows Kits\8.1\include\winrt;;</NMakeIncludeSearchPath>
 		<NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
 		<NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
 		<NMakeForcedUsingAssemblies>$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
