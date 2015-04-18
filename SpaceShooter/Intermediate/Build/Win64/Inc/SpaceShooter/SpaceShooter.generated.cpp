@@ -32,13 +32,15 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	IMPLEMENT_CLASS(AProjectile, 1778319674);
 	void AShip::StaticRegisterNativesAShip()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"GetPlayerLives",(Native)&AShip::execGetPlayerLives);
+		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"GetPlayerScore",(Native)&AShip::execGetPlayerScore);
 		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"Hit",(Native)&AShip::execHit);
 		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"MoveLeftRight",(Native)&AShip::execMoveLeftRight);
 		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"MoveUpDown",(Native)&AShip::execMoveUpDown);
 		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"OnFirePressed",(Native)&AShip::execOnFirePressed);
 		FNativeFunctionRegistrar::RegisterFunction(AShip::StaticClass(),"OnFireReleased",(Native)&AShip::execOnFireReleased);
 	}
-	IMPLEMENT_CLASS(AShip, 1141492228);
+	IMPLEMENT_CLASS(AShip, 1091631908);
 	void ASpaceHud::StaticRegisterNativesASpaceHud()
 	{
 	}
@@ -78,6 +80,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AProjectile_Hit();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_AProjectile_NoRegister();
 	SPACESHOOTER_API class UClass* Z_Construct_UClass_AProjectile();
+	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_GetPlayerLives();
+	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_GetPlayerScore();
 	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_Hit();
 	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_MoveLeftRight();
 	SPACESHOOTER_API class UFunction* Z_Construct_UFunction_AShip_MoveUpDown();
@@ -348,6 +352,52 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 		return OuterClass;
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AProjectile(Z_Construct_UClass_AProjectile, TEXT("AProjectile"));
+	UFunction* Z_Construct_UFunction_AShip_GetPlayerLives()
+	{
+		struct Ship_eventGetPlayerLives_Parms
+		{
+			int32 ReturnValue;
+		};
+		UClass* OuterClass=Z_Construct_UClass_AShip();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GetPlayerLives"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x14020401, 65535, sizeof(Ship_eventGetPlayerLives_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UIntProperty(CPP_PROPERTY_BASE(ReturnValue, Ship_eventGetPlayerLives_Parms), 0x0000000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Lives"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Ship.h"));
+			MetaData->SetValue(NewProp_ReturnValue, TEXT("ModuleRelativePath"), TEXT("Ship.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AShip_GetPlayerScore()
+	{
+		struct Ship_eventGetPlayerScore_Parms
+		{
+			int32 ReturnValue;
+		};
+		UClass* OuterClass=Z_Construct_UClass_AShip();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GetPlayerScore"), RF_Public|RF_Transient|RF_Native) UFunction(FObjectInitializer(), NULL, 0x14020401, 65535, sizeof(Ship_eventGetPlayerScore_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_Native) UIntProperty(CPP_PROPERTY_BASE(ReturnValue, Ship_eventGetPlayerScore_Parms), 0x0000000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Score"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Ship.h"));
+			MetaData->SetValue(NewProp_ReturnValue, TEXT("ModuleRelativePath"), TEXT("Ship.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_AShip_Hit()
 	{
 		struct Ship_eventHit_Parms
@@ -479,6 +529,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_AShip_GetPlayerLives());
+				OuterClass->LinkChild(Z_Construct_UFunction_AShip_GetPlayerScore());
 				OuterClass->LinkChild(Z_Construct_UFunction_AShip_Hit());
 				OuterClass->LinkChild(Z_Construct_UFunction_AShip_MoveLeftRight());
 				OuterClass->LinkChild(Z_Construct_UFunction_AShip_MoveUpDown());
@@ -490,6 +542,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 				UProperty* NewProp_ColliderComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ColliderComponent"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(ColliderComponent, AShip), 0x00000800000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
 				UProperty* NewProp_LaserSound = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LaserSound"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(LaserSound, AShip), 0x00000800000a001d, Z_Construct_UClass_UAudioComponent_NoRegister());
 				UProperty* NewProp_ExplosionSound = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ExplosionSound"), RF_Public|RF_Transient|RF_Native) UObjectProperty(CPP_PROPERTY_BASE(ExplosionSound, AShip), 0x00000800000a001d, Z_Construct_UClass_UAudioComponent_NoRegister());
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AShip_GetPlayerLives()); // 3576132526
+				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AShip_GetPlayerScore()); // 3518735542
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AShip_Hit()); // 95642449
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AShip_MoveLeftRight()); // 949887137
 				OuterClass->AddFunctionToFunctionMap(Z_Construct_UFunction_AShip_MoveUpDown()); // 4028128031
@@ -632,8 +686,8 @@ void EmptyLinkFunctionForGeneratedCodeSpaceShooter() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/SpaceShooter")), false, false));
 			ReturnPackage->PackageFlags |= PKG_CompiledIn | 0x00000000;
 			FGuid Guid;
-			Guid.A = 0xD297595C;
-			Guid.B = 0xD2147095;
+			Guid.A = 0x06ADCD2B;
+			Guid.B = 0xE2A8AEB8;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
